@@ -194,3 +194,26 @@ def test_m2_20k_nested_tags_under_1s():
     m = extract_merchant(html)
     assert time.perf_counter() - t0 < 1.0
     assert m["eik"] == "123456786"
+
+
+def test_labelled_company_that_is_only_a_legal_form_is_rejected():
+    """"Фирма: ЕООД" is not a company name.
+
+    Accepting a bare legal-form suffix suppresses the NO_COMPANY finding and makes a
+    non-compliant shop look better than it is, which is the costly direction of error.
+    The unlabelled path already required two words; labelled values now match it.
+    """
+    from shopwatch.disclosure import _is_only_legal_form
+    for bare in ("ЕООД", " ооd ".replace("d", "д"), "«АД»", "ет", "  ООД  ", "ООД."):
+        assert _is_only_legal_form(bare), bare
+    for real in ("ТЕСТ ТЪРГОВИЯ ЕООД", "АЛФА АД", "Софийска Компания ООД"):
+        assert not _is_only_legal_form(real), real
+
+
+def test_real_company_names_still_extract():
+    for html, want in [
+        ('<p>Фирма: ТЕСТ ТЪРГОВИЯ ЕООД</p>', 'ТЕСТ ТЪРГОВИЯ ЕООД'),
+        ('<p>"ТЕСТ ТЪРГОВИЯ" ЕООД</p>', 'ТЕСТ ТЪРГОВИЯ ЕООД'),
+        ('<p>"АЛФА" АД</p>', 'АЛФА АД'),
+    ]:
+        assert extract_merchant(html)["company_name"] == want

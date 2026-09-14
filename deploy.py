@@ -17,7 +17,21 @@ import socketserver
 import subprocess
 import sys
 
-ROOT = pathlib.Path(__file__).parent
+def _find_root() -> pathlib.Path:
+    """Locate the directory that holds the tool projects.
+
+    This script ships inside each tool repo as well as beside them, so it must work
+    from either place: next to the projects, or one level down inside one of them.
+    """
+    here = pathlib.Path(__file__).resolve().parent
+    for cand in (here, here.parent):
+        if any((cand / slug / "web" / "build.py").exists()
+               for slug in ("cobweb", "sealbox", "shopwatch")):
+            return cand
+    return here
+
+
+ROOT = _find_root()
 OUT = ROOT / "_site"
 
 TOOLS = [
@@ -41,6 +55,9 @@ def build() -> list[str]:
     ok = []
     for slug, *_ in TOOLS:
         d = ROOT / slug
+        if not (d / "web" / "build.py").exists():
+            print(f"  {slug}: not present, skipping")
+            continue
         r = subprocess.run([sys.executable, "web/build.py"], cwd=d,
                            capture_output=True, text=True)
         if r.returncode != 0:
@@ -186,7 +203,8 @@ if __name__ == "__main__":
     a = ap.parse_args()
     print("building:")
     got = build()
-    if len(got) != len(TOOLS):
-        print(f"warning: {len(TOOLS) - len(got)} page(s) failed to build", file=sys.stderr)
+    if not got:
+        raise SystemExit("no tool projects found next to deploy.py or one level up")
+    print(f"root: {ROOT}")
     if not a.build:
         serve(a.port)

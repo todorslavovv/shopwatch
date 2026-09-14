@@ -207,6 +207,20 @@ def _unlabelled_company(chunk: str) -> str | None:
     )).strip()
     return value or None
 
+
+def _is_only_legal_form(value: str) -> bool:
+    """Is this "name" nothing but a legal-form suffix?
+
+    A labelled value such as "Фирма: ЕООД" yields "ЕООД", which is not a company
+    name - and accepting it silently suppresses the NO_COMPANY finding, making a
+    non-compliant shop look better than it is. The unlabelled path already requires
+    at least two words; this applies the same floor to labelled values.
+    """
+    core = " ".join(value.split())
+    core = "".join(ch for ch in core if ch not in _QUOTE_CHARS).strip(" .,;:-")
+    return core.casefold() in _LEGAL_FORMS
+
+
 _RE_EMAIL = re.compile(
     r"[A-Za-z0-9._%+\-]{1,64}@[A-Za-z0-9.\-]{1,253}\.[A-Za-z]{2,10}"
 )
@@ -433,7 +447,8 @@ def extract_merchant(html: str) -> dict:
             )
             name = cut[0].strip().rstrip(",:-\u2013\u2014") if cut else name
             if len(name) >= 2:
-                set_field("company_name", name, chunk)
+                if not _is_only_legal_form(name):
+                    set_field("company_name", name, chunk)
 
     # -- pass 2: label in one element, value in the next --------------------
     label_tables: tuple[tuple[str, tuple[str, ...]], ...] = (
@@ -541,7 +556,8 @@ def extract_merchant(html: str) -> dict:
             name = _unlabelled_company(chunk)
             if name:
                 # Value has quotes stripped; evidence keeps the raw line.
-                set_field("company_name", name, chunk)
+                if not _is_only_legal_form(name):
+                    set_field("company_name", name, chunk)
                 break
 
     return result
