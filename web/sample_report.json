@@ -1,0 +1,302 @@
+[
+ {
+  "domain": "tehnomag-bg.com",
+  "merchant": {
+   "eik": "204511873",
+   "company_name": "ТЕХНОМАГ БЪЛГАРИЯ ЕООД",
+   "address": "гр. София, бул. Цариградско шосе 115, ет.4",
+   "email": "office@tehnomag-bg.com",
+   "phone": "+359 2 970 4400",
+   "vat_number": "BG204511873"
+  },
+  "evidence": {
+   "eik": "ЕИК: 204511873",
+   "phone": "Тел: +359 2 970 4400",
+   "email": "Ел. поща: office@tehnomag-bg.com",
+   "vat_number": "ИН по ЗДДС: BG204511873",
+   "address": "гр. София, бул. Цариградско шосе 115, ет.4",
+   "company_name": "\"ТЕХНОМАГ БЪЛГАРИЯ\" ЕООД"
+  },
+  "assessment": {
+   "score": 0,
+   "verdict": "ok",
+   "findings": []
+  }
+ },
+ {
+  "domain": "moda-sofia.shop",
+  "merchant": {
+   "eik": "177229030",
+   "company_name": "МОДА СОФИЯ ООД",
+   "address": "гр. Пловдив, ул. Иван Вазов 18",
+   "email": "info@moda-sofia.shop",
+   "phone": null,
+   "vat_number": null
+  },
+  "evidence": {
+   "eik": "ЕИК 177229030",
+   "email": "Имейл: info@moda-sofia.shop",
+   "address": "гр. Пловдив, ул. Иван Вазов 18",
+   "company_name": "МОДА СОФИЯ ООД"
+  },
+  "assessment": {
+   "score": 10,
+   "verdict": "ok",
+   "findings": [
+    {
+     "code": "NO_PHONE",
+     "severity": "warning",
+     "message": "No phone published (email present)."
+    },
+    {
+     "code": "NO_VAT",
+     "severity": "info",
+     "message": "No VAT number published (informational: not required for all traders)."
+    }
+   ]
+  }
+ },
+ {
+  "domain": "elektro-market.bg",
+  "merchant": {
+   "eik": "133900556",
+   "company_name": null,
+   "address": null,
+   "email": null,
+   "phone": "0888 123 456",
+   "vat_number": null
+  },
+  "evidence": {
+   "eik": "ЕИК/БУЛСТАТ: 133900556",
+   "phone": "Тел: 0888 123 456"
+  },
+  "assessment": {
+   "score": 40,
+   "verdict": "suspect",
+   "findings": [
+    {
+     "code": "NO_ADDRESS",
+     "severity": "warning",
+     "message": "No business address published."
+    },
+    {
+     "code": "NO_EMAIL",
+     "severity": "warning",
+     "message": "No email published (phone present)."
+    },
+    {
+     "code": "NO_COMPANY",
+     "severity": "warning",
+     "message": "No company name published."
+    },
+    {
+     "code": "NO_VAT",
+     "severity": "info",
+     "message": "No VAT number published (informational: not required for all traders)."
+    }
+   ]
+  }
+ },
+ {
+  "domain": "luxury-watches24.cfd",
+  "merchant": {
+   "eik": null,
+   "company_name": null,
+   "address": null,
+   "email": "support@luxury-watches24.cfd",
+   "phone": null,
+   "vat_number": null
+  },
+  "evidence": {
+   "email": "Контакти: support@luxury-watches24.cfd"
+  },
+  "assessment": {
+   "score": 90,
+   "verdict": "noncompliant",
+   "findings": [
+    {
+     "code": "NO_EIK",
+     "severity": "error",
+     "message": "No EIK/UIC identifier published on the shop site."
+    },
+    {
+     "code": "NO_ADDRESS",
+     "severity": "warning",
+     "message": "No business address published."
+    },
+    {
+     "code": "NO_PHONE",
+     "severity": "warning",
+     "message": "No phone published (email present)."
+    },
+    {
+     "code": "NO_COMPANY",
+     "severity": "warning",
+     "message": "No company name published."
+    },
+    {
+     "code": "NO_VAT",
+     "severity": "info",
+     "message": "No VAT number published (informational: not required for all traders)."
+    }
+   ]
+  }
+ },
+ {
+  "domain": "bg-outlet-sale.icu",
+  "merchant": {
+   "eik": "123456789",
+   "company_name": null,
+   "address": null,
+   "email": null,
+   "phone": null,
+   "vat_number": null
+  },
+  "evidence": {
+   "eik": "ЕИК: 123456789"
+  },
+  "assessment": {
+   "score": 90,
+   "verdict": "noncompliant",
+   "findings": [
+    {
+     "code": "EIK_INVALID",
+     "severity": "error",
+     "message": "Published EIK '123456789' is structurally invalid: checksum mismatch: expected 6, got 9."
+    },
+    {
+     "code": "NO_ADDRESS",
+     "severity": "warning",
+     "message": "No business address published."
+    },
+    {
+     "code": "NO_CONTACT",
+     "severity": "warning",
+     "message": "No email and no phone published."
+    },
+    {
+     "code": "NO_COMPANY",
+     "severity": "warning",
+     "message": "No company name published."
+    },
+    {
+     "code": "NO_VAT",
+     "severity": "info",
+     "message": "No VAT number published (informational: not required for all traders)."
+    }
+   ]
+  }
+ },
+ {
+  "domain": "mega-promo-bg.sbs",
+  "merchant": {
+   "eik": null,
+   "company_name": null,
+   "address": null,
+   "email": null,
+   "phone": null,
+   "vat_number": null
+  },
+  "evidence": {},
+  "assessment": {
+   "score": 100,
+   "verdict": "noncompliant",
+   "findings": [
+    {
+     "code": "NO_EIK",
+     "severity": "error",
+     "message": "No EIK/UIC identifier published on the shop site."
+    },
+    {
+     "code": "NO_ADDRESS",
+     "severity": "warning",
+     "message": "No business address published."
+    },
+    {
+     "code": "NO_CONTACT",
+     "severity": "warning",
+     "message": "No email and no phone published."
+    },
+    {
+     "code": "NO_COMPANY",
+     "severity": "warning",
+     "message": "No company name published."
+    },
+    {
+     "code": "NO_VAT",
+     "severity": "info",
+     "message": "No VAT number published (informational: not required for all traders)."
+    }
+   ]
+  }
+ },
+ {
+  "domain": "detski-igri.eu",
+  "merchant": {
+   "eik": "200994718",
+   "company_name": "ДЕТСКИ ИГРИ ЕООД",
+   "address": "с. Бистрица, ул. Речна 4",
+   "email": "office@detski-igri.eu",
+   "phone": "02 987 1122",
+   "vat_number": null
+  },
+  "evidence": {
+   "eik": "ЕИК: 200994718",
+   "phone": "Тел: 02 987 1122",
+   "email": "office@detski-igri.eu",
+   "address": "с. Бистрица, ул. Речна 4",
+   "company_name": "„ДЕТСКИ ИГРИ\" ЕООД"
+  },
+  "assessment": {
+   "score": 0,
+   "verdict": "ok",
+   "findings": [
+    {
+     "code": "NO_VAT",
+     "severity": "info",
+     "message": "No VAT number published (informational: not required for all traders)."
+    }
+   ]
+  }
+ },
+ {
+  "domain": "parfum-store.one",
+  "merchant": {
+   "eik": null,
+   "company_name": null,
+   "address": "гр. Бургас, ул. Александровска 22",
+   "email": null,
+   "phone": null,
+   "vat_number": null
+  },
+  "evidence": {
+   "address": "Адрес: гр. Бургас, ул. Александровска 22"
+  },
+  "assessment": {
+   "score": 80,
+   "verdict": "noncompliant",
+   "findings": [
+    {
+     "code": "NO_EIK",
+     "severity": "error",
+     "message": "No EIK/UIC identifier published on the shop site."
+    },
+    {
+     "code": "NO_CONTACT",
+     "severity": "warning",
+     "message": "No email and no phone published."
+    },
+    {
+     "code": "NO_COMPANY",
+     "severity": "warning",
+     "message": "No company name published."
+    },
+    {
+     "code": "NO_VAT",
+     "severity": "info",
+     "message": "No VAT number published (informational: not required for all traders)."
+    }
+   ]
+  }
+ }
+]
