@@ -48,3 +48,18 @@ python web/build.py
 ```
 
 The page is self-contained — data and code inlined, no network calls.
+
+## Run it locally
+
+From the parent directory holding all three tools:
+
+```bash
+python3 deploy.py
+```
+
+Builds every page and serves them together at http://localhost:8777 with an index.
+`--port N` to change port, `--build` to rebuild without serving.
+
+Pages are written as Artifact content (no `<html>`/`<head>`), so the deploy step wraps
+each one in a real document with `<meta charset="utf-8">` — without it a browser falls
+back to Latin-1 and renders the Bulgarian as mojibake.
