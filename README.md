@@ -31,3 +31,20 @@ pip install -r requirements.txt
 python -m pytest tests/ -v
 python -c "from shopwatch.eik import validate_eik; print(validate_eik('123456789'))"
 ```
+
+## Web report
+
+`web/index.html` is a standalone Merchant Disclosure Triage page: shops ranked worst-first
+by how far their published trader identity falls short of what Bulgarian law requires,
+with the extracted fields and the page snippets each value came from.
+
+It states plainly what the tool does not claim — above all that a valid ЕИК checksum does
+not mean the company exists, which needs the Commercial Register.
+
+Rebuild:
+
+```bash
+python web/build.py
+```
+
+The page is self-contained — data and code inlined, no network calls.
