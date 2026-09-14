@@ -1,4 +1,4 @@
-<title>Merchant Disclosure Triage</title>
+<title>Триаж на търговци</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -135,14 +135,25 @@ footer.page p{max-width:84ch}
 .fields dd.mono{font-family:"IBM Plex Mono",monospace}
 .snip{margin-top:10px; font-size:11.5px; color:var(--ink-faint); font-family:"IBM Plex Mono",monospace;
   border-left:2px solid var(--rule); padding-left:9px; line-height:1.45}
+/* language switcher */
+.langsw{display:inline-flex; border:1px solid var(--rule); border-radius:2px; overflow:hidden;
+  background:var(--surface)}
+.lang{display:inline-flex; align-items:center; gap:6px; background:none; border:0; cursor:pointer;
+  padding:5px 10px; color:var(--ink-soft); font:inherit; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; font-family:"IBM Plex Mono",monospace}
+.lang + .lang{border-left:1px solid var(--rule)}
+.lang:hover{background:var(--surface-2); color:var(--ink)}
+.lang[aria-pressed="true"]{background:var(--accent-soft); color:var(--accent); font-weight:500}
+.lang:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+.lang svg{display:block; width:19px; height:13px; border:1px solid var(--rule-soft)}
 </style>
 
 <div class="masthead"><div class="mast-in">
-  <span class="tag">Shopwatch &middot; merchant disclosure</span>
-  <h1>Merchant Disclosure Triage</h1>
-  <div class="sub">Bulgarian online shops ranked by how far their published trader identity
-    falls short of what the law requires. Every check runs offline against the page itself
-    &mdash; no register lookup, no personal data.</div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap">
+    <div><span class="tag" id="tag"></span><h1 id="h1"></h1></div>
+    <div id="langslot"></div>
+  </div>
+  <div class="sub" id="sub"></div>
   <div class="facts" id="facts"></div>
 </div></div>
 

@@ -1,4 +1,4 @@
-<title>Merchant Disclosure Triage</title>
+<title>Триаж на търговци</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
@@ -135,14 +135,25 @@ footer.page p{max-width:84ch}
 .fields dd.mono{font-family:"IBM Plex Mono",monospace}
 .snip{margin-top:10px; font-size:11.5px; color:var(--ink-faint); font-family:"IBM Plex Mono",monospace;
   border-left:2px solid var(--rule); padding-left:9px; line-height:1.45}
+/* language switcher */
+.langsw{display:inline-flex; border:1px solid var(--rule); border-radius:2px; overflow:hidden;
+  background:var(--surface)}
+.lang{display:inline-flex; align-items:center; gap:6px; background:none; border:0; cursor:pointer;
+  padding:5px 10px; color:var(--ink-soft); font:inherit; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; font-family:"IBM Plex Mono",monospace}
+.lang + .lang{border-left:1px solid var(--rule)}
+.lang:hover{background:var(--surface-2); color:var(--ink)}
+.lang[aria-pressed="true"]{background:var(--accent-soft); color:var(--accent); font-weight:500}
+.lang:focus-visible{outline:2px solid var(--accent); outline-offset:-2px}
+.lang svg{display:block; width:19px; height:13px; border:1px solid var(--rule-soft)}
 </style>
 
 <div class="masthead"><div class="mast-in">
-  <span class="tag">Shopwatch &middot; merchant disclosure</span>
-  <h1>Merchant Disclosure Triage</h1>
-  <div class="sub">Bulgarian online shops ranked by how far their published trader identity
-    falls short of what the law requires. Every check runs offline against the page itself
-    &mdash; no register lookup, no personal data.</div>
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap">
+    <div><span class="tag" id="tag"></span><h1 id="h1"></h1></div>
+    <div id="langslot"></div>
+  </div>
+  <div class="sub" id="sub"></div>
   <div class="facts" id="facts"></div>
 </div></div>
 
@@ -154,6 +165,112 @@ footer.page p{max-width:84ch}
 
 <script>
 const DATA = [{"domain": "tehnomag-bg.com", "merchant": {"eik": "204511873", "company_name": "ТЕХНОМАГ БЪЛГАРИЯ ЕООД", "address": "гр. София, бул. Цариградско шосе 115, ет.4", "email": "office@tehnomag-bg.com", "phone": "+359 2 970 4400", "vat_number": "BG204511873"}, "evidence": {"eik": "ЕИК: 204511873", "phone": "Тел: +359 2 970 4400", "email": "Ел. поща: office@tehnomag-bg.com", "vat_number": "ИН по ЗДДС: BG204511873", "address": "гр. София, бул. Цариградско шосе 115, ет.4", "company_name": "\"ТЕХНОМАГ БЪЛГАРИЯ\" ЕООД"}, "assessment": {"score": 0, "verdict": "ok", "findings": []}}, {"domain": "moda-sofia.shop", "merchant": {"eik": "177229030", "company_name": "МОДА СОФИЯ ООД", "address": "гр. Пловдив, ул. Иван Вазов 18", "email": "info@moda-sofia.shop", "phone": null, "vat_number": null}, "evidence": {"eik": "ЕИК 177229030", "email": "Имейл: info@moda-sofia.shop", "address": "гр. Пловдив, ул. Иван Вазов 18", "company_name": "МОДА СОФИЯ ООД"}, "assessment": {"score": 10, "verdict": "ok", "findings": [{"code": "NO_PHONE", "severity": "warning", "message": "No phone published (email present)."}, {"code": "NO_VAT", "severity": "info", "message": "No VAT number published (informational: not required for all traders)."}]}}, {"domain": "elektro-market.bg", "merchant": {"eik": "133900556", "company_name": null, "address": null, "email": null, "phone": "0888 123 456", "vat_number": null}, "evidence": {"eik": "ЕИК/БУЛСТАТ: 133900556", "phone": "Тел: 0888 123 456"}, "assessment": {"score": 40, "verdict": "suspect", "findings": [{"code": "NO_ADDRESS", "severity": "warning", "message": "No business address published."}, {"code": "NO_EMAIL", "severity": "warning", "message": "No email published (phone present)."}, {"code": "NO_COMPANY", "severity": "warning", "message": "No company name published."}, {"code": "NO_VAT", "severity": "info", "message": "No VAT number published (informational: not required for all traders)."}]}}, {"domain": "luxury-watches24.cfd", "merchant": {"eik": null, "company_name": null, "address": null, "email": "support@luxury-watches24.cfd", "phone": null, "vat_number": null}, "evidence": {"email": "Контакти: support@luxury-watches24.cfd"}, "assessment": {"score": 90, "verdict": "noncompliant", "findings": [{"code": "NO_EIK", "severity": "error", "message": "No EIK/UIC identifier published on the shop site."}, {"code": "NO_ADDRESS", "severity": "warning", "message": "No business address published."}, {"code": "NO_PHONE", "severity": "warning", "message": "No phone published (email present)."}, {"code": "NO_COMPANY", "severity": "warning", "message": "No company name published."}, {"code": "NO_VAT", "severity": "info", "message": "No VAT number published (informational: not required for all traders)."}]}}, {"domain": "bg-outlet-sale.icu", "merchant": {"eik": "123456789", "company_name": null, "address": null, "email": null, "phone": null, "vat_number": null}, "evidence": {"eik": "ЕИК: 123456789"}, "assessment": {"score": 90, "verdict": "noncompliant", "findings": [{"code": "EIK_INVALID", "severity": "error", "message": "Published EIK '123456789' is structurally invalid: checksum mismatch: expected 6, got 9."}, {"code": "NO_ADDRESS", "severity": "warning", "message": "No business address published."}, {"code": "NO_CONTACT", "severity": "warning", "message": "No email and no phone published."}, {"code": "NO_COMPANY", "severity": "warning", "message": "No company name published."}, {"code": "NO_VAT", "severity": "info", "message": "No VAT number published (informational: not required for all traders)."}]}}, {"domain": "mega-promo-bg.sbs", "merchant": {"eik": null, "company_name": null, "address": null, "email": null, "phone": null, "vat_number": null}, "evidence": {}, "assessment": {"score": 100, "verdict": "noncompliant", "findings": [{"code": "NO_EIK", "severity": "error", "message": "No EIK/UIC identifier published on the shop site."}, {"code": "NO_ADDRESS", "severity": "warning", "message": "No business address published."}, {"code": "NO_CONTACT", "severity": "warning", "message": "No email and no phone published."}, {"code": "NO_COMPANY", "severity": "warning", "message": "No company name published."}, {"code": "NO_VAT", "severity": "info", "message": "No VAT number published (informational: not required for all traders)."}]}}, {"domain": "detski-igri.eu", "merchant": {"eik": "200994718", "company_name": "ДЕТСКИ ИГРИ ЕООД", "address": "с. Бистрица, ул. Речна 4", "email": "office@detski-igri.eu", "phone": "02 987 1122", "vat_number": null}, "evidence": {"eik": "ЕИК: 200994718", "phone": "Тел: 02 987 1122", "email": "office@detski-igri.eu", "address": "с. Бистрица, ул. Речна 4", "company_name": "„ДЕТСКИ ИГРИ\" ЕООД"}, "assessment": {"score": 0, "verdict": "ok", "findings": [{"code": "NO_VAT", "severity": "info", "message": "No VAT number published (informational: not required for all traders)."}]}}, {"domain": "parfum-store.one", "merchant": {"eik": null, "company_name": null, "address": "гр. Бургас, ул. Александровска 22", "email": null, "phone": null, "vat_number": null}, "evidence": {"address": "Адрес: гр. Бургас, ул. Александровска 22"}, "assessment": {"score": 80, "verdict": "noncompliant", "findings": [{"code": "NO_EIK", "severity": "error", "message": "No EIK/UIC identifier published on the shop site."}, {"code": "NO_CONTACT", "severity": "warning", "message": "No email and no phone published."}, {"code": "NO_COMPANY", "severity": "warning", "message": "No company name published."}, {"code": "NO_VAT", "severity": "info", "message": "No VAT number published (informational: not required for all traders)."}]}}];
+const I18N = {
+  bg: {
+    lang_aria: 'Избор на език',
+    title: 'Триаж на търговци',
+    tag: 'Shopwatch · идентификация на търговеца',
+    h1: 'Триаж на търговци',
+    sub: 'Български онлайн магазини, подредени според това доколко публикуваната от тях ' +
+      'идентификация на търговеца изостава от изискванията на закона. Всички проверки се ' +
+      'извършват офлайн върху самата страница — без справка в регистър и без лични данни.',
+    f_checked: 'проверени магазина', f_non: 'без съответствие',
+    f_suspect: 'съмнителни', f_ok: 'в съответствие',
+    worklist: 'Работен списък',
+    worknote: 'най-проблемните първо · оценката е евристика, не вероятност',
+    v_noncompliant: 'без съответствие', v_suspect: 'съмнителен', v_ok: 'в съответствие',
+    fields: { eik: 'ЕИК', company_name: 'Фирма', address: 'Адрес',
+              phone: 'Телефон', email: 'Имейл', vat_number: 'ДДС' },
+    notpub: 'не е публикуван', nofind: 'без констатации',
+    msg: { NO_EIK: 'На сайта не е публикуван ЕИК.',
+           EIK_INVALID: 'Публикуваният ЕИК не преминава контролната сума.' },
+    judged: 'Как се оценява магазин',
+    checked_h: 'Проверява се офлайн', notclaimed_h: 'Умишлено не се твърди',
+    checked: ['Дали изобщо е публикуван ЕИК — българското право го изисква от онлайн търговец.',
+      'Дали публикуваният ЕИК преминава контролната си сума по модул 11.',
+      'Дали са посочени адрес на управление и начин за връзка.',
+      'Етикетите се разчитат на български и английски, включително стойности, ' +
+      'разделени от маркирането на страницата.'],
+    notclaimed: ['<strong>Валидна контролна сума не означава, че дружеството съществува.</strong> ' +
+      'Това изисква Търговския регистър, който тук не се заявява.',
+      'Само число от девет цифри никога не се приема за ЕИК — иначе цени, номера на поръчки ' +
+      'и телефони също биха се броили.',
+      'Нищо не идентифицира лице. Управители и собственици са извън обхвата по замисъл.',
+      'Липсващо оповестяване е нарушение на закона, а не доказателство за измама.'],
+    prov: 'Оценено офлайн само по маркирането на страницата — без заявки към регистър, без ' +
+      'мрежови заявки, без събиране на лични данни. Оценката тежи най-силно липсващ или ' +
+      'невалиден идентификатор; тежестите са документирани в кода и представляват евристика ' +
+      'за приоритизиране, а не вероятност за измама.',
+  },
+  en: {
+    lang_aria: 'Language',
+    title: 'Merchant Disclosure Triage',
+    tag: 'Shopwatch · merchant disclosure',
+    h1: 'Merchant Disclosure Triage',
+    sub: 'Bulgarian online shops ranked by how far their published trader identity falls short ' +
+      'of what the law requires. Every check runs offline against the page itself — no register ' +
+      'lookup, no personal data.',
+    f_checked: 'shops checked', f_non: 'non-compliant', f_suspect: 'suspect', f_ok: 'compliant',
+    worklist: 'Triage worklist',
+    worknote: 'worst first · score is a heuristic, not a probability',
+    v_noncompliant: 'noncompliant', v_suspect: 'suspect', v_ok: 'ok',
+    fields: { eik: 'ЕИК', company_name: 'Company', address: 'Address',
+              phone: 'Phone', email: 'Email', vat_number: 'VAT' },
+    notpub: 'not published', nofind: 'no findings',
+    msg: { NO_EIK: 'No ЕИК/UIC identifier published on the shop site.',
+           EIK_INVALID: 'The published ЕИК fails its checksum.' },
+    judged: 'How a shop is judged',
+    checked_h: 'Checked offline', notclaimed_h: 'Deliberately not claimed',
+    checked: ['Whether an ЕИК is published at all — Bulgarian law requires it of an online trader.',
+      'Whether a published ЕИК passes its mod-11 checksum.',
+      'Whether a registered address and a means of contact are given.',
+      'Labels are read in Bulgarian and English, including values split across page markup.'],
+    notclaimed: ['<strong>A valid checksum does not mean the company exists.</strong> That needs ' +
+      'the Commercial Register, which is not queried here.',
+      'A bare nine-digit number is never read as an ЕИК — prices, order numbers and phone ' +
+      'numbers would all qualify.',
+      'Nothing identifies a person. Directors and owners are out of scope by design.',
+      'A missing disclosure is a legal shortfall, not proof of fraud.'],
+    prov: 'Assessed offline from page markup alone — no register queries, no network calls, no ' +
+      'personal data collected. Scores weight a missing or invalid identifier most heavily; the ' +
+      'weighting is documented in the source and is a triage heuristic, not a probability of fraud.',
+  },
+};
+
+// ---- language ----------------------------------------------------------
+const FLAG_BG = '<svg viewBox="0 0 5 3" aria-hidden="true">' +
+  '<rect width="5" height="3" fill="#fff"/><rect y="1" width="5" height="1" fill="#00966E"/>' +
+  '<rect y="2" width="5" height="1" fill="#D62612"/></svg>';
+const FLAG_EN = '<svg viewBox="0 0 60 30" aria-hidden="true">' +
+  '<rect width="60" height="30" fill="#012169"/>' +
+  '<path d="M0 0 60 30M60 0 0 30" stroke="#fff" stroke-width="6"/>' +
+  '<path d="M0 0 60 30M60 0 0 30" stroke="#C8102E" stroke-width="2.5"/>' +
+  '<path d="M30 0V30M0 15H60" stroke="#fff" stroke-width="10"/>' +
+  '<path d="M30 0V30M0 15H60" stroke="#C8102E" stroke-width="6"/></svg>';
+
+// Bulgarian first: these tools are for a Bulgarian unit, so BG is the default and
+// English is the alternate, not the other way round.
+let LANG = 'bg';
+try { const s = localStorage.getItem('lang'); if (s === 'bg' || s === 'en') LANG = s; } catch (e) {}
+
+const t = k => (I18N[LANG] && I18N[LANG][k] !== undefined) ? I18N[LANG][k] : I18N.bg[k];
+
+function langSwitcher() {
+  return `<div class="langsw" role="group" aria-label="${t('lang_aria')}">
+    <button class="lang" data-lang="bg" aria-pressed="${LANG === 'bg'}" lang="bg">${FLAG_BG} БГ</button>
+    <button class="lang" data-lang="en" aria-pressed="${LANG === 'en'}" lang="en">${FLAG_EN} EN</button>
+  </div>`;
+}
+
+function bindLang() {
+  document.querySelectorAll('.lang').forEach(b => b.addEventListener('click', () => {
+    LANG = b.dataset.lang;
+    try { localStorage.setItem('lang', LANG); } catch (e) {}
+    document.documentElement.lang = LANG;
+    render();
+  }));
+}
+
 const esc = s => String(s).replace(/[&<>"']/g, c =>
   ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 
@@ -163,28 +280,15 @@ const rows = [...DATA].sort((a, b) =>
   b.assessment.score - a.assessment.score);
 
 const tone = v => v === 'noncompliant' ? 'bad' : v === 'suspect' ? 'warn' : 'good';
-
-// ---- summary -----------------------------------------------------------
-const count = v => rows.filter(r => r.assessment.verdict === v).length;
-document.getElementById('facts').innerHTML = [
-  ['shops checked', rows.length, ''],
-  ['non-compliant', count('noncompliant'), 'bad'],
-  ['suspect', count('suspect'), 'warn'],
-  ['compliant', count('ok'), 'good'],
-].map(([k, v, c]) => `<div class="fact"><div class="k">${k}</div>
-    <div class="v ${c}">${v}</div></div>`).join('');
-
-// ---- worklist ----------------------------------------------------------
-const FIELDS = [
-  ['eik', 'ЕИК', true], ['company_name', 'Company', false], ['address', 'Address', false],
-  ['phone', 'Phone', true], ['email', 'Email', true], ['vat_number', 'ДДС', true],
-];
+const FIELD_ORDER = ['eik', 'company_name', 'address', 'phone', 'email', 'vat_number'];
+const MONO = new Set(['eik', 'phone', 'email', 'vat_number']);
 
 const shopHtml = r => {
   const a = r.assessment, m = r.merchant, v = a.verdict;
-  const crit = new Set(a.findings.filter(f =>
-    /^(NO_EIK|EIK_INVALID)$/.test(f.code)).map(f => f.code));
-  const critMsg = a.findings.find(f => crit.has(f.code));
+  const crit = new Set(a.findings.filter(f => /^(NO_EIK|EIK_INVALID)$/.test(f.code)).map(f => f.code));
+  const critCode = a.findings.find(f => crit.has(f.code));
+  // Prefer the translated message; fall back to whatever the assessor emitted.
+  const critMsg = critCode ? (t('msg')[critCode.code] || critCode.message) : null;
   const snips = Object.entries(r.evidence || {}).slice(0, 2)
     .map(([k, s]) => `${k}: ${String(s).replace(/\s+/g, ' ').trim().slice(0, 110)}`);
 
@@ -192,57 +296,58 @@ const shopHtml = r => {
     <div class="shop-main">
       <div class="shop-head">
         <span class="shop-dom">${esc(r.domain)}</span>
-        <span class="vchip v-${esc(v)}">${esc(v)}</span>
+        <span class="vchip v-${esc(v)}">${esc(t('v_' + v) || v)}</span>
         <span class="score ${tone(v)}">${a.score}</span>
       </div>
-      ${critMsg ? `<div style="margin-top:7px;font-size:13px;color:var(--seal)">
-          ${esc(critMsg.message)}</div>` : ''}
+      ${critMsg ? `<div style="margin-top:7px;font-size:13px;color:var(--seal)">${esc(critMsg)}</div>` : ''}
       <div class="findings">${a.findings.map(f =>
         `<span class="f${crit.has(f.code) ? ' critical' : ''}">${esc(f.code)}</span>`).join('')
-        || '<span class="f">no findings</span>'}</div>
+        || `<span class="f">${esc(t('nofind'))}</span>`}</div>
       ${snips.length ? `<div class="snip">${snips.map(esc).join('<br>')}</div>` : ''}
     </div>
     <div class="shop-side">
-      <dl class="fields">${FIELDS.map(([k, label, mono]) => {
-        const val = m[k];
-        return `<dt>${esc(label)}</dt><dd class="${val ? (mono ? 'mono' : '') : 'miss'}">${
-          val ? esc(val) : 'not published'}</dd>`;
+      <dl class="fields">${FIELD_ORDER.map(k => {
+        const val = m[k], label = t('fields')[k];
+        return `<dt>${esc(label)}</dt><dd class="${val ? (MONO.has(k) ? 'mono' : '') : 'miss'}">${
+          val ? esc(val) : esc(t('notpub'))}</dd>`;
       }).join('')}</dl>
     </div>
   </article>`;
 };
 
-// ---- page --------------------------------------------------------------
-document.getElementById('app').innerHTML = `
-  <section class="panel">
-    <header><h2>Triage worklist</h2>
-      <span class="note">worst first &middot; score is a heuristic, not a probability</span></header>
-    ${rows.map(shopHtml).join('')}
-  </section>
+function render() {
+  document.documentElement.lang = LANG;
+  document.title = t('title');
+  document.getElementById('langslot').innerHTML = langSwitcher();
+  bindLang();
+  document.getElementById('tag').textContent = t('tag');
+  document.getElementById('h1').textContent = t('h1');
+  document.getElementById('sub').textContent = t('sub');
 
-  <section class="panel">
-    <header><h2>How a shop is judged</h2></header>
-    <div class="proof">
-      <div><h3 class="yes">Checked offline</h3><ul>
-        <li>Whether an ЕИК is published at all &mdash; Bulgarian law requires it of an online trader.</li>
-        <li>Whether a published ЕИК passes its mod-11 checksum.</li>
-        <li>Whether a registered address and a means of contact are given.</li>
-        <li>Labels are read in Bulgarian and English, including values split across page markup.</li>
-      </ul></div>
-      <div><h3 class="no">Deliberately not claimed</h3><ul>
-        <li><strong>A valid checksum does not mean the company exists.</strong> That needs the
-            Commercial Register, which is not queried here.</li>
-        <li>A bare nine-digit number is never read as an ЕИК &mdash; prices, order numbers and
-            phone numbers would all qualify.</li>
-        <li>Nothing identifies a person. Directors and owners are out of scope by design.</li>
-        <li>A missing disclosure is a legal shortfall, not proof of fraud.</li>
-      </ul></div>
-    </div>
-  </section>`;
+  const count = v => rows.filter(r => r.assessment.verdict === v).length;
+  document.getElementById('facts').innerHTML = [
+    [t('f_checked'), rows.length, ''], [t('f_non'), count('noncompliant'), 'bad'],
+    [t('f_suspect'), count('suspect'), 'warn'], [t('f_ok'), count('ok'), 'good'],
+  ].map(([k, v, c]) => `<div class="fact"><div class="k">${esc(k)}</div>
+      <div class="v ${c}">${v}</div></div>`).join('');
 
-document.getElementById('prov').innerHTML =
-  `Assessed offline from page markup alone &mdash; no register queries, no network calls, ` +
-  `no personal data collected. Scores weight a missing or invalid identifier most heavily; ` +
-  `the weighting is documented in the source and is a triage heuristic, not a probability of fraud.`;
+  document.getElementById('app').innerHTML = `
+    <section class="panel">
+      <header><h2>${esc(t('worklist'))}</h2><span class="note">${esc(t('worknote'))}</span></header>
+      ${rows.map(shopHtml).join('')}
+    </section>
+    <section class="panel">
+      <header><h2>${esc(t('judged'))}</h2></header>
+      <div class="proof">
+        <div><h3 class="yes">${esc(t('checked_h'))}</h3>
+          <ul>${t('checked').map(i => `<li>${i}</li>`).join('')}</ul></div>
+        <div><h3 class="no">${esc(t('notclaimed_h'))}</h3>
+          <ul>${t('notclaimed').map(i => `<li>${i}</li>`).join('')}</ul></div>
+      </div>
+    </section>`;
+
+  document.getElementById('prov').textContent = t('prov');
+}
+render();
 
 </script>
