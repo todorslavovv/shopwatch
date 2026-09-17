@@ -9,6 +9,15 @@ const I18N = {
       'извършват офлайн върху самата страница — без справка в регистър и без лични данни.',
     f_checked: 'проверени магазина', f_non: 'без съответствие',
     f_suspect: 'съмнителни', f_ok: 'в съответствие',
+    p_why: 'За какво служи',
+    why_a_h: 'Проблемът', why_a: 'Сигналите за измамни магазини са стотици, а времето за ' +
+      'проверка е ограничено. Кой да се погледне пръв не е очевидно.',
+    why_b_h: 'Какво прави', why_b: 'Проверява дали магазинът публикува това, което законът ' +
+      'изисква от онлайн търговец — ЕИК, адрес, връзка — и дали ЕИК-ът изобщо е валиден.',
+    why_c_h: 'Кога има значение', why_c: 'При приоритизиране. Магазин без никакъв ' +
+      'идентификатор или с невалиден такъв е очевидното начало.',
+    why_note: '<strong>Тази страница е доклад от вече извършена проверка</strong>, не самият ' +
+      'инструмент. Оценяването се прави от командния ред върху съдържанието на страниците.',
     worklist: 'Работен списък',
     worknote: 'най-проблемните първо · оценката е евристика, не вероятност',
     v_noncompliant: 'без съответствие', v_suspect: 'съмнителен', v_ok: 'в съответствие',
@@ -44,6 +53,15 @@ const I18N = {
       'of what the law requires. Every check runs offline against the page itself — no register ' +
       'lookup, no personal data.',
     f_checked: 'shops checked', f_non: 'non-compliant', f_suspect: 'suspect', f_ok: 'compliant',
+    p_why: 'What this is for',
+    why_a_h: 'The problem', why_a: 'Fraudulent-shop complaints run to hundreds while review ' +
+      'time is limited. Which to look at first is not obvious.',
+    why_b_h: 'What it does', why_b: 'Checks whether the shop publishes what the law requires ' +
+      'of an online trader — ЕИК, address, contact — and whether the ЕИК is even valid.',
+    why_c_h: 'When it matters', why_c: 'For triage. A shop with no identifier at all, or an ' +
+      'invalid one, is the obvious place to start.',
+    why_note: '<strong>This page is a report of a run that already happened</strong>, not the ' +
+      'tool itself. Assessment is done from the command line over page content.',
     worklist: 'Triage worklist',
     worknote: 'worst first · score is a heuristic, not a probability',
     v_noncompliant: 'noncompliant', v_suspect: 'suspect', v_ok: 'ok',

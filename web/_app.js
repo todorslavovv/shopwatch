@@ -60,6 +60,12 @@ function render() {
 
   document.getElementById('app').innerHTML = `
     <section class="panel">
+      <header><h2>${esc(t('p_why'))}</h2></header>
+      <div class="whygrid">${[['why_a','why_a_h'],['why_b','why_b_h'],['why_c','why_c_h']]
+        .map(([b,h]) => `<div><h3>${esc(t(h))}</h3><p>${esc(t(b))}</p></div>`).join('')}</div>
+      <div class="whynote">${t('why_note')}</div>
+    </section>
+    <section class="panel">
       <header><h2>${esc(t('worklist'))}</h2><span class="note">${esc(t('worknote'))}</span></header>
       ${rows.map(shopHtml).join('')}
     </section>
