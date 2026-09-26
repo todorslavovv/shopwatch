@@ -1,5 +1,7 @@
 # Shopwatch — merchant disclosure triage
 
+> **Try it live here:** https://returns-homework-perfect-affecting.trycloudflare.com
+
 A public-web triage tool for Bulgarian online shops. It answers two questions:
 
 * **What does a shop disclose about its trader?** Company name, ЕИК, legal form,
