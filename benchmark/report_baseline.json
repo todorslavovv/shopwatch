@@ -1,0 +1,2059 @@
+{
+ "shops": 20,
+ "coverage": {
+  "eik": {
+   "found_by_deterministic_tooling": 3,
+   "not_found_by_deterministic_tooling": 1,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 15,
+   "conflicting": 1,
+   "named_without_eik": 0
+  },
+  "legal_name": {
+   "found_by_deterministic_tooling": 5,
+   "not_found_by_deterministic_tooling": 2,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 4,
+   "conflicting": 9,
+   "named_without_eik": 0
+  },
+  "legal_form": {
+   "found_by_deterministic_tooling": 3,
+   "not_found_by_deterministic_tooling": 9,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 8,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "address": {
+   "found_by_deterministic_tooling": 8,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 2,
+   "conflicting": 10,
+   "named_without_eik": 0
+  },
+  "phone": {
+   "found_by_deterministic_tooling": 13,
+   "not_found_by_deterministic_tooling": 2,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 5,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "email": {
+   "found_by_deterministic_tooling": 18,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 2,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "vat_number": {
+   "found_by_deterministic_tooling": 1,
+   "not_found_by_deterministic_tooling": 1,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 18,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "domain_operator": {
+   "found_by_deterministic_tooling": 20,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 0,
+   "conflicting": 0,
+   "named_without_eik": 0
+  }
+ },
+ "totals": {
+  "found_by_deterministic_tooling": 71,
+  "not_found_by_deterministic_tooling": 15,
+  "unavailable_to_deterministic_tooling": 0,
+  "found_by_ai_fallback": 0,
+  "not_found_anywhere": 54,
+  "conflicting": 20,
+  "named_without_eik": 0
+ },
+ "shortfalls": {
+  "total": 54,
+  "reproduced": 39,
+  "by_kind": {
+   "shortfall": {
+    "total": 42,
+    "reproduced": 27
+   },
+   "information": {
+    "total": 12,
+    "reproduced": 12
+   }
+  }
+ },
+ "domain_operator": {
+  "domain_operator": {
+   "correct": 20,
+   "named_without_eik": 0,
+   "different_company": 0,
+   "not_identified": 0
+  }
+ },
+ "false_alarms": 6,
+ "ai_fallback_used": 0,
+ "gaps": [
+  {
+   "domain": "dobytoys.com",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    ", регистрирано в Република България, с"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "dobytoys.com",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "besteesrock.com",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    ". All duties/taxes will be billed directly to you"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "besteesrock.com",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    "besteesrock@gmail.com No matter if you ask for 100 or 10 000 T-shirts, sweaters of zipped hoodies you will always be treated with respect and offered best possible price"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "besteesrock.com",
+   "shortfall": "NO_COMPANY",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "besteesrock.com",
+   "shortfall": "NO_ADDRESS",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "biancandfred.com",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    "COMPANY"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "biancandfred.com",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    ", billing, payment, and shipping information. You represent and warrant that all the information you provide in our stores is correct, current and complete and that you have all rights necessary to provide this information"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "biancandfred.com",
+   "field": "phone",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+   "improved": true,
+   "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous"
+  },
+  {
+   "domain": "biancandfred.com",
+   "shortfall": "NO_COMPANY",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "biancandfred.com",
+   "shortfall": "PLACEHOLDER_ADDRESS",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "biancandfred.com",
+   "shortfall": "CONTACT_INCONSISTENT",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: the triage keeps one e-mail per page and never compares the mailboxes listed across the legal pages; the extra mailboxes sit in template text of the terms and refund policy",
+   "improved": false,
+   "change": "none in this pass - it needs every mailbox per page and a rule for which one is the trader's; not a privacy exclusion"
+  },
+  {
+   "domain": "biancandfred.com",
+   "false_alarm": "NO_PHONE",
+   "coverage": "false_alarm",
+   "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+   "improved": true,
+   "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous"
+  },
+  {
+   "domain": "bigvip.bg",
+   "shortfall": "NO_LEGAL_FORM",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "elanhairboutique.com",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    "то не носи отговорност при невярност на посочената от производителя информация за стоката"
+   ],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "elanhairboutique.com",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "elrelax.org",
+   "shortfall": "NO_COMPANY",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "elveszett.com",
+   "field": "legal_name",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+   "improved": true,
+   "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')"
+  },
+  {
+   "domain": "elveszett.com",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+   "improved": true,
+   "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')"
+  },
+  {
+   "domain": "elveszett.com",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    ", информация за фактуриране, плащане и доставка. Вие декларирате и гарантирате, че цялата информация, която предоставяте в нашите магазини, е вярна, актуална и пълна и че имате всички необходими права да предоставите тази информация"
+   ],
+   "reason": "text normalisation: the address was split over elements ('Адрес' | 'гр. София,' | 'ул. ... 253'), or sat alone next to the e-mail and phone",
+   "improved": true,
+   "change": "disclosure.py: the next two elements are joined when the first has no number; an address in a contact block (e-mail or +359 phone within three elements) is accepted"
+  },
+  {
+   "domain": "elveszett.com",
+   "field": "phone",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+   "improved": true,
+   "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous"
+  },
+  {
+   "domain": "elveszett.com",
+   "false_alarm": "NO_COMPANY",
+   "coverage": "false_alarm",
+   "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+   "improved": true,
+   "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')"
+  },
+  {
+   "domain": "elveszett.com",
+   "false_alarm": "NO_PHONE",
+   "coverage": "false_alarm",
+   "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+   "improved": true,
+   "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous"
+  },
+  {
+   "domain": "carpethouse-bg.com",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "carpethouse-bg.com",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    "на магазина:"
+   ],
+   "reason": "text normalisation: a heading ('Адрес на магазина:') stood in its own element with the address in the next one; the heading was read as the value and rejected, the next element never tried",
+   "improved": true,
+   "change": "disclosure.py: a short element that starts with a label and ends in ':' takes its value from the next element"
+  },
+  {
+   "domain": "chunche-bg.com",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    ". Плащания чрез Еконт с наложен платеж(Пощенски паричен превод) или по банков път. Извиняваме се за причиненото неудобство"
+   ],
+   "reason": "text normalisation: the address was split over elements ('Адрес' | 'гр. София,' | 'ул. ... 253'), or sat alone next to the e-mail and phone",
+   "improved": true,
+   "change": "disclosure.py: the next two elements are joined when the first has no number; an address in a contact block (e-mail or +359 phone within three elements) is accepted"
+  },
+  {
+   "domain": "concretta.eu",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    "grew, becoming the leader in Bulgarian market and focusing on export for US and Europe. The workshop was relocated to a new bigger place and investments in equipment, machinery and specialized equipment were constantly made"
+   ],
+   "reason": "insufficient URL/page discovery: a product page called 'About Dura' matched the 'about' hint and took the fifth page, so the privacy policy that names 'Concreta 2017 Ltd.' was never read",
+   "improved": true,
+   "change": "investigate.py: a hint in the URL outranks one in the link text, and each tier gets a share of the page budget (2 contact/about, 2 terms, 1 privacy)"
+  },
+  {
+   "domain": "concretta.eu",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "insufficient URL/page discovery: a product page called 'About Dura' matched the 'about' hint and took the fifth page, so the privacy policy that names 'Concreta 2017 Ltd.' was never read",
+   "improved": true,
+   "change": "investigate.py: a hint in the URL outranks one in the link text, and each tier gets a share of the page budget (2 contact/about, 2 terms, 1 privacy)"
+  },
+  {
+   "domain": "concretta.eu",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    "Sofia | Bulgaria"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "concretta.eu",
+   "shortfall": "ADDRESS_INCOMPLETE",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "concretta.eu",
+   "shortfall": "TRADER_NAME_INCONSISTENT",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: the terms name the supplier 'Concretta EU' with no legal form, so it is not read as a company name; with one company name found ('Concreta 2017 Ltd.') there is nothing to compare",
+   "improved": false,
+   "change": "none - accepting names without a legal form would bring back the prose false positives"
+  },
+  {
+   "domain": "kornelv.com",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    "Apli. 60мм"
+   ],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "kornelv.com",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "kornelv.com",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    "и телефон за връзка"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "davidtoys.eu",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    ", информация за фактуриране, плащане и доставка. Вие декларирате и гарантирате, че цялата информация, която предоставяте в нашите магазини, е вярна, актуална и пълна и че имате всички необходими права да предоставите тази информация"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "davidtoys.eu",
+   "shortfall": "NO_COMPANY",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "davidtoys.eu",
+   "shortfall": "PLACEHOLDER_ADDRESS",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "detetovteb.com",
+   "field": "eik",
+   "coverage": "conflicting",
+   "found": [
+    "490156854"
+   ],
+   "reason": "Bulgarian/English label matching: labels matched inside other words - 'Quickview' contains 'uic', so a product model number was read as an ЕИК",
+   "improved": true,
+   "change": "disclosure.py: labels match whole words only"
+  },
+  {
+   "domain": "detetovteb.com",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    "се стараем да ви даваме правилните съвети за повече усмихнати деца"
+   ],
+   "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+   "improved": true,
+   "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')"
+  },
+  {
+   "domain": "detetovteb.com",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+   "improved": true,
+   "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')"
+  },
+  {
+   "domain": "detetovteb.com",
+   "shortfall": "EIK_OTHER_COMPANY",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: the identifier on the site was never read (label split over two elements), so there was nothing to compare with the NAP declaration",
+   "improved": true,
+   "change": "once the UIC is read, the resolver holds two identifiers (the site's and NAP's) and reports the multiple_identifiers conflict"
+  },
+  {
+   "domain": "detetovteb.com",
+   "false_alarm": "EIK_INVALID",
+   "coverage": "false_alarm",
+   "reason": "Bulgarian/English label matching: labels matched inside other words - 'Quickview' contains 'uic', so a product model number was read as an ЕИК",
+   "improved": true,
+   "change": "disclosure.py: labels match whole words only"
+  },
+  {
+   "domain": "danishgranola.bg",
+   "field": "eik",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: the ЕИК was published only inside the VAT number BG207654830 and the triage looked for an ЕИК label only",
+   "improved": true,
+   "change": "investigate.py: a valid BG VAT number counts as the ЕИК disclosure"
+  },
+  {
+   "domain": "danishgranola.bg",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    ", вашият предпочитан източник на био гранола и ядки с най-високо качество. Нашата страст към майсторството и любовта към естествените, био съставки ни водят от 2017 г"
+   ],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "danishgranola.bg",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "danishgranola.bg",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    "за фактуриране и/или доставка. Ако направим промяна или анулираме поръчка, може да се опитаме да ви уведомим, като се свържем с имейл адреса и/или адреса за фактуриране/телефонния номер, предоставени при направата на поръчката. Запазваме си правото да ограничим или забраним поръчки, които по наше ус"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "danishgranola.bg",
+   "shortfall": "LEGAL_FORM_INCONSISTENT",
+   "coverage": "not_reproduced",
+   "reason": "conflict resolution: the triage kept the first company name per field and never compared the names on different pages",
+   "improved": true,
+   "change": "investigate.py/compliance.py: distinct company names or legal forms across pages give COMPANY_INCONSISTENT"
+  },
+  {
+   "domain": "danishgranola.bg",
+   "shortfall": "NO_ADDRESS",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "danishgranola.bg",
+   "false_alarm": "NO_EIK",
+   "coverage": "false_alarm",
+   "reason": "field extraction: the ЕИК was published only inside the VAT number BG207654830 and the triage looked for an ЕИК label only",
+   "improved": true,
+   "change": "investigate.py: a valid BG VAT number counts as the ЕИК disclosure"
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "field": "legal_name",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "field": "legal_form",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "field": "address",
+   "coverage": "conflicting",
+   "found": [
+    "а на посетителя и низа на потребителския агент на браузъра, за да помогнем за откриването на спам"
+   ],
+   "reason": "text normalisation: 'гр.Варна ул.Шипка № 2' has no space after the marker",
+   "improved": true,
+   "change": "disclosure.py: the settlement marker may touch the name"
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "false_alarm": "NO_COMPANY",
+   "coverage": "false_alarm",
+   "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+   "improved": true,
+   "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit"
+  },
+  {
+   "domain": "compartido.bg",
+   "field": "legal_name",
+   "coverage": "conflicting",
+   "found": [
+    "“Спиди”, като таксата за доставката е на стойност 6 лв. и се начислява автоматично след коректно въвеждане на данни и"
+   ],
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "compartido.bg",
+   "shortfall": "NO_COMPANY",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+   "improved": true,
+   "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped"
+  },
+  {
+   "domain": "editshop.bg",
+   "field": "vat_number",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: the ЕИК was written in VAT form ('ЕИК BG208475759'), which is the VAT number, but no VAT label was present",
+   "improved": true,
+   "change": "investigate.py: 'BG' + the ЕИК under the ЕИК label is recorded as the VAT number too"
+  }
+ ],
+ "unexplained": 0,
+ "per_shop": [
+  {
+   "domain": "dobytoys.com",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "123456789"
+     ]
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      ", регистрирано в Република България, с"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. Плевен, ул. Хаджи Димитър 24"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0877888413",
+      "+359 87 788 8413"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@dobytoys.com",
+      "info@dobytoys.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "207877153"
+     ]
+    }
+   },
+   "shortfalls": {
+    "EIK_INVALID": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "bulbsandleds.com",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "208452258"
+     ]
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ОСВЕТЛЕНИЕ БГ ЕООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ЕООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр.София"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359877518591",
+      "+359 87 751 8591"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "bulbsandleds.com@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "208542298"
+     ]
+    }
+   },
+   "shortfalls": {
+    "EIK_INVALID": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "besteesrock.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      ". All duties/taxes will be billed directly to you"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "besteesrock@gmail.com No matter if you ask for 100 or 10 000 T-shirts, sweaters of zipped hoodies you will always be treated with respect and offered best possible price"
+     ]
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "besteesrock@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "202648631"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": false,
+    "NO_ADDRESS": false,
+    "NO_PHONE": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "biancandfred.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "COMPANY"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      ", billing, payment, and shipping information. You represent and warrant that all the information you provide in our stores is correct, current and complete and that you have all rights necessary to provide this information"
+     ]
+    },
+    "phone": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "biancandfred@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "204059304"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": false,
+    "PLACEHOLDER_ADDRESS": false,
+    "CONTACT_INCONSISTENT": false,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": [
+    "NO_PHONE"
+   ]
+  },
+  {
+   "domain": "bigvip.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "„Стандарт 34“ със"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. Хасково, ул. „Христо Ботев“ 1"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0894 / 36 32 89",
+      "+359 89 436 3289",
+      "+359 700 11 122"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "sales@bigvip.bg",
+      "sales@bigvip.bg",
+      "info@kzp.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "205550384"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_LEGAL_FORM": false
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "elanhairboutique.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "то не носи отговорност при невярност на посочената от производителя информация за стоката"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Асеновград, ул „Христо Ботев“ №45"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359895697787",
+      "+359 89 569 7787",
+      "+359 89 504 0945"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "elanhairboutique@gmail.com",
+      "sales@elanhairboutique.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "206418542"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "elrelax.org",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": [
+      "El Relax – Physiotherapy"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "София център, ул. „Одрин“ 75, 1303 София"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359885040464",
+      "+359 88 504 0464"
+     ]
+    },
+    "email": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "205352858"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": false,
+    "NO_EMAIL": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "elveszett.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      ", информация за фактуриране, плащане и доставка. Вие декларирате и гарантирате, че цялата информация, която предоставяте в нашите магазини, е вярна, актуална и пълна и че имате всички необходими права да предоставите тази информация"
+     ]
+    },
+    "phone": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@elveszett.com",
+      "info@elveszett.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "208598391"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true
+   },
+   "false_alarms": [
+    "NO_COMPANY",
+    "NO_PHONE"
+   ]
+  },
+  {
+   "domain": "carpethouse-bg.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ВЕНИС 21 ООД, СМЕ С ДЪЛГОГОДИШЕН ОПИТ В ПРОДАЖБАТА, ДИСТРИБУЦИЯТА И ИЗРАБОТКАТА НА ПОДОВИ НАСТИЛКИ И ИНТЕРИОРЕН ТЕКСТИЛ"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "на магазина:"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359899943328",
+      "+359 89 994 3325",
+      "+359 89 994 3328"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "carpethousebg@gmail.com",
+      "orders@carpethouse-bg.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "130846605"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "chiraque.eu",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "202191944"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "NO_ADDRESS": true,
+    "NO_CONTACT": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "chunche-bg.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Чунче ЕООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ЕООД"
+     ]
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      ". Плащания чрез Еконт с наложен платеж(Пощенски паричен превод) или по банков път. Извиняваме се за причиненото неудобство"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359884243880",
+      "+359 88 424 3880",
+      "+359 88 826 4902"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "office@chunche-bg.com",
+      "office@chunche-bg.com",
+      "sales@chunche-bg.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "131467896"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "concretta.eu",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "grew, becoming the leader in Bulgarian market and focusing on export for US and Europe. The workshop was relocated to a new bigger place and investments in equipment, machinery and specialized equipment were constantly made"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "Sofia | Bulgaria"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359 888 299 732",
+      "+359 88 829 9732"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@concretta.eu",
+      "info@concretta.eu"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "204559054"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "ADDRESS_INCOMPLETE": false,
+    "TRADER_NAME_INCONSISTENT": false,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "kornelv.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "Apli. 60мм"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "и телефон за връзка"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "02 944 2001",
+      "+359 2 944 2001",
+      "+359 88 666 6814"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "eshop@kornelv.com",
+      "eshop@kornelv.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "130334366"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "davidtoys.eu",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": [
+      "David Toys"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      ", информация за фактуриране, плащане и доставка. Вие декларирате и гарантирате, че цялата информация, която предоставяте в нашите магазини, е вярна, актуална и пълна и че имате всички необходими права да предоставите тази информация"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359892357777",
+      "+359 89 235 7777"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "office@davidtoys.eu",
+      "office@davidtoys.eu"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "205877717"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": false,
+    "PLACEHOLDER_ADDRESS": false,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "detetovteb.com",
+   "fields": {
+    "eik": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "490156854"
+     ]
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "се стараем да ви даваме правилните съвети за повече усмихнати деца"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Varna"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+35952870102",
+      "+359 52 870 102",
+      "+359 89 832 2127"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "sha256:0d7ee300a2d4ef03"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "204565892"
+     ]
+    }
+   },
+   "shortfalls": {
+    "EIK_OTHER_COMPANY": false
+   },
+   "false_alarms": [
+    "EIK_INVALID"
+   ]
+  },
+  {
+   "domain": "danishgranola.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      ", вашият предпочитан източник на био гранола и ядки с най-високо качество. Нашата страст към майсторството и любовта към естествените, био съставки ни водят от 2017 г"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "за фактуриране и/или доставка. Ако направим промяна или анулираме поръчка, може да се опитаме да ви уведомим, като се свържем с имейл адреса и/или адреса за фактуриране/телефонния номер, предоставени при направата на поръчката. Запазваме си правото да ограничим или забраним поръчки, които по наше ус"
+     ]
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "zdr@danishgranola.bg",
+      "zdr@danishgranola.bg",
+      "hello@danishgranolacompany.de"
+     ]
+    },
+    "vat_number": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "BG207654830",
+      "BG207654830"
+     ]
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "207654830"
+     ]
+    }
+   },
+   "shortfalls": {
+    "LEGAL_FORM_INCONSISTENT": false,
+    "NO_ADDRESS": false,
+    "NO_PHONE": true
+   },
+   "false_alarms": [
+    "NO_EIK"
+   ]
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "а на посетителя и низа на потребителския агент на браузъра, за да помогнем за откриването на спам"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0898458421",
+      "+359 89 845 8421"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "sha256:bd057f484980c97f"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "202965911"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": [
+    "NO_COMPANY"
+   ]
+  },
+  {
+   "domain": "compartido.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "“Спиди”, като таксата за доставката е на стойност 6 лв. и се начислява автоматично след коректно въвеждане на данни и"
+     ]
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. София, Бул. Скопие 1, Кауфланд"
+     ]
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "hello@compartido.bg",
+      "hello@compartido.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "206708894"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": false,
+    "NO_PHONE": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "climavis.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр.Пловдив ул.Чардафон 2"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0879-444-169",
+      "+359 87 944 4169",
+      "+359 87 944 469"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@climavis.bg",
+      "info@climavis.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "207602577"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "editshop.bg",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "208475759",
+      "208475759"
+     ]
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "Айви Лайф 9 ООД",
+      "Айви Лайф 9 ООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "ООД",
+      "ООД"
+     ]
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "enquiries.editbg@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "208475759"
+     ]
+    }
+   },
+   "shortfalls": {
+    "NO_ADDRESS": true,
+    "NO_PHONE": true
+   },
+   "false_alarms": []
+  }
+ ]
+}

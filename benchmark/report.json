@@ -1,0 +1,2050 @@
+{
+ "shops": 20,
+ "coverage": {
+  "eik": {
+   "found_by_deterministic_tooling": 5,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 15,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "legal_name": {
+   "found_by_deterministic_tooling": 12,
+   "not_found_by_deterministic_tooling": 1,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 7,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "legal_form": {
+   "found_by_deterministic_tooling": 12,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 8,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "address": {
+   "found_by_deterministic_tooling": 13,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 7,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "phone": {
+   "found_by_deterministic_tooling": 15,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 5,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "email": {
+   "found_by_deterministic_tooling": 18,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 2,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "vat_number": {
+   "found_by_deterministic_tooling": 2,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 18,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "domain_operator": {
+   "found_by_deterministic_tooling": 20,
+   "not_found_by_deterministic_tooling": 0,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 0,
+   "conflicting": 0,
+   "named_without_eik": 0
+  },
+  "domain_operator_without_nap": {
+   "found_by_deterministic_tooling": 3,
+   "not_found_by_deterministic_tooling": 9,
+   "unavailable_to_deterministic_tooling": 0,
+   "found_by_ai_fallback": 0,
+   "not_found_anywhere": 0,
+   "conflicting": 2,
+   "named_without_eik": 6
+  }
+ },
+ "totals": {
+  "found_by_deterministic_tooling": 100,
+  "not_found_by_deterministic_tooling": 10,
+  "unavailable_to_deterministic_tooling": 0,
+  "found_by_ai_fallback": 0,
+  "not_found_anywhere": 62,
+  "conflicting": 2,
+  "named_without_eik": 6
+ },
+ "shortfalls": {
+  "total": 54,
+  "reproduced": 52,
+  "by_kind": {
+   "shortfall": {
+    "total": 42,
+    "reproduced": 40
+   },
+   "information": {
+    "total": 12,
+    "reproduced": 12
+   }
+  }
+ },
+ "domain_operator": {
+  "domain_operator": {
+   "correct": 20,
+   "named_without_eik": 0,
+   "different_company": 0,
+   "not_identified": 0
+  },
+  "domain_operator_without_nap": {
+   "correct": 3,
+   "named_without_eik": 6,
+   "different_company": 2,
+   "not_identified": 9
+  },
+  "without_nap_confidence": {
+   "high": 4,
+   "medium": 7,
+   "low": 0,
+   "insufficient": 9
+  }
+ },
+ "false_alarms": 0,
+ "ai_fallback_used": 0,
+ "gaps": [
+  {
+   "domain": "dobytoys.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "named_without_eik",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "bulbsandleds.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "named_without_eik",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "besteesrock.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "biancandfred.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "biancandfred.com",
+   "shortfall": "CONTACT_INCONSISTENT",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: the triage keeps one e-mail per page and never compares the mailboxes listed across the legal pages; the extra mailboxes sit in template text of the terms and refund policy",
+   "improved": false,
+   "change": "none in this pass - it needs every mailbox per page and a rule for which one is the trader's; not a privacy exclusion"
+  },
+  {
+   "domain": "bigvip.bg",
+   "field": "legal_name",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [],
+   "reason": "field extraction: the site names the company without a legal form ('„Стандарт 34“'); the extractor requires a legal form to tell a company name from prose after a label (the prose was hiding 20+ real shortfalls in the baseline)",
+   "improved": false,
+   "change": "none - reported as NO_COMPANY, which reproduces the NO_LEGAL_FORM shortfall; the domain check still shows the name from the NAP declaration"
+  },
+  {
+   "domain": "bigvip.bg",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "elanhairboutique.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "conflicting",
+   "found": [
+    null
+   ],
+   "reason": "without NAP the resolver reports the company the site itself names as owner ('е собственост на Диверсо Хеър ЕООД'); the operator declared to NAP is ЕЛЪН ХЕЪР БУТИК (ЕИК 206418542) - the site and the official declaration disagree",
+   "improved": false,
+   "change": "none - the resolver reports what the site states; with NAP the declared operator is used, and the disagreement is a candidate disclosure finding"
+  },
+  {
+   "domain": "elrelax.org",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "elveszett.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "carpethouse-bg.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "named_without_eik",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "chiraque.eu",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "chunche-bg.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "named_without_eik",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "concretta.eu",
+   "shortfall": "TRADER_NAME_INCONSISTENT",
+   "coverage": "not_reproduced",
+   "reason": "field extraction: the terms name the supplier 'Concretta EU' with no legal form, so it is not read as a company name; with one company name found ('Concreta 2017 Ltd.') there is nothing to compare",
+   "improved": false,
+   "change": "none - accepting names without a legal form would bring back the prose false positives"
+  },
+  {
+   "domain": "kornelv.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "named_without_eik",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "davidtoys.eu",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "detetovteb.com",
+   "field": "domain_operator_without_nap",
+   "coverage": "conflicting",
+   "found": [
+    "148089312"
+   ],
+   "reason": "expected: the site publishes another company's ЕИК (EIK_OTHER_COMPANY), which the resolver takes without NAP",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "field": "domain_operator_without_nap",
+   "coverage": "named_without_eik",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "compartido.bg",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  },
+  {
+   "domain": "climavis.bg",
+   "field": "domain_operator_without_nap",
+   "coverage": "not_found_by_deterministic_tooling",
+   "found": [
+    null
+   ],
+   "reason": "expected: the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК",
+   "improved": false,
+   "change": "none needed"
+  }
+ ],
+ "unexplained": 0,
+ "per_shop": [
+  {
+   "domain": "dobytoys.com",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "123456789"
+     ]
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Доби Тойс ООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. Плевен, ул. Хаджи Димитър 24"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0877888413",
+      "+359 87 788 8413"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@dobytoys.com",
+      "info@dobytoys.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "207877153"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "named_without_eik",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      null
+     ],
+     "confidence": "medium",
+     "name": "Доби Тойс ООД",
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "EIK_INVALID": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "bulbsandleds.com",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "208452258"
+     ]
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ОСВЕТЛЕНИЕ БГ ЕООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ЕООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. София, ж.к. Гевгелийски, бл. 2"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359877518591",
+      "+359 87 751 8591"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "bulbsandleds.com@gmail.com",
+      "bulbsandleds.com@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "208542298"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "named_without_eik",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      null
+     ],
+     "confidence": "medium",
+     "name": "ОСВЕТЛЕНИЕ БГ ЕООД",
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "EIK_INVALID": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "besteesrock.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "besteesrock@gmail.com",
+      "besteesrock@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "202648631"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "NO_ADDRESS": true,
+    "NO_PHONE": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "biancandfred.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359878429243",
+      "+359 87 842 9243"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "biancandfred@gmail.com",
+      "biancandfred@gmail.com",
+      "asene@t-online.de"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "204059304"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "PLACEHOLDER_ADDRESS": true,
+    "CONTACT_INCONSISTENT": false,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "bigvip.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. Хасково, ул. „Христо Ботев“ 1"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0894 / 36 32 89",
+      "+359 89 436 3289",
+      "+359 700 11 122"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "sales@bigvip.bg",
+      "sales@bigvip.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "205550384"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_LEGAL_FORM": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "elanhairboutique.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Диверсо Хеър ЕООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ЕООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Асеновград, ул „Христо Ботев“ №45"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359895697787",
+      "+359 89 569 7787",
+      "+359 89 504 0945"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "elanhairboutique@gmail.com",
+      "elanhairboutique@gmail.com",
+      "sales@elanhairboutique.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "206418542"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "medium",
+     "name": "Диверсо Хеър ЕООД"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "elrelax.org",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ул. „Одрин“ 75"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359885040464",
+      "+359 88 504 0464"
+     ]
+    },
+    "email": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "205352858"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "NO_EMAIL": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "elveszett.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Elveszett Ltd."
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "LTD"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ж.к. Люлин 7, бл. 705, вх. В"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359 877 211 226",
+      "+359 87 721 1226"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@elveszett.com",
+      "info@elveszett.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "208598391"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "carpethouse-bg.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ВЕНИС 21 ООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "бул. „Александър Малинов“ 16, 1784 Младост 1, София"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359899943328",
+      "+359 89 994 3328",
+      "+359 89 994 3325"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "carpethousebg@gmail.com",
+      "carpethousebg@gmail.com",
+      "orders@carpethouse-bg.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "130846605"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "named_without_eik",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      null
+     ],
+     "confidence": "medium",
+     "name": "ВЕНИС 21 ООД",
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "chiraque.eu",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "202191944"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "NO_ADDRESS": true,
+    "NO_CONTACT": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "chunche-bg.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Чунче ЕООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ЕООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. София, ул. Околовръстен път 253"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359884243880",
+      "+359 88 424 3880",
+      "+359 88 826 4902"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "office@chunche-bg.com",
+      "office@chunche-bg.com",
+      "sales@chunche-bg.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "131467896"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "named_without_eik",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      null
+     ],
+     "confidence": "medium",
+     "name": "Чунче ЕООД",
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "concretta.eu",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Concreta 2017 Ltd."
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "LTD"
+     ]
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359 888 299 732",
+      "+359 88 829 9732"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@concretta.eu",
+      "info@concretta.eu"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "204559054"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "204559054"
+     ],
+     "confidence": "high",
+     "name": "КОНКРЕТА 2017 ЕООД"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "ADDRESS_INCOMPLETE": true,
+    "TRADER_NAME_INCONSISTENT": false,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "kornelv.com",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Корнел В ЕООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ЕООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ул. „Поручик Христо Топракчиев“ 11"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "02 944 2001",
+      "+359 2 944 2001",
+      "+359 88 666 6814"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "eshop@kornelv.com",
+      "eshop@kornelv.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "130334366"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "named_without_eik",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      null
+     ],
+     "confidence": "medium",
+     "name": "Корнел В ЕООД",
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "davidtoys.eu",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+359892357777",
+      "+359 89 235 7777"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "office@davidtoys.eu",
+      "office@davidtoys.eu"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "205877717"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "PLACEHOLDER_ADDRESS": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "detetovteb.com",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "148089312"
+     ]
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Parashkevovi Company Ltd."
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "LTD"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Северна промишлена зона Младост, ул. „Петко Стайнов“ 3, 9009 Варна"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "+35952870102",
+      "+359 52 870 102",
+      "+359 89 832 2127"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "jugo_vn@abv.bg",
+      "jugo_vn@abv.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "204565892"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "conflicting",
+     "by": [],
+     "found": [
+      "148089312"
+     ],
+     "confidence": "high",
+     "name": "ПАРАШКЕВОВИ ООД",
+     "expected_reason": "the site publishes another company's ЕИК (EIK_OTHER_COMPANY), which the resolver takes without NAP"
+    }
+   },
+   "shortfalls": {
+    "EIK_OTHER_COMPANY": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "danishgranola.bg",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "207654830"
+     ]
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Органик Бранд ЕООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ЕООД"
+     ]
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "zdr@danishgranola.bg",
+      "zdr@danishgranola.bg",
+      "hallo@danishgranolacompany.de"
+     ]
+    },
+    "vat_number": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "BG207654830",
+      "BG207654830"
+     ]
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "207654830"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "207654830"
+     ],
+     "confidence": "high",
+     "name": "Органик Бранд ЕООД"
+    }
+   },
+   "shortfalls": {
+    "LEGAL_FORM_INCONSISTENT": true,
+    "NO_ADDRESS": true,
+    "NO_PHONE": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "Панколита 2 ООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "ООД"
+     ]
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр.Варна ул.Шипка № 2"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0898458421",
+      "+359 89 845 8421"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "pankolita@abv.bg",
+      "pankolita@abv.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "202965911"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "named_without_eik",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      null
+     ],
+     "confidence": "medium",
+     "name": "Панколита 2 ООД",
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "compartido.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр. София, Бул. Скопие 1, Кауфланд"
+     ]
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "hello@compartido.bg",
+      "hello@compartido.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "206708894"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "NO_PHONE": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "climavis.bg",
+   "fields": {
+    "eik": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_name": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "legal_form": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "address": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "гр.Пловдив ул.Чардафон 2"
+     ]
+    },
+    "phone": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "0879-444-169",
+      "+359 87 944 4169",
+      "+359 87 944 469"
+     ]
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "info@climavis.bg",
+      "info@climavis.bg"
+     ]
+    },
+    "vat_number": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "207602577"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "not_found_by_deterministic_tooling",
+     "by": [],
+     "found": [
+      null
+     ],
+     "confidence": "insufficient",
+     "name": null,
+     "expected_reason": "the site publishes no valid ЕИК of its operator (the NO_EIK / EIK_INVALID finding itself): without NAP no source links the domain to an ЕИК"
+    }
+   },
+   "shortfalls": {
+    "NO_EIK": true,
+    "NO_COMPANY": true,
+    "VAT_NOT_DISCLOSED": true
+   },
+   "false_alarms": []
+  },
+  {
+   "domain": "editshop.bg",
+   "fields": {
+    "eik": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "208475759",
+      "208475759"
+     ]
+    },
+    "legal_name": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "Айви Лайф 9 ООД",
+      "Айви Лайф 9 ООД"
+     ]
+    },
+    "legal_form": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "ООД",
+      "ООД"
+     ]
+    },
+    "address": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "phone": {
+     "coverage": "not_found_anywhere",
+     "by": [],
+     "found": []
+    },
+    "email": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck",
+      "triage"
+     ],
+     "found": [
+      "enquiries.editbg@gmail.com",
+      "enquiries.editbg@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "triage"
+     ],
+     "found": [
+      "BG208475759"
+     ]
+    },
+    "domain_operator": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "208475759"
+     ]
+    },
+    "domain_operator_without_nap": {
+     "coverage": "found_by_deterministic_tooling",
+     "by": [
+      "domaincheck"
+     ],
+     "found": [
+      "208475759"
+     ],
+     "confidence": "high",
+     "name": "Айви Лайф 9 ООД"
+    }
+   },
+   "shortfalls": {
+    "NO_ADDRESS": true,
+    "NO_PHONE": true
+   },
+   "false_alarms": []
+  }
+ ]
+}

@@ -1,0 +1,5071 @@
+{
+ "generated": "2026-09-23",
+ "schema": 1,
+ "method": "Seed: NAP public e-shop list (265 unique own-domain shops across 6 categories). Discovery in that list says nothing about compliance. All 265 were screened with Shopwatch, 81 candidates were researched with a broad crawl (benchmark/research.py, up to 30 pages each), and every finding below was confirmed by hand on the rendered pages in a browser. Official data: NAP declaration and VIES, queried live.",
+ "wording": "Findings describe observed disclosure shortfalls on the public website on the check date. They are not a legal determination.",
+ "shops": [
+  {
+   "domain": "dobytoys.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "206345126",
+      "declared_name": "ИКОМ БРАДЪРС",
+      "declared_domain": "www.dobytoys.com",
+      "declared_at": "02.12.2024 22:02:50",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:37Z"
+     },
+     {
+      "eik": "207877153",
+      "declared_name": "Доби Тойс",
+      "declared_domain": "www.dobytoys.com",
+      "declared_at": "29.11.2024 14:39:09",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:37Z"
+     }
+    ],
+    "vies": {
+     "eik": "206345126",
+     "status": "confirmed",
+     "name": "ИКОМ БРАДЪРС - ООД",
+     "address": "ДИЛО ЙОТОВ №12 обл.ЛОВЕЧ, с.ТОРОС 5790",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/206345126",
+     "retrieved_at": "2026-09-23T17:08:37Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": "123456789",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "Доби Тойс\" ООД, регистрирано на адрес: с. Торос, ул. Дило Йотов 12, с ЕИК 123456789, и потребителите на онлайн магазина, намиращ се на адрес: www .dobyto",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Доби Тойс ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "използване на услугата Общи условия за ползване на сайта dobytoys.com Настоящите общи условия уреждат отношенията между \"Доби Тойс\" ООД, регистрирано на адрес: с. Торос, ул. Дило Йотов 12, с ЕИК 123456789, и потребителите на онлайн магазина, намиращ се на адре",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "с. Торос, ул. Дило Йотов 12",
+      "гр. Плевен, ул. Хаджи Димитър 24"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "щи условия уреждат отношенията между \"Доби Тойс\" ООД, регистрирано на адрес: с. Торос, ул. Дило Йотов 12, с ЕИК 123456789, и потребителите на онлайн магазина, намиращ се на адрес",
+       "found_by": "research_crawl"
+      },
+      {
+       "url": "https://dobytoys.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "/ за Изчерпано Контакти Телефон: 0877888413 Имейл: info@dobytoys.com Адрес: гр. Плевен, ул. Хаджи Димитър 24 Информация Доставка Общи условия Врьщане и замяна Политика за поверит",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "0877888413"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "ена €18,80 Цена при разпродажба Единична цена / за Изчерпано Контакти Телефон: 0877888413 Имейл: info@dobytoys.com Адрес: гр. Плевен, ул. Хаджи Димитър 24 Инфо",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "info@dobytoys.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "ажба Единична цена / за Изчерпано Контакти Телефон: 0877888413 Имейл: info@dobytoys.com Адрес: гр. Плевен, ул. Хаджи Димитър 24 Информация Доставка Общи усло",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/",
+       "pages_checked": [
+        "https://dobytoys.com/",
+        "https://dobytoys.com/policies/terms-of-service",
+        "https://dobytoys.com/policies/privacy-policy",
+        "https://dobytoys.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "използване на услугата Общи условия за ползване на сайта dobytoys.com Настоящите общи условия уреждат отношенията между \"Доби Тойс\" ООД, регистрирано на адрес: с. Торос, ул. Дило Йотов 12, с ЕИК 123456789, и потребителите на онлайн магазина, намиращ се на адре",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://dobytoys.com/",
+    "https://dobytoys.com/policies/terms-of-service",
+    "https://dobytoys.com/policies/privacy-policy",
+    "https://dobytoys.com/policies/refund-policy"
+   ],
+   "shortfalls": [
+    {
+     "code": "EIK_INVALID",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The terms publish ЕИК 123456789, a placeholder that fails the ЕИК checksum. The company they name, Доби Тойс ООД, is declared to NAP and listed in VIES under ЕИК 207877153.",
+     "summary_bg": "Общите условия публикуват ЕИК 123456789 - шаблонна стойност, която не преминава контролната сума. Посоченото дружество Доби Тойс ООД е декларирано пред НАП и е във VIES с ЕИК 207877153.",
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "\"Доби Тойс\" ООД ... с. Торос, ул. Дило Йотов 12, с ЕИК 123456789",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:37Z",
+       "excerpt": "declared shop www.dobytoys.com - operator ЕИК 206345126 (declared 02.12.2024 22:02:50); declared shop www.dobytoys.com - operator ЕИК 207877153 (declared 29.11.2024 14:39:09)"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/207877153",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:37Z",
+       "excerpt": "Доби Тойс - ООД; ДИЛО ЙОТОВ №12 обл.ЛОВЕЧ, с.ТОРОС 5790"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://dobytoys.com/",
+       "pages_checked": [
+        "https://dobytoys.com/",
+        "https://dobytoys.com/policies/terms-of-service",
+        "https://dobytoys.com/policies/privacy-policy",
+        "https://dobytoys.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/206345126",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:37Z",
+       "excerpt": "ИКОМ БРАДЪРС - ООД; ДИЛО ЙОТОВ №12 обл.ЛОВЕЧ, с.ТОРОС 5790"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "bulbsandleds.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "208542298",
+      "declared_name": "ОСВЕТЛЕНИЕ БГ",
+      "declared_domain": "https://bulbsandleds.com",
+      "declared_at": "20.12.2025 23:10:06",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:38Z"
+     }
+    ],
+    "vies": {
+     "eik": "208542298",
+     "status": "not_found",
+     "name": null,
+     "address": null,
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/208542298",
+     "retrieved_at": "2026-09-23T17:08:38Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": "208452258",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:14Z",
+       "excerpt": "нни за администратора на лични данни Наименование: ОСВЕТЛЕНИЕ БГ ЕООД ЕИК: 208452258 Седалище и адрес на управление: гр. София, ж.к. Гевгелийски, бл. 2 Ел",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "ОСВЕТЛЕНИЕ БГ ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:14Z",
+       "excerpt": "РИТЕЛНОСТ И ЗАЩИТА НА ЛИЧНИТЕ ДАННИ 1. Общи положения 1.1. Настоящата Политика за поверителност урежда начина, по който „ОСВЕТЛЕНИЕ БГ“ ЕООД събира, използва, съхранява и защитава личните данни на потребителите на уебсайта https://bulbsandleds.com. 1.2. Тази п",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "гр. София, ж.к. Гевгелийски, бл. 2"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:14Z",
+       "excerpt": "ратора на лични данни Наименование: ОСВЕТЛЕНИЕ БГ ЕООД ЕИК: 208452258 Седалище и адрес на управление: гр. София, ж.к. Гевгелийски, бл. 2 Електронна поща: bulbsandleds.com@gmail.com Уебсайт: https://bulbsand",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "+359877518591"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:14Z",
+       "excerpt": "е mailto:bulbsandleds.com@gmail.com mailto:bulbsandleds.com@gmail.com tel:+359877518591",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "bulbsandleds.com@gmail.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:14Z",
+       "excerpt": "m Grow Lamps – HPS) - Посребрени крушки (Silvered Bulbs) Регистриране bulbsandleds.com@gmail.com Свържете се с нас 0 продукт(и) - 0.00€ 0 Моята количка Вашата кошница",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/",
+       "pages_checked": [
+        "https://bulbsandleds.com/",
+        "https://bulbsandleds.com/contact/",
+        "https://bulbsandleds.com/privacy-policy/",
+        "https://bulbsandleds.com/terms/",
+        "https://bulbsandleds.com/about/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:14Z",
+       "excerpt": "РИТЕЛНОСТ И ЗАЩИТА НА ЛИЧНИТЕ ДАННИ 1. Общи положения 1.1. Настоящата Политика за поверителност урежда начина, по който „ОСВЕТЛЕНИЕ БГ“ ЕООД събира, използва, съхранява и защитава личните данни на потребителите на уебсайта https://bulbsandleds.com. 1.2. Тази п",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://bulbsandleds.com/",
+    "https://bulbsandleds.com/contact/",
+    "https://bulbsandleds.com/privacy-policy/",
+    "https://bulbsandleds.com/terms/",
+    "https://bulbsandleds.com/about/"
+   ],
+   "shortfalls": [
+    {
+     "code": "EIK_INVALID",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The privacy policy and terms publish ЕИК 208452258, which fails the ЕИК checksum; the ЕИК declared to NAP for this shop is 208542298 (two digits transposed).",
+     "summary_bg": "Политиката за поверителност и общите условия публикуват ЕИК 208452258, който не преминава контролната сума; декларираният пред НАП ЕИК е 208542298 (разменени цифри).",
+     "evidence": [
+      {
+       "url": "https://bulbsandleds.com/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "ОСВЕТЛЕНИЕ БГ ЕООД ЕИК: 208452258",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:38Z",
+       "excerpt": "declared shop https://bulbsandleds.com - operator ЕИК 208542298 (declared 20.12.2025 23:10:06)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "besteesrock.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "202648631",
+      "declared_name": "КОТЪН КИНГС",
+      "declared_domain": "www.besteesrock.com",
+      "declared_at": "25.10.2021 18:27:49",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:39Z"
+     }
+    ],
+    "vies": {
+     "eik": "202648631",
+     "status": "confirmed",
+     "name": "КОТЪН КИНГС - ЕООД",
+     "address": "Шипка №24 ет.6 обл.СОФИЯ, гр.СОФИЯ 1504",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/202648631",
+     "retrieved_at": "2026-09-23T17:08:40Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "besteesrock@gmail.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/pages/view/about-us",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:27Z",
+       "excerpt": "red to door high quality merchandise, hit us up on our email address: besteesrock@gmail.com No matter if you ask for 100 or 10 000 T-shirts, sweaters of zipped h",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://besteesrock.com/",
+    "https://besteesrock.com/pages/view/about-us",
+    "https://besteesrock.com/pages/view/contact",
+    "https://besteesrock.com/pages/view/terms-of-service",
+    "https://besteesrock.com/pages/view/privacy-policy"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "No ЕИК, company name, address or phone on the homepage, about, contact, terms or privacy pages; only an e-mail address.",
+     "summary_bg": "Няма ЕИК, наименование, адрес или телефон на началната страница, за нас, контакти, общи условия и поверителност; само имейл.",
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:39Z",
+       "excerpt": "declared shop www.besteesrock.com - operator ЕИК 202648631 (declared 25.10.2021 18:27:49)"
+      }
+     ]
+    },
+    {
+     "code": "NO_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "No trader name is published.",
+     "summary_bg": "Не е публикувано наименование на търговеца.",
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_ADDRESS",
+     "kind": "shortfall",
+     "fields": [
+      "address"
+     ],
+     "summary_en": "No address is published.",
+     "summary_bg": "Не е публикуван адрес.",
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_PHONE",
+     "kind": "shortfall",
+     "fields": [
+      "phone"
+     ],
+     "summary_en": "No telephone number is published.",
+     "summary_bg": "Не е публикуван телефон.",
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://besteesrock.com/",
+       "pages_checked": [
+        "https://besteesrock.com/",
+        "https://besteesrock.com/pages/view/about-us",
+        "https://besteesrock.com/pages/view/contact",
+        "https://besteesrock.com/pages/view/terms-of-service",
+        "https://besteesrock.com/pages/view/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/202648631",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:40Z",
+       "excerpt": "КОТЪН КИНГС - ЕООД; Шипка №24 ет.6 обл.СОФИЯ, гр.СОФИЯ 1504"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "biancandfred.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "204059304",
+      "declared_name": "ЕЛАС-АН",
+      "declared_domain": "http://www.biancandfred.com/",
+      "declared_at": "28.04.2026 12:52:13",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:40Z"
+     }
+    ],
+    "vies": {
+     "eik": "204059304",
+     "status": "confirmed",
+     "name": "ЕЛАС-АН - ЕООД",
+     "address": "бул. \"Княгиня Мария Луиза\" №2 обл.СОФИЯ, гр.СОФИЯ 1000",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/204059304",
+     "retrieved_at": "2026-09-23T17:08:41Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address (refund policy holds the template text [INSERT RETURN ADDRESS])",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "+359878429243"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/pages/contact",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "phone +359878429243",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "biancandfred@gmail.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:32Z",
+       "excerpt": "Terms & Condition Privacy Policy Delivery & Return CONTACT E-mail us: biancandfred@gmail.com Call us at: +359878429243 Email SIGN UP © 2026 Bianca & Fred, Powered",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://biancandfred.com/",
+    "https://biancandfred.com/pages/contact",
+    "https://biancandfred.com/policies/terms-of-service",
+    "https://biancandfred.com/policies/privacy-policy",
+    "https://biancandfred.com/policies/refund-policy"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "No ЕИК, company name or address on the homepage, contact, terms, privacy or refund pages.",
+     "summary_bg": "Няма ЕИК, наименование или адрес на началната страница, контакти, общи условия, поверителност и връщане.",
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:40Z",
+       "excerpt": "declared shop http://www.biancandfred.com/ - operator ЕИК 204059304 (declared 28.04.2026 12:52:13)"
+      }
+     ]
+    },
+    {
+     "code": "NO_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "No trader name is published.",
+     "summary_bg": "Не е публикувано наименование на търговеца.",
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "PLACEHOLDER_ADDRESS",
+     "kind": "shortfall",
+     "fields": [
+      "address"
+     ],
+     "summary_en": "The refund policy still contains the template text \"[INSERT RETURN ADDRESS]\"; no trader address is published.",
+     "summary_bg": "Политиката за връщане съдържа шаблонния текст \"[INSERT RETURN ADDRESS]\"; не е публикуван адрес на търговеца.",
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/policies/refund-policy",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:32Z",
+       "excerpt": "l.com. Please note that returns will need to be sent to the following address: [INSERT RETURN ADDRESS] If your return is accepted, we’ll send you a return shipping label, a",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    {
+     "code": "CONTACT_INCONSISTENT",
+     "kind": "shortfall",
+     "fields": [
+      "email"
+     ],
+     "summary_en": "The terms and refund pages list other, unrelated mailboxes besides the shop's own (template leftovers; not reproduced here).",
+     "summary_bg": "Страниците с общи условия и връщане съдържат други, несвързани имейл адреси освен този на магазина (остатъци от шаблон; не се възпроизвеждат).",
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/policies/terms-of-service",
+       "pages_checked": [
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "third-party mailboxes present (not reproduced)",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://biancandfred.com/",
+       "pages_checked": [
+        "https://biancandfred.com/",
+        "https://biancandfred.com/pages/contact",
+        "https://biancandfred.com/policies/terms-of-service",
+        "https://biancandfred.com/policies/privacy-policy",
+        "https://biancandfred.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/204059304",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:41Z",
+       "excerpt": "ЕЛАС-АН - ЕООД; бул. \"Княгиня Мария Луиза\" №2 обл.СОФИЯ, гр.СОФИЯ 1000"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "bigvip.bg",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "205550384",
+      "declared_name": "СТАНДАРТ 34",
+      "declared_domain": "www.bigvip.bg",
+      "declared_at": "23.04.2019 11:34:58",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:40Z"
+     }
+    ],
+    "vies": {
+     "eik": "205550384",
+     "status": "not_found",
+     "name": null,
+     "address": null,
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/205550384",
+     "retrieved_at": "2026-09-23T17:08:43Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://bigvip.bg/",
+       "pages_checked": [
+        "https://bigvip.bg/",
+        "https://bigvip.bg/?page_id=1797",
+        "https://bigvip.bg/?page_id=3",
+        "https://bigvip.bg/?page_id=1963"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Стандарт 34",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bigvip.bg/?page_id=1963",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "търговското дружество „Стандарт 34“ със седалище и адрес на управление гр.Хасково, ул. „Стара Планина“ № 21",
+       "found_by": "browser_verification"
+      }
+     ],
+     "note": "named without a legal form"
+    },
+    "address": {
+     "value": [
+      "гр.Хасково, ул. „Стара Планина“ № 21",
+      "гр. Хасково, ул. „Христо Ботев“ 1"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://bigvip.bg/?page_id=1963",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "търговското дружество „Стандарт 34“ със седалище и адрес на управление гр.Хасково, ул. „Стара Планина“ № 21",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:35Z",
+       "excerpt": "ЗМЕР 10XL 0 Контакти Име * First Last Email * Съобщение Phone Изпрати Адрес: гр. Хасково, ул. „Христо Ботев“ 1 тел: 0894 / 36 32 89 e-mail: sales@bigvip.bg Контакти Моят профил Заб",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "0894 / 36 32 89"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:35Z",
+       "excerpt": "il * Съобщение Phone Изпрати Адрес: гр. Хасково, ул. „Христо Ботев“ 1 тел: 0894 / 36 32 89 e-mail: sales@bigvip.bg Контакти Моят профил Забравена парола Политик",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "sales@bigvip.bg"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:35Z",
+       "excerpt": "Адрес: гр. Хасково, ул. „Христо Ботев“ 1 тел: 0894 / 36 32 89 e-mail: sales@bigvip.bg Контакти Моят профил Забравена парола Политика за поверителност Общи",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://bigvip.bg/",
+       "pages_checked": [
+        "https://bigvip.bg/",
+        "https://bigvip.bg/?page_id=1797",
+        "https://bigvip.bg/?page_id=3",
+        "https://bigvip.bg/?page_id=1963"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://bigvip.bg/?page_id=1963",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "търговското дружество „Стандарт 34“ със седалище и адрес на управление гр.Хасково, ул. „Стара Планина“ № 21",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://bigvip.bg/",
+    "https://bigvip.bg/?page_id=1797",
+    "https://bigvip.bg/?page_id=3",
+    "https://bigvip.bg/?page_id=1963"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The terms name the company „Стандарт 34“ with its seat, but without a legal form and without an ЕИК; no ЕИК on any page.",
+     "summary_bg": "Общите условия посочват дружеството „Стандарт 34“ със седалище, но без правна форма и без ЕИК; няма ЕИК на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://bigvip.bg/?page_id=1963",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "търговското дружество „Стандарт 34“ със седалище и адрес на управление гр.Хасково, ул. „Стара Планина“ № 21",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:40Z",
+       "excerpt": "declared shop www.bigvip.bg - operator ЕИК 205550384 (declared 23.04.2019 11:34:58)"
+      }
+     ]
+    },
+    {
+     "code": "NO_LEGAL_FORM",
+     "kind": "shortfall",
+     "fields": [
+      "legal_form"
+     ],
+     "summary_en": "The company is named „Стандарт 34“ without a legal form (ООД, ЕООД, АД...).",
+     "summary_bg": "Дружеството е посочено като „Стандарт 34“ без правна форма (ООД, ЕООД, АД...).",
+     "evidence": [
+      {
+       "url": "https://bigvip.bg/?page_id=1963",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "търговското дружество „Стандарт 34“ със седалище и адрес на управление гр.Хасково, ул. „Стара Планина“ № 21",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "elanhairboutique.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "206418542",
+      "declared_name": "ЕЛЪН ХЕЪР БУТИК",
+      "declared_domain": "https://elanhairboutique.com",
+      "declared_at": "28.07.2023 18:16:23",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:41Z"
+     }
+    ],
+    "vies": {
+     "eik": "206418542",
+     "status": "not_found",
+     "name": null,
+     "address": null,
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/206418542",
+     "retrieved_at": "2026-09-23T17:08:44Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/",
+       "pages_checked": [
+        "https://elanhairboutique.com/",
+        "https://elanhairboutique.com/za-nas/",
+        "https://elanhairboutique.com/kontakti/",
+        "https://elanhairboutique.com/obshhi-usloviya/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Диверсо Хеър ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/obshhi-usloviya/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "на доставка и заплащане на стоката от клиента/потребителя. 27. Интернет магазинът elanhairboutique.com е собственост на Диверсо Хеър ЕООД. 28. Всички спорове между страните се решават в дух на разбирателство и добра воля. В случай, че съгласие не бъде постигна",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "Асеновград, ул „Христо Ботев“ №45",
+      "гр. Пловдив, бул. Васил Априлов 43",
+      "София, ул „Ралевица“ №63"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/za-nas/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "я, не се колебайте да се свържете с нас за приятелски съвет и насоки. Адрес: Асеновград, ул „Христо Ботев“ №45 Адрес: гр. Пловдив, бул. Васил Априлов 43 Адрес: София, ул „Ралевица“",
+       "found_by": "research_crawl"
+      },
+      {
+       "url": "https://elanhairboutique.com/za-nas/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "я, не се колебайте да се свържете с нас за приятелски съвет и насоки. Адрес: Асеновград, ул „Христо Ботев“ №45 Адрес: гр. Пловдив, бул. Васил Априлов 43 Адрес: София, ул „Ралевица“",
+       "found_by": "research_crawl"
+      },
+      {
+       "url": "https://elanhairboutique.com/za-nas/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "я, не се колебайте да се свържете с нас за приятелски съвет и насоки. Адрес: Асеновград, ул „Христо Ботев“ №45 Адрес: гр. Пловдив, бул. Васил Априлов 43 Адрес: София, ул „Ралевица“",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "salon addresses; no registered seat"
+    },
+    "phone": {
+     "value": [
+      "+359895697787"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "яване. Научете повече в страницата Политика за поверителност. Приемам tel:+359895697787",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "elanhairboutique@gmail.com",
+      "sales@elanhairboutique.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/kontakti/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "С НАС 0895697787 - Пловдив 0895040945 - Асеновград 0899243838 - София elanhairboutique@gmail.com Асеновград, ул „Христо Ботев“ №45 гр. Пловдив, бул. Васил Априлов 43",
+       "found_by": "research_crawl"
+      },
+      {
+       "url": "https://elanhairboutique.com/obshhi-usloviya/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "изрично несъгласие на Потребителя, изпратено на следния e-mail адрес: sales@elanhairboutique.com. ТЪРГОВЕЦА събира и използва информацията за да подобрява предлаганит",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/",
+       "pages_checked": [
+        "https://elanhairboutique.com/",
+        "https://elanhairboutique.com/za-nas/",
+        "https://elanhairboutique.com/kontakti/",
+        "https://elanhairboutique.com/obshhi-usloviya/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/obshhi-usloviya/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:45Z",
+       "excerpt": "на доставка и заплащане на стоката от клиента/потребителя. 27. Интернет магазинът elanhairboutique.com е собственост на Диверсо Хеър ЕООД. 28. Всички спорове между страните се решават в дух на разбирателство и добра воля. В случай, че съгласие не бъде постигна",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://elanhairboutique.com/",
+    "https://elanhairboutique.com/za-nas/",
+    "https://elanhairboutique.com/kontakti/",
+    "https://elanhairboutique.com/obshhi-usloviya/"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The terms state that the shop is owned by Диверсо Хеър ЕООД, but no ЕИК is published on any page.",
+     "summary_bg": "Общите условия посочват, че магазинът е собственост на Диверсо Хеър ЕООД, но ЕИК не е публикуван на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://elanhairboutique.com/obshhi-usloviya/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Интернет магазинът elanhairboutique.com е собственост на Диверсо Хеър ЕООД",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:41Z",
+       "excerpt": "declared shop https://elanhairboutique.com - operator ЕИК 206418542 (declared 28.07.2023 18:16:23)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "elrelax.org",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "205352858",
+      "declared_name": "Ел Релакс",
+      "declared_domain": "elrelax.org",
+      "declared_at": "09.02.2026 11:29:06",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:42Z"
+     }
+    ],
+    "vies": {
+     "eik": "205352858",
+     "status": "not_found",
+     "name": null,
+     "address": null,
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/205352858",
+     "retrieved_at": "2026-09-23T17:08:45Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/",
+       "pages_checked": [
+        "https://elrelax.org/",
+        "https://elrelax.org/company/",
+        "https://elrelax.org/contact/",
+        "https://elrelax.org/obshti-usloviq/",
+        "https://elrelax.org/politika-za-poveritelnost/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/obshti-usloviq/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Общи условия уреждат отношенията между El Relax – Physiotherapy (наричан по-долу „Доставчикът“)",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "trade_name": {
+     "value": "El Relax – Physiotherapy",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/obshti-usloviq/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Общи условия уреждат отношенията между El Relax – Physiotherapy (наричан по-долу „Доставчикът“)",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "ул. „Одрин“ 75, 1303 София"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/contact/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "address 'ул. „Одрин“ 75, 1303 София'",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "+359885040464"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:03Z",
+       "excerpt": "ие ще приемем, че сте доволни от него. ДобреПолитика за поверителност tel:+359885040464 tel:+359885040464 tel:+359885040464 tel:+359885040464",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/",
+       "pages_checked": [
+        "https://elrelax.org/",
+        "https://elrelax.org/company/",
+        "https://elrelax.org/contact/",
+        "https://elrelax.org/obshti-usloviq/",
+        "https://elrelax.org/politika-za-poveritelnost/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: e-mail (contact form only)",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/",
+       "pages_checked": [
+        "https://elrelax.org/",
+        "https://elrelax.org/company/",
+        "https://elrelax.org/contact/",
+        "https://elrelax.org/obshti-usloviq/",
+        "https://elrelax.org/politika-za-poveritelnost/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elrelax.org/obshti-usloviq/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Общи условия уреждат отношенията между El Relax – Physiotherapy (наричан по-долу „Доставчикът“)",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://elrelax.org/",
+    "https://elrelax.org/company/",
+    "https://elrelax.org/contact/",
+    "https://elrelax.org/obshti-usloviq/",
+    "https://elrelax.org/politika-za-poveritelnost/"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The terms identify the provider only by the trade name \"El Relax – Physiotherapy\"; no legal entity and no ЕИК.",
+     "summary_bg": "Общите условия посочват доставчика само с търговското наименование \"El Relax – Physiotherapy\"; няма юридическо лице и ЕИК.",
+     "evidence": [
+      {
+       "url": "https://elrelax.org/obshti-usloviq/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Общи условия уреждат отношенията между El Relax – Physiotherapy (наричан по-долу „Доставчикът“)",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:42Z",
+       "excerpt": "declared shop elrelax.org - operator ЕИК 205352858 (declared 09.02.2026 11:29:06)"
+      }
+     ]
+    },
+    {
+     "code": "NO_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "No legal entity is named, only a trade name.",
+     "summary_bg": "Не е посочено юридическо лице, само търговско наименование.",
+     "evidence": [
+      {
+       "url": "https://elrelax.org/",
+       "pages_checked": [
+        "https://elrelax.org/",
+        "https://elrelax.org/company/",
+        "https://elrelax.org/contact/",
+        "https://elrelax.org/obshti-usloviq/",
+        "https://elrelax.org/politika-za-poveritelnost/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: legal entity",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_EMAIL",
+     "kind": "shortfall",
+     "fields": [
+      "email"
+     ],
+     "summary_en": "No e-mail address is published (contact form only).",
+     "summary_bg": "Не е публикуван имейл (само форма за контакт).",
+     "evidence": [
+      {
+       "url": "https://elrelax.org/",
+       "pages_checked": [
+        "https://elrelax.org/",
+        "https://elrelax.org/company/",
+        "https://elrelax.org/contact/",
+        "https://elrelax.org/obshti-usloviq/",
+        "https://elrelax.org/politika-za-poveritelnost/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: e-mail",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "elveszett.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "208598391",
+      "declared_name": "ЕЛВЕСЗЕТ",
+      "declared_domain": "elveszett.com",
+      "declared_at": "16.03.2026 23:10:03",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:43Z"
+     }
+    ],
+    "vies": {
+     "eik": "208598391",
+     "status": "not_found",
+     "name": null,
+     "address": null,
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/208598391",
+     "retrieved_at": "2026-09-23T17:08:46Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/",
+       "pages_checked": [
+        "https://elveszett.com/",
+        "https://elveszett.com/pages/about-us",
+        "https://elveszett.com/pages/contact",
+        "https://elveszett.com/policies/terms-of-service",
+        "https://elveszett.com/policies/privacy-policy",
+        "https://elveszett.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Elveszett Ltd.",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "© 2026 Elveszett Ltd. Всички права са запазени."
+      }
+     ],
+     "note": "footer copyright line; the terms say only \"Elveszett\""
+    },
+    "trade_name": {
+     "value": "Elveszett",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Информация за контакт ... еlveszett.com info@elveszett.com +359 877 211 226 Elveszett ж.к. Люлин 7, бл. 705, вх. В",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "ж.к. Люлин 7, бл. 705, вх. В",
+      "4000 Пловдив, ул. Голямоконарско шосе 29С"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Информация за контакт ... еlveszett.com info@elveszett.com +359 877 211 226 Elveszett ж.к. Люлин 7, бл. 705, вх. В",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://elveszett.com/policies/refund-policy",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:07Z",
+       "excerpt": "е предвид, че върнатите артикули трябва да бъдат изпратени на следния адрес: 4000 Пловдив, ул. Голямоконарско шосе 29С Ако връщането ви бъде прието, ние ще ви изпратим етикет за обратна до",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "+359877211226"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Информация за контакт ... еlveszett.com info@elveszett.com +359 877 211 226 Elveszett ж.к. Люлин 7, бл. 705, вх. В",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "info@elveszett.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:07Z",
+       "excerpt": "ата Политика за поверителност. Elveszett ж.к. Люлин 7, бл. 705, вх. В info@elveszett.com Facebook Instagram TikTok Правни Политика за поверителност Условия за",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/",
+       "pages_checked": [
+        "https://elveszett.com/",
+        "https://elveszett.com/pages/about-us",
+        "https://elveszett.com/pages/contact",
+        "https://elveszett.com/policies/terms-of-service",
+        "https://elveszett.com/policies/privacy-policy",
+        "https://elveszett.com/policies/refund-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "Ltd.",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://elveszett.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "© 2026 Elveszett Ltd. Всички права са запазени."
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://elveszett.com/",
+    "https://elveszett.com/pages/about-us",
+    "https://elveszett.com/pages/contact",
+    "https://elveszett.com/policies/terms-of-service",
+    "https://elveszett.com/policies/privacy-policy",
+    "https://elveszett.com/policies/refund-policy"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The terms identify the trader only as \"Elveszett\" and the footer as \"Elveszett Ltd.\"; no ЕИК on any page.",
+     "summary_bg": "Общите условия посочват търговеца само като \"Elveszett\", а долният колонтитул - \"Elveszett Ltd.\"; няма ЕИК на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://elveszett.com/policies/terms-of-service",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Информация за контакт ... еlveszett.com info@elveszett.com +359 877 211 226 Elveszett ж.к. Люлин 7, бл. 705, вх. В",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://elveszett.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "© 2026 Elveszett Ltd. Всички права са запазени."
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:43Z",
+       "excerpt": "declared shop elveszett.com - operator ЕИК 208598391 (declared 16.03.2026 23:10:03)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "carpethouse-bg.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "130846605",
+      "declared_name": "Венис 21",
+      "declared_domain": "www.carpethouse-bg.com",
+      "declared_at": "25.03.2019 13:44:18",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:44Z"
+     }
+    ],
+    "vies": {
+     "eik": "130846605",
+     "status": "confirmed",
+     "name": "Венис 21 - ООД",
+     "address": "жк Младост-1 бул. \"Александър Малинов\" №16, магазин \"Carpethouse\" обл.СОФИЯ, гр.СОФИЯ 1750",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/130846605",
+     "retrieved_at": "2026-09-23T17:08:48Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/",
+       "pages_checked": [
+        "https://carpethouse-bg.com/",
+        "https://carpethouse-bg.com/about-us/",
+        "https://carpethouse-bg.com/contacts/",
+        "https://carpethouse-bg.com/privacy-policy/",
+        "https://carpethouse-bg.com/terms/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "ВЕНИС 21 ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/terms/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:32Z",
+       "excerpt": "сочени количества. Стоките, обект на продажба чрез Сайта, са описани по вид, качество и количество в същия. Дружеството „ВЕНИС 21” ООД не носи отговорност за възможни разлики в цветовете на закупените Стоки, дължащи се на специфики в екраните на компютрите. За",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "бул. „Александър Малинов“ 16, 1784 Младост 1, София"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/contacts/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Магазин Младост 1 Адрес на магазина: бул. „Александър Малинов“ 16, 1784 Младост 1, София",
+       "found_by": "page_fetch"
+      }
+     ],
+     "note": "store address"
+    },
+    "phone": {
+     "value": [
+      "+359899943328"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/contacts/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:32Z",
+       "excerpt": "rences {title} {title} {title} Управление на съгласието Scroll to Top tel:+359899943328 tel:+359899943328 tel:+359899943325 tel:+359899943325 tel:+3598999433",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "carpethousebg@gmail.com",
+      "orders@carpethouse-bg.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/terms/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:32Z",
+       "excerpt": "ржете с нас на телефони 0899943325, 0899943328 или ни пишете на имейл carpethousebg@gmail.com. При възникнал проблем с онлайн пазаруване, може да се обърнете към h",
+       "found_by": "research_crawl"
+      },
+      {
+       "url": "https://carpethouse-bg.com/terms/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:32Z",
+       "excerpt": "обекти и др. За формуляр за отказ,моля обърнете се към нас на адрес: orders@carpethouse-bg.com Shopping Cart https://www.facebook.com/carpethousebulgaria/ Instagram",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/",
+       "pages_checked": [
+        "https://carpethouse-bg.com/",
+        "https://carpethouse-bg.com/about-us/",
+        "https://carpethouse-bg.com/contacts/",
+        "https://carpethouse-bg.com/privacy-policy/",
+        "https://carpethouse-bg.com/terms/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/terms/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:35:32Z",
+       "excerpt": "сочени количества. Стоките, обект на продажба чрез Сайта, са описани по вид, качество и количество в същия. Дружеството „ВЕНИС 21” ООД не носи отговорност за възможни разлики в цветовете на закупените Стоки, дължащи се на специфики в екраните на компютрите. За",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://carpethouse-bg.com/",
+    "https://carpethouse-bg.com/about-us/",
+    "https://carpethouse-bg.com/contacts/",
+    "https://carpethouse-bg.com/privacy-policy/",
+    "https://carpethouse-bg.com/terms/"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The company ВЕНИС 21 ООД is named in the terms, but no ЕИК is published on any page.",
+     "summary_bg": "Общите условия посочват ВЕНИС 21 ООД, но ЕИК не е публикуван на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/terms/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Дружеството „ВЕНИС 21” ООД ...",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:44Z",
+       "excerpt": "declared shop www.carpethouse-bg.com - operator ЕИК 130846605 (declared 25.03.2019 13:44:18)"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://carpethouse-bg.com/",
+       "pages_checked": [
+        "https://carpethouse-bg.com/",
+        "https://carpethouse-bg.com/about-us/",
+        "https://carpethouse-bg.com/contacts/",
+        "https://carpethouse-bg.com/privacy-policy/",
+        "https://carpethouse-bg.com/terms/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/130846605",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:48Z",
+       "excerpt": "Венис 21 - ООД; жк Младост-1 бул. \"Александър Малинов\" №16, магазин \"Carpethouse\" обл.СОФИЯ, гр.СОФИЯ 1750"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "chiraque.eu",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "202191944",
+      "declared_name": "Асеневци трейд",
+      "declared_domain": "chiraque.eu",
+      "declared_at": "23.08.2023 10:28:21",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:44Z"
+     }
+    ],
+    "vies": {
+     "eik": "202191944",
+     "status": "confirmed",
+     "name": "Асеневци трейд - ЕООД",
+     "address": "Еровете №13 ет.2 ап.5 обл.СОФИЯ, гр.СОФИЯ 1618",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/202191944",
+     "retrieved_at": "2026-09-23T17:08:49Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: eik",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: legal_name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "email": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: email",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: vat_number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: legal_name",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://chiraque.eu/",
+    "https://chiraque.eu/about-chiraque/",
+    "https://chiraque.eu/shipping/"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "No ЕИК, company name, address, phone or e-mail; no general-terms, contact or privacy page is linked.",
+     "summary_bg": "Няма ЕИК, наименование, адрес, телефон или имейл; няма връзка към общи условия, контакти или поверителност.",
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:44Z",
+       "excerpt": "declared shop chiraque.eu - operator ЕИК 202191944 (declared 23.08.2023 10:28:21)"
+      }
+     ]
+    },
+    {
+     "code": "NO_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "No trader name is published.",
+     "summary_bg": "Не е публикувано наименование на търговеца.",
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_ADDRESS",
+     "kind": "shortfall",
+     "fields": [
+      "address"
+     ],
+     "summary_en": "No address is published.",
+     "summary_bg": "Не е публикуван адрес.",
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_CONTACT",
+     "kind": "shortfall",
+     "fields": [
+      "phone",
+      "email"
+     ],
+     "summary_en": "No phone and no e-mail are published.",
+     "summary_bg": "Не са публикувани телефон и имейл.",
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone, e-mail",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://chiraque.eu/",
+       "pages_checked": [
+        "https://chiraque.eu/",
+        "https://chiraque.eu/about-chiraque/",
+        "https://chiraque.eu/shipping/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/202191944",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:49Z",
+       "excerpt": "Асеневци трейд - ЕООД; Еровете №13 ет.2 ап.5 обл.СОФИЯ, гр.СОФИЯ 1618"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "chunche-bg.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "131467896",
+      "declared_name": "ЧУНЧЕ",
+      "declared_domain": "CHUNCHE-BG.COM",
+      "declared_at": "16.08.2019 12:11:49",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:46Z"
+     }
+    ],
+    "vies": {
+     "eik": "131467896",
+     "status": "confirmed",
+     "name": "ЧУНЧЕ - ЕООД",
+     "address": "жк . Околовръстен път №253 бл.. вх.. ет.. ап.. обл.СОФИЯ, гр.СОФИЯ 1766",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/131467896",
+     "retrieved_at": "2026-09-23T17:08:50Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/",
+       "pages_checked": [
+        "https://chunche-bg.com/",
+        "https://chunche-bg.com/index.php?route=information/contact",
+        "https://chunche-bg.com/za-nas",
+        "https://chunche-bg.com/obshti-usloviya",
+        "https://chunche-bg.com/poveritelnost-i-registratsiya",
+        "https://chunche-bg.com/garancia-i-vrashtane"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Чунче ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:08Z",
+       "excerpt": " благодарение на дългия и пра.. 55€ Добави в количка Добави към любими Сравни Бърза поръчка През 2005 година създадохме „ЧУНЧЕ“ ЕООД с ясната идея да предложим на българския пазар внимателно подбрани продукти от света на японските ножове и прецизните инструмен",
+       "found_by": "research_crawl"
+      },
+      {
+       "url": "https://chunche-bg.com/poveritelnost-i-registratsiya",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "'\"Чунче\" ЕООД счита",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "гр. София, ул. Околовръстен път 253"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/index.php?route=information/contact",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "гр. София, ул. Околовръстен път 253",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "+359884243880"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/index.php?route=information/contact",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:08Z",
+       "excerpt": "Околовръстен път 253 Обадете ни се Tел: 0888 264 902 Viber, WhatsApp Тел: 0884 243 880 Работно време понеделник до петък: от 09:00 ч. до 17:00 ч. Свържете с",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "office@chunche-bg.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/index.php?route=information/contact",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:08Z",
+       "excerpt": "нче Он-лайн Магазин Чунче Он-лайн Магазин 1766 София, п.к. 5, e-mail: office@chunche-bg.com Виж Google карта Телефон: 0884 243 880 Работно време Поннелник - Неде",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/",
+       "pages_checked": [
+        "https://chunche-bg.com/",
+        "https://chunche-bg.com/index.php?route=information/contact",
+        "https://chunche-bg.com/za-nas",
+        "https://chunche-bg.com/obshti-usloviya",
+        "https://chunche-bg.com/poveritelnost-i-registratsiya",
+        "https://chunche-bg.com/garancia-i-vrashtane"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:08Z",
+       "excerpt": " благодарение на дългия и пра.. 55€ Добави в количка Добави към любими Сравни Бърза поръчка През 2005 година създадохме „ЧУНЧЕ“ ЕООД с ясната идея да предложим на българския пазар внимателно подбрани продукти от света на японските ножове и прецизните инструмен",
+       "found_by": "research_crawl"
+      },
+      {
+       "url": "https://chunche-bg.com/poveritelnost-i-registratsiya",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "'\"Чунче\" ЕООД счита",
+       "found_by": "browser_verification"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://chunche-bg.com/",
+    "https://chunche-bg.com/index.php?route=information/contact",
+    "https://chunche-bg.com/za-nas",
+    "https://chunche-bg.com/obshti-usloviya",
+    "https://chunche-bg.com/poveritelnost-i-registratsiya",
+    "https://chunche-bg.com/garancia-i-vrashtane"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The company \"Чунче\" ЕООД is named, but no ЕИК is published on any page.",
+     "summary_bg": "Посочено е \"Чунче\" ЕООД, но ЕИК не е публикуван на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/poveritelnost-i-registratsiya",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "'\"Чунче\" ЕООД счита",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:46Z",
+       "excerpt": "declared shop CHUNCHE-BG.COM - operator ЕИК 131467896 (declared 16.08.2019 12:11:49)"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://chunche-bg.com/",
+       "pages_checked": [
+        "https://chunche-bg.com/",
+        "https://chunche-bg.com/index.php?route=information/contact",
+        "https://chunche-bg.com/za-nas",
+        "https://chunche-bg.com/obshti-usloviya",
+        "https://chunche-bg.com/poveritelnost-i-registratsiya",
+        "https://chunche-bg.com/garancia-i-vrashtane"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/131467896",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:50Z",
+       "excerpt": "ЧУНЧЕ - ЕООД; жк . Околовръстен път №253 бл.. вх.. ет.. ап.. обл.СОФИЯ, гр.СОФИЯ 1766"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "concretta.eu",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "204559054",
+      "declared_name": "КОНКРЕТА  2017",
+      "declared_domain": "www.concretta.eu",
+      "declared_at": "04.12.2023 14:38:24",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:47Z"
+     }
+    ],
+    "vies": {
+     "eik": "204559054",
+     "status": "confirmed",
+     "name": "КОНКРЕТА  2017 - ЕООД",
+     "address": "ул.\"Йордан Бакалов- Стубел\" №24а обл.СОФИЯ, гр.СОФИЯ 1404",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/204559054",
+     "retrieved_at": "2026-09-23T17:08:52Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://concretta.eu/",
+       "pages_checked": [
+        "https://concretta.eu/",
+        "https://concretta.eu/about-us/",
+        "https://concretta.eu/contact/",
+        "https://concretta.eu/privacy-policy/",
+        "https://concretta.eu/terms-conditions/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК in the visible text",
+       "found_by": "browser_verification"
+      }
+     ],
+     "machine_readable": "204559054",
+     "note": "not in the visible text; inside the VAT number in the pages' schema.org structured data"
+    },
+    "legal_name": {
+     "value": "Concreta 2017 Ltd.",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://concretta.eu/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Concretta.eu, a part of Concreta 2017 Ltd.",
+       "found_by": "browser_verification"
+      }
+     ],
+     "note": "terms name the supplier \"Concretta EU\""
+    },
+    "address": {
+     "value": null,
+     "published": false,
+     "published_text": [
+      "Sofia | Bulgaria Botevgradsko shose Industrial area"
+     ],
+     "evidence": [
+      {
+       "url": "https://concretta.eu/contact/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "address 'Sofia | Bulgaria Botevgradsko shose Industrial area'",
+       "found_by": "browser_verification"
+      }
+     ],
+     "note": "incomplete: no street number"
+    },
+    "phone": {
+     "value": [
+      "+359888299732"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://concretta.eu/contact/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:30Z",
+       "excerpt": "лгарски English CART € 0.00 0 CART € 0.00 (0) My account Get in Touch phone +359 888 299 732 address Sofia | Bulgaria Botevgradsko shose Industrial area GPS: 42.7",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "info@concretta.eu"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://concretta.eu/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:30Z",
+       "excerpt": "e we’re the best in the business. Sofia | Bulgaria Botevgradsko shose info@concretta.eu +359 888 299 732 shop Wall Mount Sinks Cabinet Sinks Countertop Sinks",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://concretta.eu/",
+       "pages_checked": [
+        "https://concretta.eu/",
+        "https://concretta.eu/about-us/",
+        "https://concretta.eu/contact/",
+        "https://concretta.eu/privacy-policy/",
+        "https://concretta.eu/terms-conditions/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number in the visible text",
+       "found_by": "browser_verification"
+      }
+     ],
+     "machine_readable": "BG204559054"
+    },
+    "legal_form": {
+     "value": "Ltd.",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://concretta.eu/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Concretta.eu, a part of Concreta 2017 Ltd.",
+       "found_by": "browser_verification"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://concretta.eu/",
+    "https://concretta.eu/about-us/",
+    "https://concretta.eu/contact/",
+    "https://concretta.eu/privacy-policy/",
+    "https://concretta.eu/terms-conditions/"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "No ЕИК in the visible text of any page. The VAT number BG204559054, which contains it, appears only in the pages' machine-readable structured data (schema.org vatID), which a customer does not see.",
+     "summary_bg": "Няма ЕИК във видимия текст на никоя страница. ДДС номерът BG204559054, който го съдържа, е само в машинночетимите структурирани данни на страниците (schema.org vatID), които клиентът не вижда.",
+     "evidence": [
+      {
+       "url": "https://concretta.eu/",
+       "pages_checked": [
+        "https://concretta.eu/",
+        "https://concretta.eu/about-us/",
+        "https://concretta.eu/contact/",
+        "https://concretta.eu/privacy-policy/",
+        "https://concretta.eu/terms-conditions/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК in the visible text",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://concretta.eu/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-25",
+       "found_by": "shopwatch_domaincheck",
+       "excerpt": "schema.org structured data (not visible text): vatID=BG204559054 - on /, /about-us/ and /contact/"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:47Z",
+       "excerpt": "declared shop www.concretta.eu - operator ЕИК 204559054 (declared 04.12.2023 14:38:24)"
+      }
+     ]
+    },
+    {
+     "code": "ADDRESS_INCOMPLETE",
+     "kind": "shortfall",
+     "fields": [
+      "address"
+     ],
+     "summary_en": "The only address published has no street number: 'Sofia | Bulgaria Botevgradsko shose Industrial area'.",
+     "summary_bg": "Единственият публикуван адрес е без номер: 'Sofia | Bulgaria Botevgradsko shose Industrial area'.",
+     "evidence": [
+      {
+       "url": "https://concretta.eu/contact/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "address 'Sofia | Bulgaria Botevgradsko shose Industrial area'",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "TRADER_NAME_INCONSISTENT",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "The terms name the supplier \"Concretta EU\"; the privacy policy names \"Concreta 2017 Ltd.\".",
+     "summary_bg": "Общите условия посочват доставчик \"Concretta EU\"; политиката за поверителност - \"Concreta 2017 Ltd.\".",
+     "evidence": [
+      {
+       "url": "https://concretta.eu/terms-conditions/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "We are Concretta EU with email address info@concretta.eu (the Supplier)",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://concretta.eu/privacy-policy/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Concretta.eu, a part of Concreta 2017 Ltd.",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed in the visible text; it is present only in the pages' machine-readable structured data (BG204559054). VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен във видимия текст; има го само в машинночетимите структурирани данни на страниците (BG204559054). Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://concretta.eu/",
+       "pages_checked": [
+        "https://concretta.eu/",
+        "https://concretta.eu/about-us/",
+        "https://concretta.eu/contact/",
+        "https://concretta.eu/privacy-policy/",
+        "https://concretta.eu/terms-conditions/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number in the visible text",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://concretta.eu/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-25",
+       "found_by": "shopwatch_domaincheck",
+       "excerpt": "schema.org structured data (not visible text): vatID=BG204559054 - on /, /about-us/ and /contact/"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/204559054",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:52Z",
+       "excerpt": "КОНКРЕТА  2017 - ЕООД; ул.\"Йордан Бакалов- Стубел\" №24а обл.СОФИЯ, гр.СОФИЯ 1404"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "kornelv.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "130334366",
+      "declared_name": "КОРНЕЛ В",
+      "declared_domain": "www.kornelv.com",
+      "declared_at": "27.03.2019 19:54:30",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:48Z"
+     }
+    ],
+    "vies": {
+     "eik": "130334366",
+     "status": "confirmed",
+     "name": "КОРНЕЛ В - ЕООД",
+     "address": "ул. БАНАТ 7 обл.СОФИЯ, гр.СОФИЯ 1407",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/130334366",
+     "retrieved_at": "2026-09-23T17:08:53Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://kornelv.com/",
+       "pages_checked": [
+        "https://kornelv.com/",
+        "https://kornelv.com/kontakt-s-nas",
+        "https://kornelv.com/content/4-za-nas",
+        "https://kornelv.com/content/3-obshti-usloviya"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Корнел В ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.kornelv.com/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:35Z",
+       "excerpt": "епа на микро и малки предприятия за преодоляване на икономическите последствия от пандемията COVID-19“ На 17.07.2020 г. „Корнел В“ ЕООД сключи договор за предоставяне на безвъзмездна финансова помощ по проект № BG16RFOP002-2.073-4212 “Преодоляване недостига на",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "гр. София, Книжна борса Искър, ул. \"поручик Христо Топракчиев\" №11, ет. 1, офис 30"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.kornelv.com/content/4-za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:35Z",
+       "excerpt": "и продукти могат да бъдат намерени на място в склада на \"Корнел В\" на адрес: гр. София, Книжна борса Искър, ул. \"поручик Христо Топракчиев\" №11, ет. 1, офис 30 Работно време: Понеделник-петък - 9:00-16:30 ч. Тел: 02 944 2001; 088",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "02 944 2001"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.kornelv.com/content/4-za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:35Z",
+       "excerpt": "\" №11, ет. 1, офис 30 Работно време: Понеделник-петък - 9:00-16:30 ч. Тел: 02 944 2001; 0886 666 814 Бюлетин Ok Facebook Twitter YouTube Google Plus Pintere",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "eshop@kornelv.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.kornelv.com/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:35Z",
+       "excerpt": "то Топракчиев“ 11 етаж1, офис 30 1528 София 02 944 2001, 0886 666 814 eshop@kornelv.com",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://kornelv.com/",
+       "pages_checked": [
+        "https://kornelv.com/",
+        "https://kornelv.com/kontakt-s-nas",
+        "https://kornelv.com/content/4-za-nas",
+        "https://kornelv.com/content/3-obshti-usloviya"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.kornelv.com/",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:35Z",
+       "excerpt": "епа на микро и малки предприятия за преодоляване на икономическите последствия от пандемията COVID-19“ На 17.07.2020 г. „Корнел В“ ЕООД сключи договор за предоставяне на безвъзмездна финансова помощ по проект № BG16RFOP002-2.073-4212 “Преодоляване недостига на",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://kornelv.com/",
+    "https://kornelv.com/kontakt-s-nas",
+    "https://kornelv.com/content/4-za-nas",
+    "https://kornelv.com/content/3-obshti-usloviya"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The terms name Корнел В ЕООД, but no ЕИК is published on any page.",
+     "summary_bg": "Общите условия посочват Корнел В ЕООД, но ЕИК не е публикуван на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://kornelv.com/content/3-obshti-usloviya",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "С настоящите Общи условия Корнел В ЕООД уведомява потребителите",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:48Z",
+       "excerpt": "declared shop www.kornelv.com - operator ЕИК 130334366 (declared 27.03.2019 19:54:30)"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://kornelv.com/",
+       "pages_checked": [
+        "https://kornelv.com/",
+        "https://kornelv.com/kontakt-s-nas",
+        "https://kornelv.com/content/4-za-nas",
+        "https://kornelv.com/content/3-obshti-usloviya"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/130334366",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:53Z",
+       "excerpt": "КОРНЕЛ В - ЕООД; ул. БАНАТ 7 обл.СОФИЯ, гр.СОФИЯ 1407"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "davidtoys.eu",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "205877717",
+      "declared_name": "ДЪ ГРИЙН БЕЪР",
+      "declared_domain": "https://davidtoys.eu",
+      "declared_at": "23.05.2024 14:47:40",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:49Z"
+     }
+    ],
+    "vies": {
+     "eik": "205877717",
+     "status": "confirmed",
+     "name": "ДЪ ГРИЙН БЕЪР - ЕООД",
+     "address": "ул. \"Академик Стефан Младенов\" №46 вх.Д ет.4 ап.401 обл.СОФИЯ, гр.СОФИЯ 1700",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/205877717",
+     "retrieved_at": "2026-09-23T17:08:54Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "pages_checked": [
+        "https://davidtoys.eu/",
+        "https://davidtoys.eu/pages/contact",
+        "https://davidtoys.eu/policies/terms-of-service",
+        "https://davidtoys.eu/policies/privacy-policy",
+        "https://davidtoys.eu/policies/refund-policy",
+        "https://davidtoys.eu/policies/contact-information"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "pages_checked": [
+        "https://davidtoys.eu/",
+        "https://davidtoys.eu/pages/contact",
+        "https://davidtoys.eu/policies/terms-of-service",
+        "https://davidtoys.eu/policies/privacy-policy",
+        "https://davidtoys.eu/policies/refund-policy",
+        "https://davidtoys.eu/policies/contact-information"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: legal entity",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "trade_name": {
+     "value": "David Toys",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/policies/contact-information",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Търговско наименование: David Toys Телефонен номер: 0892357777 Имейл: office@davidtoys.eu",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "pages_checked": [
+        "https://davidtoys.eu/",
+        "https://davidtoys.eu/pages/contact",
+        "https://davidtoys.eu/policies/terms-of-service",
+        "https://davidtoys.eu/policies/privacy-policy",
+        "https://davidtoys.eu/policies/refund-policy",
+        "https://davidtoys.eu/policies/contact-information"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address (refund policy holds [INSERT RETURN ADDRESS])",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "+359892357777"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:47Z",
+       "excerpt": "Политики за поверителност Връщане и замяна Контакти Търсене Контакти Телефон +359892357777 Имейл: office@davidtoys.eu Добави имейла си и разбери първи за нашите",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "office@davidtoys.eu"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:47Z",
+       "excerpt": "ъщане и замяна Контакти Търсене Контакти Телефон +359892357777 Имейл: office@davidtoys.eu Добави имейла си и разбери първи за нашите нови продукти и промоции И",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "pages_checked": [
+        "https://davidtoys.eu/",
+        "https://davidtoys.eu/pages/contact",
+        "https://davidtoys.eu/policies/terms-of-service",
+        "https://davidtoys.eu/policies/privacy-policy",
+        "https://davidtoys.eu/policies/refund-policy",
+        "https://davidtoys.eu/policies/contact-information"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "pages_checked": [
+        "https://davidtoys.eu/",
+        "https://davidtoys.eu/pages/contact",
+        "https://davidtoys.eu/policies/terms-of-service",
+        "https://davidtoys.eu/policies/privacy-policy",
+        "https://davidtoys.eu/policies/refund-policy",
+        "https://davidtoys.eu/policies/contact-information"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: legal entity",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://davidtoys.eu/",
+    "https://davidtoys.eu/pages/contact",
+    "https://davidtoys.eu/policies/terms-of-service",
+    "https://davidtoys.eu/policies/privacy-policy",
+    "https://davidtoys.eu/policies/refund-policy",
+    "https://davidtoys.eu/policies/contact-information"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "The contact-information page gives only the trade name \"David Toys\"; no legal entity and no ЕИК on any page.",
+     "summary_bg": "Страницата с информация за контакт посочва само търговско наименование \"David Toys\"; няма юридическо лице и ЕИК.",
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/policies/contact-information",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Търговско наименование: David Toys Телефонен номер: 0892357777 Имейл: office@davidtoys.eu",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:49Z",
+       "excerpt": "declared shop https://davidtoys.eu - operator ЕИК 205877717 (declared 23.05.2024 14:47:40)"
+      }
+     ]
+    },
+    {
+     "code": "NO_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "No legal entity is named, only a trade name.",
+     "summary_bg": "Не е посочено юридическо лице, само търговско наименование.",
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "pages_checked": [
+        "https://davidtoys.eu/",
+        "https://davidtoys.eu/pages/contact",
+        "https://davidtoys.eu/policies/terms-of-service",
+        "https://davidtoys.eu/policies/privacy-policy",
+        "https://davidtoys.eu/policies/refund-policy",
+        "https://davidtoys.eu/policies/contact-information"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: legal entity",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "PLACEHOLDER_ADDRESS",
+     "kind": "shortfall",
+     "fields": [
+      "address"
+     ],
+     "summary_en": "The refund policy still contains the template text \"[INSERT RETURN ADDRESS]\"; no trader address is published.",
+     "summary_bg": "Политиката за връщане съдържа шаблонния текст \"[INSERT RETURN ADDRESS]\"; не е публикуван адрес на търговеца.",
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/policies/refund-policy",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:47Z",
+       "excerpt": "е предвид, че върнатите артикули трябва да бъдат изпратени на следния адрес: [INSERT RETURN ADDRESS] Ако връщането ви бъде прието, ние ще ви изпратим етикет за обратна до",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://davidtoys.eu/",
+       "pages_checked": [
+        "https://davidtoys.eu/",
+        "https://davidtoys.eu/pages/contact",
+        "https://davidtoys.eu/policies/terms-of-service",
+        "https://davidtoys.eu/policies/privacy-policy",
+        "https://davidtoys.eu/policies/refund-policy",
+        "https://davidtoys.eu/policies/contact-information"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/205877717",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:54Z",
+       "excerpt": "ДЪ ГРИЙН БЕЪР - ЕООД; ул. \"Академик Стефан Младенов\" №46 вх.Д ет.4 ап.401 обл.СОФИЯ, гр.СОФИЯ 1700"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "detetovteb.com",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "204565892",
+      "declared_name": "КАПИНКАТА",
+      "declared_domain": "www.detetovteb.com",
+      "declared_at": "28.06.2019 19:40:45",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:49Z"
+     },
+     {
+      "eik": "204565892",
+      "declared_name": "КАПИНКАТА",
+      "declared_domain": "www.detetovteb.com",
+      "declared_at": "28.03.2019 20:20:19",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:49Z"
+     }
+    ],
+    "vies": {
+     "eik": "204565892",
+     "status": "not_found",
+     "name": null,
+     "address": null,
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/204565892",
+     "retrieved_at": "2026-09-23T17:08:56Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": "148089312",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "* Parashkevovi Company Ltd. * Registered address: Varna, Petko Staynov Str. * Telephone: 052/870102 * Data for entry in the Commercial or other register, UIC 148089312"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Parashkevovi Company Ltd.",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "* Parashkevovi Company Ltd. * Registered address: Varna, Petko Staynov Str. * Telephone: 052/870102 * Data for entry in the Commercial or other register, UIC 148089312"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "Северна промишлена зона Младост, ул. „Петко Стайнов“ 3, 9009 Варна",
+      "Varna, Petko Staynov Str."
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/index.php?route=information/contact",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "Контакт с нас Адрес Северна промишлена зона Младост, ул. „Петко Стайнов“ 3, 9009 Варна Телефон 0898322127"
+      },
+      {
+       "url": "https://detetovteb.com/za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "* Parashkevovi Company Ltd. * Registered address: Varna, Petko Staynov Str. * Telephone: 052/870102 * Data for entry in the Commercial or other register, UIC 148089312"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "052/870102"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:48Z",
+       "excerpt": "vi Company Ltd. * Registered address: Varna, Petko Staynov Str. * Telephone: 052/870102 * Email jugo_vn@abv.bg * Data for entry in the Commercial or other re",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "jugo_vn@abv.bg"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:48Z",
+       "excerpt": "ed address: Varna, Petko Staynov Str. * Telephone: 052/870102 * Email jugo_vn@abv.bg * Data for entry in the Commercial or other register, UIC 148089312 b",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/",
+       "pages_checked": [
+        "https://detetovteb.com/",
+        "https://detetovteb.com/za-nas",
+        "https://detetovteb.com/index.php?route=information/contact"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "Ltd.",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "* Parashkevovi Company Ltd. * Registered address: Varna, Petko Staynov Str. * Telephone: 052/870102 * Data for entry in the Commercial or other register, UIC 148089312"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://detetovteb.com/",
+    "https://detetovteb.com/za-nas",
+    "https://detetovteb.com/index.php?route=information/contact"
+   ],
+   "shortfalls": [
+    {
+     "code": "EIK_OTHER_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "eik",
+      "legal_name"
+     ],
+     "summary_en": "The about page publishes UIC 148089312, which VIES lists as ПАРАШКЕВОВИ - ООД; the operator declared to NAP for this shop is ЕИК 204565892.",
+     "summary_bg": "Страницата „За нас“ публикува ЕИК 148089312, който във VIES е на ПАРАШКЕВОВИ - ООД; деклариралият пред НАП търговец за магазина е с ЕИК 204565892.",
+     "evidence": [
+      {
+       "url": "https://detetovteb.com/za-nas",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "found_by": "page_fetch",
+       "excerpt": "* Parashkevovi Company Ltd. * Registered address: Varna, Petko Staynov Str. * Telephone: 052/870102 * Data for entry in the Commercial or other register, UIC 148089312"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:49Z",
+       "excerpt": "declared shop www.detetovteb.com - operator ЕИК 204565892 (declared 28.06.2019 19:40:45); declared shop www.detetovteb.com - operator ЕИК 204565892 (declared 28.03.2019 20:20:19)"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/148089312",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:09:07Z",
+       "excerpt": "ПАРАШКЕВОВИ - ООД; жк Виница ул. Света Екатерина №8 ап.8 обл.ВАРНА, гр.ВАРНА 9000"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "danishgranola.bg",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "207654830",
+      "declared_name": "Органик Бранд",
+      "declared_domain": "https://danishgranola.bg/",
+      "declared_at": "18.03.2024 08:40:41",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:50Z"
+     }
+    ],
+    "vies": {
+     "eik": "207654830",
+     "status": "confirmed",
+     "name": "Органик Бранд - ЕООД",
+     "address": "ул. Братя Миладинови №12 ет.1 обл.СОФИЯ, гр.СОФИЯ 1000",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/207654830",
+     "retrieved_at": "2026-09-23T17:08:57Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": "207654830",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.danishgranola.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:37:41Z",
+       "excerpt": "ни за всички новини, отстъпки и рецепти. Изпращане Органик Бранд ЕООД ДДС номер: BG207654830 Контакт: zdr@danishgranola.bg Информация Контакт За нас Друго Общи ус",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "published only inside the VAT number BG207654830"
+    },
+    "legal_name": {
+     "value": "Органик Бранд ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.danishgranola.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:37:41Z",
+       "excerpt": "Абонирайте се за нашия бюлетин Ще бъдете сред първите, които ще бъдат информирани за всички новини, отстъпки и рецепти. Изпращане Органик Бранд ЕООД ДДС номер: BG207654830 Контакт: zdr@danishgranola.bg Информация Контакт За нас Друго Общи условия за търговия и",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "privacy page says Органик Бранд ООД"
+    },
+    "address": {
+     "value": null,
+     "published": false,
+     "published_text": [
+      "Borchwerf 5, 4704 RG Roosendaal, Нидерландия"
+     ],
+     "evidence": [
+      {
+       "url": "https://www.danishgranola.bg/pages/ruckgabe-umtauschbedingungen",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:37:41Z",
+       "excerpt": "ете внимание, че върнатите стоки трябва да бъдат изпратени на следния адрес: Borchwerf 5, 4704 RG Roosendaal, Нидерландия. След като приемем върнатия Ви продукт, ще Ви изпратим етикет за връща",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "a returns address in the Netherlands only; no trader address"
+    },
+    "phone": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://danishgranola.bg/",
+       "pages_checked": [
+        "https://danishgranola.bg/",
+        "https://danishgranola.bg/pages/kontact",
+        "https://danishgranola.bg/pages/uber-uns",
+        "https://danishgranola.bg/pages/handels-lieferbedingungen",
+        "https://danishgranola.bg/pages/datenschutzbestimmungen",
+        "https://danishgranola.bg/pages/ruckgabe-umtauschbedingungen"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "zdr@danishgranola.bg"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.danishgranola.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:37:41Z",
+       "excerpt": "рецепти. Изпращане Органик Бранд ЕООД ДДС номер: BG207654830 Контакт: zdr@danishgranola.bg Информация Контакт За нас Друго Общи условия за търговия и доставка П",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": "BG207654830",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.danishgranola.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:37:41Z",
+       "excerpt": "ни за всички новини, отстъпки и рецепти. Изпращане Органик Бранд ЕООД ДДС номер: BG207654830 Контакт: zdr@danishgranola.bg Информация Контакт За нас Друго Общи ус",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://www.danishgranola.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:37:41Z",
+       "excerpt": "Абонирайте се за нашия бюлетин Ще бъдете сред първите, които ще бъдат информирани за всички новини, отстъпки и рецепти. Изпращане Органик Бранд ЕООД ДДС номер: BG207654830 Контакт: zdr@danishgranola.bg Информация Контакт За нас Друго Общи условия за търговия и",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://danishgranola.bg/",
+    "https://danishgranola.bg/pages/kontact",
+    "https://danishgranola.bg/pages/uber-uns",
+    "https://danishgranola.bg/pages/handels-lieferbedingungen",
+    "https://danishgranola.bg/pages/datenschutzbestimmungen",
+    "https://danishgranola.bg/pages/ruckgabe-umtauschbedingungen"
+   ],
+   "shortfalls": [
+    {
+     "code": "LEGAL_FORM_INCONSISTENT",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name",
+      "legal_form"
+     ],
+     "summary_en": "The footer names Органик Бранд ЕООД; the privacy policy names Органик Бранд ООД (different legal form). VIES: Органик Бранд - ЕООД.",
+     "summary_bg": "Долният колонтитул посочва Органик Бранд ЕООД; политиката за поверителност - Органик Бранд ООД (различна правна форма). VIES: Органик Бранд - ЕООД.",
+     "evidence": [
+      {
+       "url": "https://danishgranola.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Органик Бранд ЕООД ДДС номер: BG207654830",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://danishgranola.bg/pages/datenschutzbestimmungen",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Информация за собственика Органик Бранд ООД ДДС номер: BG207654830",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/207654830",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:57Z",
+       "excerpt": "Органик Бранд - ЕООД; ул. Братя Миладинови №12 ет.1 обл.СОФИЯ, гр.СОФИЯ 1000"
+      }
+     ]
+    },
+    {
+     "code": "NO_ADDRESS",
+     "kind": "shortfall",
+     "fields": [
+      "address"
+     ],
+     "summary_en": "No address of the trader in Bulgaria is published; the only address is a returns address in the Netherlands.",
+     "summary_bg": "Не е публикуван адрес на търговеца в България; единственият адрес е за връщане в Нидерландия.",
+     "evidence": [
+      {
+       "url": "https://danishgranola.bg/pages/ruckgabe-umtauschbedingungen",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "Borchwerf 5, 4704 RG Roosendaal, Нидерландия",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_PHONE",
+     "kind": "shortfall",
+     "fields": [
+      "phone"
+     ],
+     "summary_en": "No telephone number is published.",
+     "summary_bg": "Не е публикуван телефон.",
+     "evidence": [
+      {
+       "url": "https://danishgranola.bg/",
+       "pages_checked": [
+        "https://danishgranola.bg/",
+        "https://danishgranola.bg/pages/kontact",
+        "https://danishgranola.bg/pages/uber-uns",
+        "https://danishgranola.bg/pages/handels-lieferbedingungen",
+        "https://danishgranola.bg/pages/datenschutzbestimmungen",
+        "https://danishgranola.bg/pages/ruckgabe-umtauschbedingungen"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "detski-magazin.bg",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "202965911",
+      "declared_name": "ПАНКОЛИТА 2",
+      "declared_domain": "detski-magazin.bg",
+      "declared_at": "19.03.2024 09:49:37",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:51Z"
+     }
+    ],
+    "vies": {
+     "eik": "202965911",
+     "status": "confirmed",
+     "name": "ПАНКОЛИТА 2 - ООД",
+     "address": "ул.Проф.Асен Кисилинчев №7 обл.ШУМЕН, с.ЦАРЕВ БРОД 9747",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/202965911",
+     "retrieved_at": "2026-09-23T17:08:59Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/",
+       "pages_checked": [
+        "https://detski-magazin.bg/",
+        "https://detski-magazin.bg/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81/",
+        "https://detski-magazin.bg/contact/",
+        "https://detski-magazin.bg/refund_returns/",
+        "https://detski-magazin.bg/privacy-policy/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": "Панколита 2 ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "сувателни игри (5) Роботи (1) Строителни машини (9) Трансформърси (2) Чадъри (7) 0 0,00 € / 0,00 лв. Home За нас За нас „Панколита 2“ ООД е създадена през 2011 г. в гр.Варна. Занимава се с търговия на дребно със сувенири и детски играчки. Предлагаме безплатна ",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "гр.Варна ул.Шипка № 2"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/contact/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "гр.Варна ул.Шипка № 2 e-mail: pankolita@abv.bg тел: 0898458421",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "0898458421"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/contact/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "сайт! Контакти с нас: гр.Варна ул.Шипка № 2 e-mail: pankolita@abv.bg тел: 0898458421 За нас Количка Контакти Магазин Моят профил Политика за възстановяван",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "pankolita@abv.bg"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/contact/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "щението на нашият сайт! Контакти с нас: гр.Варна ул.Шипка № 2 e-mail: pankolita@abv.bg тел: 0898458421 За нас Количка Контакти Магазин Моят профил Политика",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/",
+       "pages_checked": [
+        "https://detski-magazin.bg/",
+        "https://detski-magazin.bg/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81/",
+        "https://detski-magazin.bg/contact/",
+        "https://detski-magazin.bg/refund_returns/",
+        "https://detski-magazin.bg/privacy-policy/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:36:52Z",
+       "excerpt": "сувателни игри (5) Роботи (1) Строителни машини (9) Трансформърси (2) Чадъри (7) 0 0,00 € / 0,00 лв. Home За нас За нас „Панколита 2“ ООД е създадена през 2011 г. в гр.Варна. Занимава се с търговия на дребно със сувенири и детски играчки. Предлагаме безплатна ",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://detski-magazin.bg/",
+    "https://detski-magazin.bg/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81/",
+    "https://detski-magazin.bg/contact/",
+    "https://detski-magazin.bg/refund_returns/",
+    "https://detski-magazin.bg/privacy-policy/"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "„Панколита 2“ ООД is named on the about page, but no ЕИК is published on any page.",
+     "summary_bg": "„Панколита 2“ ООД е посочено на страницата „За нас“, но ЕИК не е публикуван на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "„Панколита 2“ ООД е създадена през 2011 г. в гр.Варна",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:51Z",
+       "excerpt": "declared shop detski-magazin.bg - operator ЕИК 202965911 (declared 19.03.2024 09:49:37)"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://detski-magazin.bg/",
+       "pages_checked": [
+        "https://detski-magazin.bg/",
+        "https://detski-magazin.bg/%D0%B7%D0%B0-%D0%BD%D0%B0%D1%81/",
+        "https://detski-magazin.bg/contact/",
+        "https://detski-magazin.bg/refund_returns/",
+        "https://detski-magazin.bg/privacy-policy/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/202965911",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:08:59Z",
+       "excerpt": "ПАНКОЛИТА 2 - ООД; ул.Проф.Асен Кисилинчев №7 обл.ШУМЕН, с.ЦАРЕВ БРОД 9747"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "compartido.bg",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "206708894",
+      "declared_name": "КОМПАРТИДО",
+      "declared_domain": "www.compartido.bg",
+      "declared_at": "17.03.2023 16:25:35",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:52Z"
+     }
+    ],
+    "vies": {
+     "eik": "206708894",
+     "status": "confirmed",
+     "name": "КОМПАРТИДО - ООД",
+     "address": "Георги Райчев №5 обл.СОФИЯ, гр.СОФИЯ 1700",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/206708894",
+     "retrieved_at": "2026-09-23T17:09:01Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "гр. София, Бул. Скопие 1, Кауфланд"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "'Email: hello@compartido.bg гр. София, Бул. Скопие 1, Кауфланд'",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "hello@compartido.bg"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:37:18Z",
+       "excerpt": "е това поле празно Вие успешно се абонирахте за нашия бюлетин! Email: hello@compartido.bg гр. София, Бул. Скопие 1, Кауфланд All rights reserved 2022 X",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://compartido.bg/",
+    "https://compartido.bg/privacy-policy"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "No company name, ЕИК or phone; the footer link \"Общи условия\" opens the privacy policy.",
+     "summary_bg": "Няма наименование, ЕИК или телефон; връзката \"Общи условия\" отваря политиката за поверителност.",
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:52Z",
+       "excerpt": "declared shop www.compartido.bg - operator ЕИК 206708894 (declared 17.03.2023 16:25:35)"
+      }
+     ]
+    },
+    {
+     "code": "NO_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "No trader name is published.",
+     "summary_bg": "Не е публикувано наименование на търговеца.",
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_PHONE",
+     "kind": "shortfall",
+     "fields": [
+      "phone"
+     ],
+     "summary_en": "No telephone number is published.",
+     "summary_bg": "Не е публикуван телефон.",
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://compartido.bg/",
+       "pages_checked": [
+        "https://compartido.bg/",
+        "https://compartido.bg/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/206708894",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:09:01Z",
+       "excerpt": "КОМПАРТИДО - ООД; Георги Райчев №5 обл.СОФИЯ, гр.СОФИЯ 1700"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "climavis.bg",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "207602577",
+      "declared_name": "КЛИМАВИС",
+      "declared_domain": "Climavis.bg",
+      "declared_at": "03.01.2025 15:49:32",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:53Z"
+     }
+    ],
+    "vies": {
+     "eik": "207602577",
+     "status": "confirmed",
+     "name": "КЛИМАВИС - ЕООД",
+     "address": "жк Тракия Генерал Константин Кисяков №12 ет.6 ап.25 обл.ПЛОВДИВ, гр.ПЛОВДИВ 4023",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/207602577",
+     "retrieved_at": "2026-09-23T17:09:03Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "pages_checked": [
+        "https://climavis.bg/",
+        "https://climavis.bg/за-нас/",
+        "https://climavis.bg/контакти/",
+        "https://climavis.bg/доставка/",
+        "https://climavis.bg/общи-условия/",
+        "https://climavis.bg/политика-за-поверителност/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_name": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "pages_checked": [
+        "https://climavis.bg/",
+        "https://climavis.bg/за-нас/",
+        "https://climavis.bg/контакти/",
+        "https://climavis.bg/доставка/",
+        "https://climavis.bg/общи-условия/",
+        "https://climavis.bg/политика-за-поверителност/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "address": {
+     "value": [
+      "гр.Пловдив ул.Чардафон 2"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:36Z",
+       "excerpt": "а За Поверителност Контакти Тел: 0879-444-169 Имейл: info@climavis.bg Адрес: гр.Пловдив ул.Чардафон 2 Работно Време Пон-Пет: 9:00ч.–18:00ч Съб-Нед: Затворено Copyright ©20",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "phone": {
+     "value": [
+      "0879-444-169"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:36Z",
+       "excerpt": "нция Доставка Плащане Общи Условия Политика За Поверителност Контакти Тел: 0879-444-169 Имейл: info@climavis.bg Адрес: гр.Пловдив ул.Чардафон 2 Работно Време",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "info@climavis.bg"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:38:36Z",
+       "excerpt": "CLIMAVIS Климатици Пловдив – Климатици Пловдив 0879-444-169 info@climavis.bg Поискай Оферта Facebook-f Icon-tiktok 0,00 € 0 Cart Начало Услуги Мон",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "pages_checked": [
+        "https://climavis.bg/",
+        "https://climavis.bg/за-нас/",
+        "https://climavis.bg/контакти/",
+        "https://climavis.bg/доставка/",
+        "https://climavis.bg/общи-условия/",
+        "https://climavis.bg/политика-за-поверителност/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "pages_checked": [
+        "https://climavis.bg/",
+        "https://climavis.bg/за-нас/",
+        "https://climavis.bg/контакти/",
+        "https://climavis.bg/доставка/",
+        "https://climavis.bg/общи-условия/",
+        "https://climavis.bg/политика-за-поверителност/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   },
+   "pages_checked": [
+    "https://climavis.bg/",
+    "https://climavis.bg/за-нас/",
+    "https://climavis.bg/контакти/",
+    "https://climavis.bg/доставка/",
+    "https://climavis.bg/общи-условия/",
+    "https://climavis.bg/политика-за-поверителност/"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_EIK",
+     "kind": "shortfall",
+     "fields": [
+      "eik"
+     ],
+     "summary_en": "No company name and no ЕИК on the homepage, about, contacts, delivery, terms or privacy pages.",
+     "summary_bg": "Няма наименование и ЕИК на началната страница, за нас, контакти, доставка, общи условия и поверителност.",
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "pages_checked": [
+        "https://climavis.bg/",
+        "https://climavis.bg/за-нас/",
+        "https://climavis.bg/контакти/",
+        "https://climavis.bg/доставка/",
+        "https://climavis.bg/общи-условия/",
+        "https://climavis.bg/политика-за-поверителност/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: ЕИК",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://portal.nra.bg/details/online-store-nrareg",
+       "source_type": "nap_register",
+       "current": true,
+       "retrieved_at": "2026-09-24T20:58:53Z",
+       "excerpt": "declared shop Climavis.bg - operator ЕИК 207602577 (declared 03.01.2025 15:49:32)"
+      }
+     ]
+    },
+    {
+     "code": "NO_COMPANY",
+     "kind": "shortfall",
+     "fields": [
+      "legal_name"
+     ],
+     "summary_en": "No trader name is published.",
+     "summary_bg": "Не е публикувано наименование на търговеца.",
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "pages_checked": [
+        "https://climavis.bg/",
+        "https://climavis.bg/за-нас/",
+        "https://climavis.bg/контакти/",
+        "https://climavis.bg/доставка/",
+        "https://climavis.bg/общи-условия/",
+        "https://climavis.bg/политика-за-поверителност/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: company name",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "VAT_NOT_DISCLOSED",
+     "kind": "information",
+     "fields": [
+      "vat_number"
+     ],
+     "summary_en": "VAT number not publicly disclosed on the pages checked. VAT registration of the operator declared to NAP: valid according to VIES.",
+     "summary_bg": "ДДС номерът не е публично оповестен на проверените страници. Регистрация по ДДС на деклариралия пред НАП търговец: валидна според VIES.",
+     "evidence": [
+      {
+       "url": "https://climavis.bg/",
+       "pages_checked": [
+        "https://climavis.bg/",
+        "https://climavis.bg/за-нас/",
+        "https://climavis.bg/контакти/",
+        "https://climavis.bg/доставка/",
+        "https://climavis.bg/общи-условия/",
+        "https://climavis.bg/политика-за-поверителност/"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: VAT number",
+       "found_by": "browser_verification"
+      },
+      {
+       "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/207602577",
+       "source_type": "vies",
+       "current": true,
+       "retrieved_at": "2026-09-23T17:09:03Z",
+       "excerpt": "КЛИМАВИС - ЕООД; жк Тракия Генерал Константин Кисяков №12 ет.6 ап.25 обл.ПЛОВДИВ, гр.ПЛОВДИВ 4023"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "domain": "editshop.bg",
+   "checked_at": "2026-09-23",
+   "discovery": {
+    "source": "NAP public e-shop list",
+    "url": "https://portal.nra.bg/details/online-store-nrareg"
+   },
+   "official": {
+    "nap_declarations": [
+     {
+      "eik": "208475759",
+      "declared_name": "Айви Лайф 9",
+      "declared_domain": "www.editshop.bg",
+      "declared_at": "18.08.2026 13:34:31",
+      "source_type": "nap_register",
+      "url": "https://portal.nra.bg/details/online-store-nrareg",
+      "retrieved_at": "2026-09-24T20:58:54Z"
+     }
+    ],
+    "vies": {
+     "eik": "208475759",
+     "status": "confirmed",
+     "name": "Айви Лайф 9 - ООД",
+     "address": "ул. Риккардо Ваккарини №8 ет.1, офис 6 обл.СОФИЯ, гр.СОФИЯ 1404",
+     "source_type": "vies",
+     "url": "https://ec.europa.eu/taxation_customs/vies/rest-api/ms/BG/vat/208475759",
+     "retrieved_at": "2026-09-23T17:09:06Z"
+    }
+   },
+   "published": {
+    "eik": {
+     "value": "208475759",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://editshop.bg/pages/общи-условия",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "„Айви Лайф 9“ ООД, ЕИК BG208475759",
+       "found_by": "browser_verification"
+      }
+     ],
+     "note": "written in VAT form (BG prefix)"
+    },
+    "legal_name": {
+     "value": "Айви Лайф 9 ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:40Z",
+       "excerpt": "не към плащане. Продължете да пазарувате Общи условия ОБЩА ИНФОРМАЦИЯ Настоящите Общи условия уреждат отношенията между „Айви Лайф 9“ ООД, ЕИК BG208475759, наричано по-долу „EDIT“ , „ние“ , „нас“ или „Търговецът“ , и потребителите на онлайн магазина EDIT. Изпо",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "address": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://editshop.bg/",
+       "pages_checked": [
+        "https://editshop.bg/",
+        "https://editshop.bg/pages/общи-условия",
+        "https://editshop.bg/policies/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "phone": {
+     "value": null,
+     "published": false,
+     "evidence": [
+      {
+       "url": "https://editshop.bg/",
+       "pages_checked": [
+        "https://editshop.bg/",
+        "https://editshop.bg/pages/общи-условия",
+        "https://editshop.bg/policies/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "email": {
+     "value": [
+      "enquiries.editbg@gmail.com"
+     ],
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://editshop.bg/pages/%D0%B4%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%B8-%D0%BF%D0%BB%D0%B0%D1%89%D0%B0%D0%BD%D0%B5",
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:40Z",
+       "excerpt": "та или състоянието на Вашата поръчка, можете да се свържете с нас на: enquiries.editbg@gmail.com Join Edit Newsletter - Get Updates, Offers and Invites. Имейл Политик",
+       "found_by": "research_crawl"
+      }
+     ]
+    },
+    "vat_number": {
+     "value": "BG208475759",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://editshop.bg/pages/общи-условия",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "„Айви Лайф 9“ ООД, ЕИК BG208475759",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    "legal_form": {
+     "value": "ООД",
+     "published": true,
+     "evidence": [
+      {
+       "url": "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F",
+       "source_type": "company_document",
+       "current": true,
+       "retrieved_at": "2026-09-23T16:34:40Z",
+       "excerpt": "не към плащане. Продължете да пазарувате Общи условия ОБЩА ИНФОРМАЦИЯ Настоящите Общи условия уреждат отношенията между „Айви Лайф 9“ ООД, ЕИК BG208475759, наричано по-долу „EDIT“ , „ние“ , „нас“ или „Търговецът“ , и потребителите на онлайн магазина EDIT. Изпо",
+       "found_by": "research_crawl"
+      }
+     ],
+     "note": "derived from the published legal name"
+    }
+   },
+   "pages_checked": [
+    "https://editshop.bg/",
+    "https://editshop.bg/pages/общи-условия",
+    "https://editshop.bg/policies/privacy-policy"
+   ],
+   "shortfalls": [
+    {
+     "code": "NO_ADDRESS",
+     "kind": "shortfall",
+     "fields": [
+      "address"
+     ],
+     "summary_en": "No geographic address is published on any page.",
+     "summary_bg": "Не е публикуван адрес на никоя страница.",
+     "evidence": [
+      {
+       "url": "https://editshop.bg/",
+       "pages_checked": [
+        "https://editshop.bg/",
+        "https://editshop.bg/pages/общи-условия",
+        "https://editshop.bg/policies/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: address",
+       "found_by": "browser_verification"
+      }
+     ]
+    },
+    {
+     "code": "NO_PHONE",
+     "kind": "shortfall",
+     "fields": [
+      "phone"
+     ],
+     "summary_en": "No telephone number is published; only a free-mail address.",
+     "summary_bg": "Не е публикуван телефон; само имейл в безплатна поща.",
+     "evidence": [
+      {
+       "url": "https://editshop.bg/",
+       "pages_checked": [
+        "https://editshop.bg/",
+        "https://editshop.bg/pages/общи-условия",
+        "https://editshop.bg/policies/privacy-policy"
+       ],
+       "source_type": "company_site",
+       "current": true,
+       "retrieved_at": "2026-09-23",
+       "excerpt": "not published: phone",
+       "found_by": "browser_verification"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "removed_examples": [
+  {
+   "domain": "mega-promo-bg.sbs",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:06Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=mega-promo-bg.sbs&type=A",
+    "https://archive.org/wayback/available?url=mega-promo-bg.sbs"
+   ]
+  },
+  {
+   "domain": "luxury-watches24.cfd",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:13Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=luxury-watches24.cfd&type=A",
+    "https://archive.org/wayback/available?url=luxury-watches24.cfd"
+   ]
+  },
+  {
+   "domain": "bg-outlet-sale.icu",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:18Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=bg-outlet-sale.icu&type=A",
+    "https://archive.org/wayback/available?url=bg-outlet-sale.icu"
+   ]
+  },
+  {
+   "domain": "parfum-store.one",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:24Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=parfum-store.one&type=A",
+    "https://archive.org/wayback/available?url=parfum-store.one"
+   ]
+  },
+  {
+   "domain": "elektro-market.bg",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:28Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=elektro-market.bg&type=A",
+    "https://archive.org/wayback/available?url=elektro-market.bg"
+   ]
+  },
+  {
+   "domain": "moda-sofia.shop",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:36Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=moda-sofia.shop&type=A",
+    "https://archive.org/wayback/available?url=moda-sofia.shop"
+   ]
+  },
+  {
+   "domain": "tehnomag-bg.com",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:43Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=tehnomag-bg.com&type=A",
+    "https://archive.org/wayback/available?url=tehnomag-bg.com"
+   ]
+  },
+  {
+   "domain": "detski-igri.eu",
+   "reason": "synthetic example: the domain does not resolve and the Internet Archive has no copy, so no finding can be reproduced",
+   "dns": "NXDOMAIN",
+   "archived_copy": false,
+   "checked_at": "2026-09-23T17:34:50Z",
+   "sources": [
+    "https://cloudflare-dns.com/dns-query?name=detski-igri.eu&type=A",
+    "https://archive.org/wayback/available?url=detski-igri.eu"
+   ]
+  }
+ ],
+ "excluded_candidates": [
+  {
+   "domain": "ele.bg",
+   "reason": "trader details (ЕИК 207465623) are published on the sister domain laptop.bg, which ele.bg links as its terms"
+  },
+  {
+   "domain": "cattleyahome.eu",
+   "reason": "ЕИК 205470828 is published in English ('Identification Code/Number') in the terms"
+  },
+  {
+   "domain": "elixira.bg",
+   "reason": "the terms publish Косара Козметикс ЕООД with VAT number BG205254816, which contains the ЕИК"
+  },
+  {
+   "domain": "cupcoffee.bg",
+   "reason": "the terms publish ФИШИНГ МОЛ 7 ЕООД with BG207871638, which contains the ЕИК"
+  },
+  {
+   "domain": "cohones.beer",
+   "reason": "brand site; the published ЕИК belongs to a different entity than the NAP declaration - ambiguous, not a clear shortfall"
+  },
+  {
+   "domain": "beduende.com",
+   "reason": "the domain now serves a news site, not a shop"
+  },
+  {
+   "domain": "coffee-whiskey.com",
+   "reason": "the domain now serves an English lifestyle blog, not a shop"
+  },
+  {
+   "domain": "eliksirko.com",
+   "reason": "pages are served with broken text encoding; the absence of an ЕИК cannot be verified reliably"
+  },
+  {
+   "domain": "bulclima.com",
+   "reason": "confirmed shortfall (БУЛКЛИМА ЕООД named without ЕИК); not needed for the 20"
+  }
+ ]
+}

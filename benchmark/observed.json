@@ -1,0 +1,2831 @@
+[
+ {
+  "domain": "dobytoys.com",
+  "observed_at": "2026-09-24T21:04:14Z",
+  "triage": {
+   "merchant": {
+    "eik": "123456789",
+    "company_name": "Доби Тойс ООД",
+    "address": "гр. Плевен, ул. Хаджи Димитър 24",
+    "email": "info@dobytoys.com",
+    "phone": "0877888413",
+    "vat_number": null
+   },
+   "sources": {
+    "address": "https://dobytoys.com",
+    "email": "https://dobytoys.com",
+    "phone": "https://dobytoys.com",
+    "eik": "https://dobytoys.com/policies/terms-of-service",
+    "company_name": "https://dobytoys.com/policies/terms-of-service"
+   },
+   "codes": [
+    "EIK_INVALID",
+    "NO_VAT",
+    "EIK_NOT_IN_VAT_REGISTRY"
+   ],
+   "verdict": "suspect",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://dobytoys.com",
+    "https://dobytoys.com/policies/terms-of-service",
+    "https://dobytoys.com/policies/privacy-policy"
+   ],
+   "seconds": 1.9
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "207877153",
+   "confidence": "high",
+   "conflicts": [
+    "name_mismatch",
+    "multiple_identifiers"
+   ],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 2
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://dobytoys.com/",
+    "https://dobytoys.com/policies/terms-of-service",
+    "https://dobytoys.com/policies/privacy-policy"
+   ],
+   "fields": {
+    "eik": {
+     "value": "207877153",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "Доби Тойс ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "Дило Йотов № 12 обл. Ловеч, с. Торос 5790",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 87 788 8413",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 87 788 8413"
+     ]
+    },
+    "email": {
+     "value": "info@dobytoys.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "info@dobytoys.com"
+     ]
+    },
+    "vat_number": {
+     "value": "BG207877153",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "dobytoys.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": "Доби Тойс ООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "medium",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 9.3
+  }
+ },
+ {
+  "domain": "bulbsandleds.com",
+  "observed_at": "2026-09-24T21:04:37Z",
+  "triage": {
+   "merchant": {
+    "eik": "208452258",
+    "company_name": "ОСВЕТЛЕНИЕ БГ ЕООД",
+    "address": "гр. София, ж.к. Гевгелийски, бл. 2",
+    "email": "bulbsandleds.com@gmail.com",
+    "phone": "+359877518591",
+    "vat_number": null
+   },
+   "sources": {
+    "email": "https://bulbsandleds.com",
+    "phone": "https://bulbsandleds.com",
+    "eik": "https://bulbsandleds.com/terms/",
+    "company_name": "https://bulbsandleds.com/terms/",
+    "address": "https://bulbsandleds.com/terms/"
+   },
+   "codes": [
+    "EIK_INVALID",
+    "NO_VAT",
+    "EIK_NOT_IN_VAT_REGISTRY"
+   ],
+   "verdict": "suspect",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://bulbsandleds.com",
+    "https://bulbsandleds.com/about/",
+    "https://bulbsandleds.com/contact/",
+    "https://bulbsandleds.com/terms/",
+    "https://bulbsandleds.com/privacy-policy/"
+   ],
+   "seconds": 6.2
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "208542298",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://bulbsandleds.com/",
+    "https://bulbsandleds.com/about/",
+    "https://bulbsandleds.com/contact/",
+    "https://bulbsandleds.com/terms/",
+    "https://bulbsandleds.com/privacy-policy/",
+    "https://bulbsandleds.com/terms/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "208542298",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "ОСВЕТЛЕНИЕ БГ",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 87 751 8591",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 87 751 8591"
+     ]
+    },
+    "email": {
+     "value": "bulbsandleds.com@gmail.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "bulbsandleds.com@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "not_registered",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "bulbsandleds.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": "ОСВЕТЛЕНИЕ БГ ЕООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "medium",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 27.3
+  }
+ },
+ {
+  "domain": "besteesrock.com",
+  "observed_at": "2026-09-24T21:04:11Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": null,
+    "email": "besteesrock@gmail.com",
+    "phone": null,
+    "vat_number": null
+   },
+   "sources": {
+    "email": "https://besteesrock.com/pages/view/about-us"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_ADDRESS",
+    "NO_PHONE",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://besteesrock.com",
+    "https://besteesrock.com/pages/view/about-us",
+    "https://besteesrock.com/pages/view/contact",
+    "https://besteesrock.com/pages/view/terms-of-service",
+    "https://besteesrock.com/pages/view/privacy-policy"
+   ],
+   "seconds": 1.1
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "202648631",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://besteesrock.com/",
+    "https://besteesrock.com/pages/view/about-us",
+    "https://besteesrock.com/pages/view/contact",
+    "https://besteesrock.com/pages/view/terms-of-service",
+    "https://besteesrock.com/pages/view/privacy-policy"
+   ],
+   "fields": {
+    "eik": {
+     "value": "202648631",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "КОТЪН КИНГС ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "Шипка № 24 ет. 6 обл. София, гр. София 1504",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "email": {
+     "value": "besteesrock@gmail.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "besteesrock@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "value": "BG202648631",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "besteesrock.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 7.2
+  }
+ },
+ {
+  "domain": "biancandfred.com",
+  "observed_at": "2026-09-24T21:04:15Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": null,
+    "email": "biancandfred@gmail.com",
+    "phone": "+359878429243",
+    "vat_number": null
+   },
+   "sources": {
+    "email": "https://biancandfred.com",
+    "phone": "https://biancandfred.com"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_ADDRESS",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://biancandfred.com",
+    "https://biancandfred.com/pages/contact",
+    "https://biancandfred.com/policies/terms-of-service",
+    "https://biancandfred.com/policies/privacy-policy"
+   ],
+   "seconds": 2.2
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "204059304",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://biancandfred.com/",
+    "https://biancandfred.com/pages/contact",
+    "https://biancandfred.com/policies/terms-of-service",
+    "https://biancandfred.com/policies/privacy-policy"
+   ],
+   "fields": {
+    "eik": {
+     "value": "204059304",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "ЕЛАС-АН ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "бул. Княгиня Мария Луиза № 2 обл. София, гр. София 1000",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 87 842 9243",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 87 842 9243"
+     ]
+    },
+    "email": {
+     "value": "biancandfred@gmail.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "biancandfred@gmail.com",
+      "asene@t-online.de"
+     ]
+    },
+    "vat_number": {
+     "value": "BG204059304",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "biancandfred.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 10.0
+  }
+ },
+ {
+  "domain": "bigvip.bg",
+  "observed_at": "2026-09-24T21:04:48Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": "гр. Хасково, ул. „Христо Ботев“ 1",
+    "email": "sales@bigvip.bg",
+    "phone": "0894 / 36 32 89",
+    "vat_number": null
+   },
+   "sources": {
+    "address": "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803",
+    "email": "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803",
+    "phone": "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://www.bigvip.bg/",
+    "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803",
+    "https://www.bigvip.bg/?page_id=1797",
+    "https://www.bigvip.bg/?page_id=1963",
+    "https://www.bigvip.bg/?page_id=3"
+   ],
+   "seconds": 3.1
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "205550384",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://www.bigvip.bg/",
+    "https://www.bigvip.bg/?page_id=1797&_thumbnail_id=1803",
+    "https://www.bigvip.bg/?page_id=1797",
+    "https://www.bigvip.bg/?page_id=1963",
+    "https://www.bigvip.bg/?page_id=3"
+   ],
+   "fields": {
+    "eik": {
+     "value": "205550384",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "СТАНДАРТ 34",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 89 436 3289",
+     "status": "conflicting",
+     "coverage": "conflicting",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 89 436 3289",
+      "+359 700 11 122",
+      "+359 2 915 3518"
+     ]
+    },
+    "email": {
+     "value": "sales@bigvip.bg",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "sales@bigvip.bg"
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "not_registered",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "bigvip.bg",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 33.2
+  }
+ },
+ {
+  "domain": "elanhairboutique.com",
+  "observed_at": "2026-09-24T21:04:40Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": "Диверсо Хеър ЕООД",
+    "address": "Асеновград, ул „Христо Ботев“ №45",
+    "email": "elanhairboutique@gmail.com",
+    "phone": "+359895697787",
+    "vat_number": null
+   },
+   "sources": {
+    "phone": "https://elanhairboutique.com",
+    "address": "https://elanhairboutique.com/za-nas/",
+    "email": "https://elanhairboutique.com/kontakti/",
+    "company_name": "https://elanhairboutique.com/obshhi-usloviya/"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://elanhairboutique.com",
+    "https://elanhairboutique.com/za-nas/",
+    "https://elanhairboutique.com/kontakti/",
+    "https://elanhairboutique.com/obshhi-usloviya/",
+    "https://elanhairboutique.com/poveritelnost/"
+   ],
+   "seconds": 2.0
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "206418542",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://elanhairboutique.com/",
+    "https://elanhairboutique.com/za-nas/",
+    "https://elanhairboutique.com/kontakti/",
+    "https://elanhairboutique.com/obshhi-usloviya/",
+    "https://elanhairboutique.com/poveritelnost/",
+    "https://elanhairboutique.com/kontakti/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "206418542",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "ЕЛЪН ХЕЪР БУТИК",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 89 569 7787",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 89 569 7787",
+      "+359 89 504 0945",
+      "+359 89 924 3838"
+     ]
+    },
+    "email": {
+     "value": "elanhairboutique@gmail.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "elanhairboutique@gmail.com",
+      "sales@elanhairboutique.com"
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "not_registered",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "elanhairboutique.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": "Диверсо Хеър ЕООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "medium",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 24.0
+  }
+ },
+ {
+  "domain": "elrelax.org",
+  "observed_at": "2026-09-24T21:05:22Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": "ул. „Одрин“ 75",
+    "email": null,
+    "phone": "+359885040464",
+    "vat_number": null
+   },
+   "sources": {
+    "address": "https://elrelax.org",
+    "phone": "https://elrelax.org"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_EMAIL",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://elrelax.org",
+    "https://elrelax.org/contact/",
+    "https://elrelax.org/company/",
+    "https://elrelax.org/obshti-usloviq/",
+    "https://elrelax.org/politika-za-poveritelnost/"
+   ],
+   "seconds": 12.4
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "205352858",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://elrelax.org/",
+    "https://elrelax.org/contact/",
+    "https://elrelax.org/company/",
+    "https://elrelax.org/obshti-usloviq/",
+    "https://elrelax.org/politika-za-poveritelnost/",
+    "https://elrelax.org/contact/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "205352858",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "Ел Релакс",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 88 504 0464",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 88 504 0464"
+     ]
+    },
+    "email": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_number": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "not_registered",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "elrelax.org",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 54.3
+  }
+ },
+ {
+  "domain": "elveszett.com",
+  "observed_at": "2026-09-24T21:04:49Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": "Elveszett Ltd.",
+    "address": "ж.к. Люлин 7, бл. 705, вх. В",
+    "email": "info@elveszett.com",
+    "phone": "+359 877 211 226",
+    "vat_number": null
+   },
+   "sources": {
+    "company_name": "https://elveszett.com",
+    "address": "https://elveszett.com",
+    "email": "https://elveszett.com",
+    "phone": "https://elveszett.com/policies/terms-of-service"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://elveszett.com",
+    "https://elveszett.com/pages/about-us",
+    "https://elveszett.com/pages/contact",
+    "https://elveszett.com/policies/terms-of-service",
+    "https://elveszett.com/policies/privacy-policy"
+   ],
+   "seconds": 2.1
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "208598391",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://elveszett.com/",
+    "https://elveszett.com/pages/about-us",
+    "https://elveszett.com/pages/contact",
+    "https://elveszett.com/policies/terms-of-service",
+    "https://elveszett.com/policies/privacy-policy"
+   ],
+   "fields": {
+    "eik": {
+     "value": "208598391",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "ЕЛВЕСЗЕТ",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 87 721 1226",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 87 721 1226"
+     ]
+    },
+    "email": {
+     "value": "info@elveszett.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "info@elveszett.com"
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "not_registered",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "elveszett.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 10.1
+  }
+ },
+ {
+  "domain": "carpethouse-bg.com",
+  "observed_at": "2026-09-24T21:05:12Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": "ВЕНИС 21 ООД",
+    "address": "бул. „Александър Малинов“ 16, 1784 Младост 1, София",
+    "email": "carpethousebg@gmail.com",
+    "phone": "+359899943328",
+    "vat_number": null
+   },
+   "sources": {
+    "address": "https://carpethouse-bg.com/contacts/",
+    "phone": "https://carpethouse-bg.com/contacts/",
+    "company_name": "https://carpethouse-bg.com/terms/",
+    "email": "https://carpethouse-bg.com/terms/"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://carpethouse-bg.com",
+    "https://carpethouse-bg.com/about-us/",
+    "https://carpethouse-bg.com/contacts/",
+    "https://carpethouse-bg.com/terms/",
+    "https://carpethouse-bg.com/privacy-policy/"
+   ],
+   "seconds": 1.2
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "130846605",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://carpethouse-bg.com/",
+    "https://carpethouse-bg.com/about-us/",
+    "https://carpethouse-bg.com/contacts/",
+    "https://carpethouse-bg.com/terms/",
+    "https://carpethouse-bg.com/privacy-policy/",
+    "https://carpethouse-bg.com/terms/",
+    "https://carpethouse-bg.com/wp-login.php?redirect_to=https%3A%2F%2Fcarpethouse-bg.com%2Fterms",
+    "https://carpethouse-bg.com/cookies/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "130846605",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "Венис 21 ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "жк Младост-1 бул. Александър Малинов № 16, магазин Carpethouse обл. София, гр. София 1750",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 89 994 3328",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 89 994 3328",
+      "+359 89 994 3325",
+      "+359 89 994 3324",
+      "+359 89 994 3327"
+     ]
+    },
+    "email": {
+     "value": "carpethousebg@gmail.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "carpethousebg@gmail.com",
+      "orders@carpethouse-bg.com"
+     ]
+    },
+    "vat_number": {
+     "value": "BG130846605",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "carpethouse-bg.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": "ВЕНИС 21 ООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "medium",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 30.5
+  }
+ },
+ {
+  "domain": "chiraque.eu",
+  "observed_at": "2026-09-24T21:05:28Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": null,
+    "email": null,
+    "phone": null,
+    "vat_number": null
+   },
+   "sources": {},
+   "codes": [
+    "NO_EIK",
+    "NO_ADDRESS",
+    "NO_CONTACT",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://chiraque.eu",
+    "https://chiraque.eu/about-chiraque/"
+   ],
+   "seconds": 3.7
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "202191944",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://chiraque.eu/",
+    "https://chiraque.eu/about-chiraque/",
+    "https://chiraque.eu/contact-us/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "202191944",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "Асеневци трейд ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "Еровете № 13 ет. 2 ап. 5 обл. София, гр. София 1618",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "email": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_number": {
+     "value": "BG202191944",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "chiraque.eu",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 36.9
+  }
+ },
+ {
+  "domain": "chunche-bg.com",
+  "observed_at": "2026-09-24T21:04:55Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": "Чунче ЕООД",
+    "address": "гр. София, ул. Околовръстен път 253",
+    "email": "office@chunche-bg.com",
+    "phone": "+359884243880",
+    "vat_number": null
+   },
+   "sources": {
+    "company_name": "https://chunche-bg.com",
+    "phone": "https://chunche-bg.com",
+    "address": "https://chunche-bg.com/index.php?route=information/contact",
+    "email": "https://chunche-bg.com/index.php?route=information/contact"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://chunche-bg.com",
+    "https://chunche-bg.com/index.php?route=information/contact",
+    "https://chunche-bg.com/za-nas",
+    "https://chunche-bg.com/obshti-usloviya",
+    "https://chunche-bg.com/gdpr-nastroiki"
+   ],
+   "seconds": 1.4
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "131467896",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://chunche-bg.com/",
+    "https://chunche-bg.com/index.php?route=information/contact",
+    "https://chunche-bg.com/za-nas",
+    "https://chunche-bg.com/obshti-usloviya"
+   ],
+   "fields": {
+    "eik": {
+     "value": "131467896",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "ЧУНЧЕ ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "жк . Околовръстен път № 253 бл. . вх. . ет. . ап. . обл. София, гр. София 1766",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 88 424 3880",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 88 424 3880",
+      "+359 88 826 4902"
+     ]
+    },
+    "email": {
+     "value": "office@chunche-bg.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "office@chunche-bg.com",
+      "sales@chunche-bg.com"
+     ]
+    },
+    "vat_number": {
+     "value": "BG131467896",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "chunche-bg.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": "Чунче ЕООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "medium",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 5.1
+  }
+ },
+ {
+  "domain": "concretta.eu",
+  "observed_at": "2026-09-24T21:05:01Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": "Concreta 2017 Ltd.",
+    "address": null,
+    "email": "info@concretta.eu",
+    "phone": "+359 888 299 732",
+    "vat_number": null
+   },
+   "sources": {
+    "email": "https://concretta.eu",
+    "phone": "https://concretta.eu",
+    "company_name": "https://concretta.eu/privacy-policy/"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_ADDRESS",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://concretta.eu",
+    "https://concretta.eu/about-us/",
+    "https://concretta.eu/contact/",
+    "https://concretta.eu/terms-conditions/",
+    "https://concretta.eu/privacy-policy/"
+   ],
+   "seconds": 0.9
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "204559054",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://concretta.eu/",
+    "https://concretta.eu/about-us/",
+    "https://concretta.eu/contact/",
+    "https://concretta.eu/terms-conditions/",
+    "https://concretta.eu/privacy-policy/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "204559054",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "КОНКРЕТА 2017 ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "ул. Йордан Бакалов- Стубел № 24а обл. София, гр. София 1404",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 88 829 9732",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 88 829 9732"
+     ]
+    },
+    "email": {
+     "value": "info@concretta.eu",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "info@concretta.eu"
+     ]
+    },
+    "vat_number": {
+     "value": "BG204559054",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "concretta.eu",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "concretta.eu"
+     ]
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": "204559054",
+    "name": "КОНКРЕТА 2017 ЕООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "high",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 5.0
+  }
+ },
+ {
+  "domain": "kornelv.com",
+  "observed_at": "2026-09-24T21:05:22Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": "Корнел В ЕООД",
+    "address": "ул. „Поручик Христо Топракчиев“ 11",
+    "email": "eshop@kornelv.com",
+    "phone": "02 944 2001",
+    "vat_number": null
+   },
+   "sources": {
+    "company_name": "https://www.kornelv.com/",
+    "address": "https://www.kornelv.com/",
+    "email": "https://www.kornelv.com/",
+    "phone": "https://www.kornelv.com/content/4-za-nas"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://www.kornelv.com/",
+    "https://www.kornelv.com/kontakt-s-nas",
+    "https://www.kornelv.com/content/4-za-nas",
+    "https://www.kornelv.com/content/3-obshti-usloviya",
+    "https://www.kornelv.com/authentication?back=identity"
+   ],
+   "seconds": 6.0
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "130334366",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://www.kornelv.com/",
+    "https://www.kornelv.com/kontakt-s-nas",
+    "https://www.kornelv.com/content/4-za-nas",
+    "https://www.kornelv.com/content/3-obshti-usloviya",
+    "https://www.kornelv.com/authentication?back=identity"
+   ],
+   "fields": {
+    "eik": {
+     "value": "130334366",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "КОРНЕЛ В ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "ул. Банат 7 обл. София, гр. София 1407",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 2 944 2001",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 2 944 2001",
+      "+359 88 666 6814"
+     ]
+    },
+    "email": {
+     "value": "eshop@kornelv.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "eshop@kornelv.com"
+     ]
+    },
+    "vat_number": {
+     "value": "BG130334366",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "kornelv.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": "Корнел В ЕООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "medium",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 14.4
+  }
+ },
+ {
+  "domain": "davidtoys.eu",
+  "observed_at": "2026-09-24T21:05:37Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": null,
+    "email": "office@davidtoys.eu",
+    "phone": "+359892357777",
+    "vat_number": null
+   },
+   "sources": {
+    "email": "https://davidtoys.eu",
+    "phone": "https://davidtoys.eu"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_ADDRESS",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://davidtoys.eu",
+    "https://davidtoys.eu/pages/contact",
+    "https://davidtoys.eu/policies/contact-information",
+    "https://davidtoys.eu/policies/terms-of-service",
+    "https://davidtoys.eu/policies/privacy-policy"
+   ],
+   "seconds": 1.9
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "205877717",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://davidtoys.eu/",
+    "https://davidtoys.eu/pages/contact",
+    "https://davidtoys.eu/policies/contact-information",
+    "https://davidtoys.eu/policies/terms-of-service",
+    "https://davidtoys.eu/policies/privacy-policy"
+   ],
+   "fields": {
+    "eik": {
+     "value": "205877717",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "ДЪ ГРИЙН БЕЪР ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "ул. Академик Стефан Младенов № 46 вх. Д ет. 4 ап. 401 обл. София, гр. София 1700",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 89 235 7777",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 89 235 7777"
+     ]
+    },
+    "email": {
+     "value": "office@davidtoys.eu",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "office@davidtoys.eu"
+     ]
+    },
+    "vat_number": {
+     "value": "BG205877717",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "davidtoys.eu",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 23.0
+  }
+ },
+ {
+  "domain": "detetovteb.com",
+  "observed_at": "2026-09-24T21:05:29Z",
+  "triage": {
+   "merchant": {
+    "eik": "148089312",
+    "company_name": "Parashkevovi Company Ltd.",
+    "address": "Северна промишлена зона Младост, ул. „Петко Стайнов“ 3, 9009 Варна",
+    "email": "jugo_vn@abv.bg",
+    "phone": "+35952870102",
+    "vat_number": null
+   },
+   "sources": {
+    "phone": "https://detetovteb.com",
+    "eik": "https://detetovteb.com/za-nas",
+    "company_name": "https://detetovteb.com/za-nas",
+    "email": "https://detetovteb.com/za-nas",
+    "address": "https://detetovteb.com/index.php?route=information/contact"
+   },
+   "codes": [
+    "NO_VAT",
+    "EIK_CONFIRMED"
+   ],
+   "verdict": "ok",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://detetovteb.com",
+    "https://detetovteb.com/za-nas",
+    "https://detetovteb.com/index.php?route=information/contact",
+    "https://detetovteb.com/usloviya-za-polzvane",
+    "https://detetovteb.com/lichni-danni"
+   ],
+   "seconds": 2.2
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "204565892",
+   "confidence": "high",
+   "conflicts": [
+    "multiple_identifiers"
+   ],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 2
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://detetovteb.com/",
+    "https://detetovteb.com/za-nas",
+    "https://detetovteb.com/index.php?route=information/contact",
+    "https://detetovteb.com/usloviya-za-polzvane",
+    "https://detetovteb.com/lichni-danni"
+   ],
+   "fields": {
+    "eik": {
+     "value": "204565892",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "КАПИНКАТА",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": null,
+     "status": "unavailable",
+     "coverage": "unavailable_to_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 52 870 102",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 52 870 102",
+      "+359 89 832 2127"
+     ]
+    },
+    "email": {
+     "value": "jugo_vn@abv.bg",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "jugo_vn@abv.bg"
+     ]
+    },
+    "vat_number": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "not_registered",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "detetovteb.com",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": "148089312",
+    "name": "ПАРАШКЕВОВИ ООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "high",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 5.3
+  }
+ },
+ {
+  "domain": "danishgranola.bg",
+  "observed_at": "2026-09-24T21:05:50Z",
+  "triage": {
+   "merchant": {
+    "eik": "207654830",
+    "company_name": "Органик Бранд ЕООД",
+    "address": null,
+    "email": "zdr@danishgranola.bg",
+    "phone": null,
+    "vat_number": "BG207654830"
+   },
+   "sources": {
+    "company_name": "https://www.danishgranola.bg/",
+    "email": "https://www.danishgranola.bg/",
+    "vat_number": "https://www.danishgranola.bg/",
+    "eik": "https://www.danishgranola.bg/"
+   },
+   "codes": [
+    "NO_ADDRESS",
+    "NO_PHONE",
+    "COMPANY_INCONSISTENT",
+    "EIK_CONFIRMED"
+   ],
+   "verdict": "suspect",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://www.danishgranola.bg/",
+    "https://www.danishgranola.bg/pages/kontact",
+    "https://www.danishgranola.bg/pages/uber-uns",
+    "https://www.danishgranola.bg/pages/handels-lieferbedingungen",
+    "https://www.danishgranola.bg/pages/datenschutzbestimmungen"
+   ],
+   "seconds": 4.5
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "207654830",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://www.danishgranola.bg/",
+    "https://www.danishgranola.bg/pages/kontact",
+    "https://www.danishgranola.bg/pages/uber-uns",
+    "https://www.danishgranola.bg/pages/handels-lieferbedingungen",
+    "https://www.danishgranola.bg/pages/datenschutzbestimmungen"
+   ],
+   "fields": {
+    "eik": {
+     "value": "207654830",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "Органик Бранд ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "ул. Братя Миладинови № 12 ет. 1 обл. София, гр. София 1000",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "email": {
+     "value": "zdr@danishgranola.bg",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "zdr@danishgranola.bg",
+      "hallo@danishgranolacompany.de",
+      "hello@danishgranolacompany.de"
+     ]
+    },
+    "vat_number": {
+     "value": "BG207654830",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "BG207654830"
+     ]
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "danishgranola.bg",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "danishgranola.bg"
+     ]
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": "207654830",
+    "name": "Органик Бранд ЕООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "high",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 23.1
+  }
+ },
+ {
+  "domain": "detski-magazin.bg",
+  "observed_at": "2026-09-24T21:06:03Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": "Панколита 2 ООД",
+    "address": "гр.Варна ул.Шипка № 2",
+    "email": "pankolita@abv.bg",
+    "phone": "0898458421",
+    "vat_number": null
+   },
+   "sources": {
+    "address": "https://detski-magazin.bg/contact/",
+    "email": "https://detski-magazin.bg/contact/",
+    "phone": "https://detski-magazin.bg/contact/",
+    "company_name": "https://detski-magazin.bg/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://detski-magazin.bg",
+    "https://detski-magazin.bg/contact/",
+    "https://detski-magazin.bg/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/",
+    "https://detski-magazin.bg/privacy-policy/"
+   ],
+   "seconds": 5.0
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "202965911",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://detski-magazin.bg/",
+    "https://detski-magazin.bg/contact/",
+    "https://detski-magazin.bg/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/",
+    "https://detski-magazin.bg/privacy-policy/",
+    "https://detski-magazin.bg/contact/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "202965911",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "ПАНКОЛИТА 2 ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "ул. Проф.Асен Кисилинчев № 7 обл. Шумен, с. Царев Брод 9747",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 89 845 8421",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 89 845 8421"
+     ]
+    },
+    "email": {
+     "value": "pankolita@abv.bg",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "pankolita@abv.bg"
+     ]
+    },
+    "vat_number": {
+     "value": "BG202965911",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "detski-magazin.bg",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": "Панколита 2 ООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "medium",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 29.2
+  }
+ },
+ {
+  "domain": "compartido.bg",
+  "observed_at": "2026-09-24T21:07:07Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": "гр. София, Бул. Скопие 1, Кауфланд",
+    "email": "hello@compartido.bg",
+    "phone": null,
+    "vat_number": null
+   },
+   "sources": {
+    "address": "https://compartido.bg",
+    "email": "https://compartido.bg"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_PHONE",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://compartido.bg",
+    "https://compartido.bg/privacy-policy/"
+   ],
+   "seconds": 15.2
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "206708894",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://compartido.bg/",
+    "https://compartido.bg/privacy-policy/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "206708894",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "КОМПАРТИДО ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "Георги Райчев № 5 обл. София, гр. София 1700",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "email": {
+     "value": "hello@compartido.bg",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "hello@compartido.bg"
+     ]
+    },
+    "vat_number": {
+     "value": "BG206708894",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "compartido.bg",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 82.5
+  }
+ },
+ {
+  "domain": "climavis.bg",
+  "observed_at": "2026-09-24T21:05:52Z",
+  "triage": {
+   "merchant": {
+    "eik": null,
+    "company_name": null,
+    "address": "гр.Пловдив ул.Чардафон 2",
+    "email": "info@climavis.bg",
+    "phone": "0879-444-169",
+    "vat_number": null
+   },
+   "sources": {
+    "address": "https://climavis.bg",
+    "email": "https://climavis.bg",
+    "phone": "https://climavis.bg"
+   },
+   "codes": [
+    "NO_EIK",
+    "NO_COMPANY",
+    "NO_VAT"
+   ],
+   "verdict": "noncompliant",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://climavis.bg",
+    "https://climavis.bg/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/",
+    "https://climavis.bg/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/",
+    "https://climavis.bg/%d0%be%d0%b1%d1%89%d0%b8-%d1%83%d1%81%d0%bb%d0%be%d0%b2%d0%b8%d1%8f/",
+    "https://climavis.bg/%d0%bf%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b0-%d0%b7%d0%b0-%d0%bf%d0%be%d0%b2%d0%b5%d1%80%d0%b8%d1%82%d0%b5%d0%bb%d0%bd%d0%be%d1%81%d1%82/"
+   ],
+   "seconds": 2.5
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "207602577",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://climavis.bg/",
+    "https://climavis.bg/%d0%b7%d0%b0-%d0%bd%d0%b0%d1%81/",
+    "https://climavis.bg/%d0%ba%d0%be%d0%bd%d1%82%d0%b0%d0%ba%d1%82%d0%b8/",
+    "https://climavis.bg/%d0%be%d0%b1%d1%89%d0%b8-%d1%83%d1%81%d0%bb%d0%be%d0%b2%d0%b8%d1%8f/",
+    "https://climavis.bg/%d0%bf%d0%be%d0%bb%d0%b8%d1%82%d0%b8%d0%ba%d0%b0-%d0%b7%d0%b0-%d0%bf%d0%be%d0%b2%d0%b5%d1%80%d0%b8%d1%82%d0%b5%d0%bb%d0%bd%d0%be%d1%81%d1%82/"
+   ],
+   "fields": {
+    "eik": {
+     "value": "207602577",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_name": {
+     "value": "КЛИМАВИС ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "legal_form": {
+     "value": "ЕООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "registered_address": {
+     "value": "жк Тракия Генерал Константин Кисяков № 12 ет. 6 ап. 25 обл. Пловдив, гр. Пловдив 4023",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": "+359 87 944 4169",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "+359 87 944 4169",
+      "+359 87 944 469"
+     ]
+    },
+    "email": {
+     "value": "info@climavis.bg",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "info@climavis.bg"
+     ]
+    },
+    "vat_number": {
+     "value": "BG207602577",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "climavis.bg",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": null,
+    "name": null,
+    "basis": null,
+    "company_identified": false,
+    "confidence": "insufficient",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 12.5
+  }
+ },
+ {
+  "domain": "editshop.bg",
+  "observed_at": "2026-09-24T21:06:10Z",
+  "triage": {
+   "merchant": {
+    "eik": "208475759",
+    "company_name": "Айви Лайф 9 ООД",
+    "address": null,
+    "email": "enquiries.editbg@gmail.com",
+    "phone": null,
+    "vat_number": "BG208475759"
+   },
+   "sources": {
+    "eik": "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F",
+    "company_name": "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F",
+    "email": "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F",
+    "vat_number": "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F"
+   },
+   "codes": [
+    "NO_ADDRESS",
+    "NO_PHONE",
+    "EIK_CONFIRMED"
+   ],
+   "verdict": "suspect",
+   "reachable": true,
+   "refused": false,
+   "pages": [
+    "https://editshop.bg",
+    "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F"
+   ],
+   "seconds": 1.4
+  },
+  "domaincheck": {
+   "error": null,
+   "company_identified": true,
+   "eik": "208475759",
+   "confidence": "high",
+   "conflicts": [],
+   "nap": {
+    "status": "available",
+    "outcome": "evidence_found",
+    "url": "https://portal.nra.bg/details/online-store-nrareg",
+    "declarations": 1
+   },
+   "fetch_status": "available",
+   "pages": [
+    "https://editshop.bg/",
+    "https://editshop.bg/pages/%D0%BE%D0%B1%D1%89%D0%B8-%D1%83%D1%81%D0%BB%D0%BE%D0%B2%D0%B8%D1%8F"
+   ],
+   "fields": {
+    "eik": {
+     "value": "208475759",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "208475759"
+     ]
+    },
+    "legal_name": {
+     "value": "Айви Лайф 9 ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "Айви Лайф 9 ООД"
+     ]
+    },
+    "legal_form": {
+     "value": "ООД",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "ООД"
+     ]
+    },
+    "registered_address": {
+     "value": "ул. Риккардо Ваккарини № 8 ет. 1, офис 6 обл. София, гр. София 1404",
+     "status": "corroborated",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "phone": {
+     "value": null,
+     "status": "not_found",
+     "coverage": "not_found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "email": {
+     "value": "enquiries.editbg@gmail.com",
+     "status": "published",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "enquiries.editbg@gmail.com"
+     ]
+    },
+    "vat_number": {
+     "value": "BG208475759",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "vat_status": {
+     "value": "valid",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": false,
+     "site_values": []
+    },
+    "domain_association": {
+     "value": "editshop.bg",
+     "status": "verified",
+     "coverage": "found_by_deterministic_tooling",
+     "disclosed_by_site": true,
+     "site_values": [
+      "editshop.bg"
+     ]
+    }
+   },
+   "ai_fallback": {
+    "enabled": false,
+    "requests": 0,
+    "fields": {},
+    "note": "disabled"
+   },
+   "without_nap": {
+    "eik": "208475759",
+    "name": "Айви Лайф 9 ООД",
+    "basis": "company_source",
+    "company_identified": true,
+    "confidence": "high",
+    "candidate": null,
+    "error": null
+   },
+   "seconds": 19.1
+  }
+ }
+]

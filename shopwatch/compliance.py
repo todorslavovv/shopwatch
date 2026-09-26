@@ -21,13 +21,15 @@ company exists — that requires the Commercial Register (later milestone).
 
 from __future__ import annotations
 
+import re
+
 from shopwatch.eik import validate_eik
 
 _OK_MAX = 19
 _SUSPECT_MAX = 49
 
 
-def assess(merchant: dict) -> dict:
+def assess(merchant: dict, registry: dict | None = None, *, company_names=()) -> dict:
     """Score a merchant dict as produced by extract_merchant().
 
     Returns {"score": 0-100, "verdict": "ok"|"suspect"|"noncompliant",
@@ -43,6 +45,7 @@ def assess(merchant: dict) -> dict:
         findings.append({"code": code, "severity": severity, "message": message})
         score += weight
 
+    reg = (registry or {}).get("status")
     eik = merchant.get("eik")
     if not eik:
         add(
@@ -62,7 +65,8 @@ def assess(merchant: dict) -> dict:
             )
 
     if not merchant.get("address"):
-        add("NO_ADDRESS", "warning", "No business address published.", 20)
+        add("NO_ADDRESS", "warning",
+            "No business address with a street and number published.", 20)
 
     email = merchant.get("email")
     phone = merchant.get("phone")
@@ -74,7 +78,18 @@ def assess(merchant: dict) -> dict:
         add("NO_PHONE", "warning", "No phone published (email present).", 10)
 
     if not merchant.get("company_name"):
-        add("NO_COMPANY", "warning", "No company name published.", 10)
+        add("NO_COMPANY", "warning",
+            "No company name with its legal form (ООД, ЕООД, АД...) published.", 10)
+
+    # "Органик Бранд ЕООД" in the footer, "Органик Бранд ООД" in the privacy policy: the
+    # trader's identity is disclosed inconsistently, whichever of the two is right.
+    distinct: dict[str, str] = {}
+    for n in company_names:
+        distinct.setdefault(" ".join(re.findall(r"\w+", n.casefold())), n)
+    if len(distinct) > 1:
+        add("COMPANY_INCONSISTENT", "warning",
+            "Different company names or legal forms on different pages: "
+            + "; ".join(list(distinct.values())[:3]) + ".", 10)
 
     if not merchant.get("vat_number"):
         add(
@@ -83,6 +98,23 @@ def assess(merchant: dict) -> dict:
             "No VAT number published (informational: not required for all traders).",
             0,
         )
+
+    if reg == "confirmed":
+        # A registry hit does not lower an otherwise-earned score; it records only that
+        # the identifier resolves to a real, VAT-registered trader.
+        findings.append({"code": "EIK_CONFIRMED", "severity": "info",
+                         "message": "Identifier confirmed in the EU VAT registry."})
+    elif reg == "not_found" and eik:
+        # Weight 0, deliberately. VIES holds VAT-registered traders only, so a shop
+        # below the registration threshold is legitimately absent. Scoring this would
+        # punish exactly the small legitimate traders the tool must not accuse.
+        findings.append({"code": "EIK_NOT_IN_VAT_REGISTRY", "severity": "info",
+                         "message": "Not in the EU VAT registry. Expected for traders "
+                                    "below the VAT threshold; not evidence of fraud."})
+    elif reg == "unavailable" and eik:
+        findings.append({"code": "REGISTRY_UNAVAILABLE", "severity": "info",
+                         "message": "The VAT registry could not be reached, so "
+                                    "existence was not verified."})
 
     score = max(0, min(100, score))
     if score <= _OK_MAX:

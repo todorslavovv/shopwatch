@@ -26,6 +26,7 @@ EIK_LABELS = (
     "е.и.к.",
     "булстат",
     "идентификационен номер",
+    "identification code",
     "еик",
     "uic",
 )
@@ -143,7 +144,7 @@ def _clean_vat_candidate(raw: str) -> str | None:
 
 # Bulgarian legal-form suffixes (compared casefolded, whole-token only).
 _LEGAL_FORMS = frozenset(
-    ["еоод", "оод", "ад", "еад", "ет", "кд", "кда", "сд"]
+    ["еоод", "оод", "ад", "еад", "ет", "кд", "кда", "сд", "ltd"]
 )
 
 _QUOTE_CHARS = "\"'«»„“”‘’`"
@@ -156,7 +157,7 @@ _BULLETS = "\"'«»„“”‘’·•\\-–—*№ \t"
 _NAME_WORD = r"[а-яa-z][а-яa-z'\-]{0,29}"
 _RE_UNLABELLED_ADDR = re.compile(
     r"(?:гр\.|град|с\.|село)"
-    r"\s+" + _NAME_WORD
+    r"\s*" + _NAME_WORD
     + r"(?:\s+" + _NAME_WORD + r")?"
     + r"(?:\s+" + _NAME_WORD + r")?"
     + r"[\s,;]{1,10}"
@@ -221,6 +222,99 @@ def _is_only_legal_form(value: str) -> bool:
     return core.casefold() in _LEGAL_FORMS
 
 
+_FORM_ALT = r"ЕООД|ЕАД|ООД|АД|ЕТ|КДА|КД|СД|EOOD|OOD|EAD|AD|Ltd\.?|LTD\.?"
+_RE_NAME_FORM = re.compile(
+    r"^[\s*•·\-–—" + _QUOTE_CHARS + r"]*([А-ЯA-Z0-9" + _QUOTE_CHARS + r"][^,;:\n]{0,80}?)"
+    r"[\s\-–]*(?<![^\W\d_])(" + _FORM_ALT + r")(?![^\W\d_])", re.IGNORECASE)
+_RE_ET_FIRST = re.compile(r"^[\s*•·]*ЕТ\s+([" + _QUOTE_CHARS + r"]?[А-ЯA-Z][^,;:\n]{1,60}?)\s*(?:[,;:\n]|$)")
+_ADDR_MARK = re.compile(r"(?i)(гр\.|град|ул\.|бул\.|ж\.?к\.?|кв\.|с\.|обл|област|шосе|път|"
+                        r"площад|пл\.|зона|бл\.|str\.|street|blvd|ul\.|bul\.)")
+
+
+_CREDIT = re.compile(r"(?i)designed by|developed by|powered by|created by|made by|website by|"
+                     r"изработ|уеб дизайн|разработ|хостинг|hosting")
+
+
+def _company_value(raw: str | None) -> str | None:
+    """The name up to and including its legal form, or None.
+
+    A label is followed by prose as often as by a name ("Дружеството не носи
+    отговорност...", "Company: we ship worldwide"). Without a legal form it is not a
+    company name, and accepting it hides a missing company identity.
+    """
+    if _CREDIT.search(raw or ""):               # the web agency's credit, not the trader
+        return None
+    et = _RE_ET_FIRST.match(raw or "")          # sole trader: "ЕТ „Иван Петров - 67“"
+    if et:
+        return re.sub(r"\s+", " ", "ЕТ " + "".join(c for c in et.group(1) if c not in _QUOTE_CHARS)).strip()
+    m = _RE_NAME_FORM.match(raw or "")
+    if not m or _is_only_legal_form(m.group(1)):
+        return None
+    # The name is the capitalised run just before the form: "е собственост на Диверсо
+    # Хеър ЕООД" -> "Диверсо Хеър ЕООД".
+    run: list[str] = []
+    for tok in reversed(m.group(1).split()):
+        core = tok.strip(_QUOTE_CHARS + "-–")
+        if not core or not (core[0].isupper() or core[0].isdigit()):
+            break
+        run.insert(0, tok)
+    if not run or len(run) > 8:
+        return None
+    name = "".join(c for c in " ".join(run) if c not in _QUOTE_CHARS)
+    return re.sub(r"\s+", " ", f"{name.strip(' -–')} {m.group(2)}")
+
+
+def _address_value(raw: str | None) -> str | None:
+    """A place, not a sentence: a number, a street or settlement marker, and short."""
+    # "и адрес на управление: гр. София..." -> "гр. София..."
+    a = re.sub(r"(?is)^.{0,40}?(?:седалище\s+и\s+)?адрес(?:\s+на\s+управление)?\s*[:\-–]\s*",
+               "", (raw or "").strip()).strip()
+    if not a or a[0] in ",.;:" or not 8 <= len(a) <= 200 or len(a.split()) > 18:
+        return None
+    return a if re.search(r"\d", a) and _ADDR_MARK.search(a) else None
+
+
+# A company named in a sentence, accepted only where the sentence says it is the
+# trader: "е собственост на X ЕООД", "Общи условия X ООД уведомява", "X ООД, ЕИК ...",
+# "„X“ ООД е създадена ...". A courier in the delivery terms ("чрез Еконт Експрес ООД")
+# has none of these.
+_RE_NAMED = re.compile(
+    r"([" + _QUOTE_CHARS + r"]?[А-ЯA-Z][^\s,;:.]*(?:\s+[" + _QUOTE_CHARS + r"]?[А-ЯA-Z0-9][^\s,;:.]*){0,5})"
+    r"[\s\-–]*(ЕООД|ЕАД|ООД|АД|ЕТ|КДА|КД|СД|Ltd\.?|LTD\.?)(?![^\W\d_])")
+_CTX_BEFORE = ("собственост", "търговец", "доставчик", "администратор", "оператор", "продавач",
+               "общи условия", "дружеството", "между", "©", "part of", "operated by",
+               "owned by", "trading as")
+_CTX_AFTER = re.compile(r"(?i)^[\s,\-–]{0,4}(?:еик|булстат|ддс|ин по|vat|uic|е създаден|е собственик|"
+                        r"е регистриран|регистриран|със седалище)")
+
+
+def _contextual_company(chunk: str) -> str | None:
+    for m in _RE_NAMED.finditer(chunk[:2000]):
+        before = chunk[max(0, m.start() - 60):m.start()].casefold()
+        if any(w in before for w in _CTX_BEFORE) or _CTX_AFTER.match(chunk[m.end():]):
+            return _company_value(m.group(0))
+    return None
+
+
+_RE_ADDR_ANY = re.compile(
+    r"(?:(?:\d{4}\s+)?(?:гр\.|град|с\.)\s*[А-Я][а-я]+[\s,]+)?(?:ж\.?к\.?|ул\.|бул\.)\s*"
+    r"[" + _QUOTE_CHARS + r"]?[А-Я0-9][^,\n]{1,40}?\s*№?\s*\d+[А-Яа-я]?(?:,\s*(?:бл|вх|ет|ап|офис)\.?\s*[\wА-я]+){0,4}")
+
+
+def _contact_block_address(chunk: str, context: str = "") -> str | None:
+    """"Elveszett ж.к. Люлин 7, бл. 705, вх. В" in a block that also gives an e-mail or
+    phone (here or in the elements around it). The contact context is what separates it
+    from a courier office mentioned in prose."""
+    ctx = chunk + " " + context
+    if not (_RE_EMAIL.search(ctx) or _RE_INTL_PHONE.search(ctx)):
+        return None
+    m = _RE_ADDR_ANY.search(chunk)
+    return m.group(0).strip(" ,") if m else None
+
+
+_RE_INTL_PHONE = re.compile(r"(?<![\d+])\+359[\s\-/().]{0,3}\d(?:[\s\-/().]{0,2}\d){7,8}(?!\d)")
+
+
 _RE_EMAIL = re.compile(
     r"[A-Za-z0-9._%+\-]{1,64}@[A-Za-z0-9.\-]{1,253}\.[A-Za-z]{2,10}"
 )
@@ -240,6 +334,27 @@ def _label_alternation(labels: tuple[str, ...]) -> str:
     return "|".join(re.escape(l) for l in ordered)
 
 
+_LABEL_RX: dict[str, re.Pattern] = {}
+
+
+def _label_rx(label: str) -> re.Pattern:
+    """A label as a whole word: "uic" must not match inside "Quickview", nor "тел" inside
+    "потребител", nor "адрес" inside "адреса за фактуриране". Digits may touch it
+    ("ЕИК123456789")."""
+    if label not in _LABEL_RX:
+        _LABEL_RX[label] = re.compile(r"(?<![^\W\d_])" + re.escape(label.casefold())
+                                      + r"(?![^\W\d_])")
+    return _LABEL_RX[label]
+
+
+def _label_at_end(chunk: str, labels: tuple[str, ...]) -> bool:
+    """"... in the Commercial register, UIC" with the number in the next element."""
+    low = chunk.casefold().strip()
+    if len(low) <= 40 and low.endswith(":") and any(_label_rx(l).match(low) for l in labels):
+        return True
+    return any(re.search(_label_rx(lab).pattern + r"\s*[:\-–—]{0,3}$", low) for lab in labels)
+
+
 def _inline_search(chunk: str, labels: tuple[str, ...]) -> str | None:
     """Return the value after a "label ... value" occurrence in chunk.
 
@@ -255,10 +370,10 @@ def _inline_search(chunk: str, labels: tuple[str, ...]) -> str | None:
     low = chunk.casefold()
     best: tuple[int, str] | None = None
     for lab in labels:
-        folded = lab.casefold()
-        pos = low.find(folded)
-        if pos == -1:
+        m = _label_rx(lab).search(low)
+        if m is None:
             continue
+        pos = m.start()
         if best is None or pos < best[0] or (pos == best[0] and len(lab) > len(best[1])):
             best = (pos, lab)
     if best is None:
@@ -402,6 +517,10 @@ def extract_merchant(html: str) -> dict:
     }
 
     def set_field(field: str, value: str | None, evidence: str) -> None:
+        if field == "company_name":
+            value = _company_value(value)
+        elif field == "address":
+            value = _address_value(value)
         if value and result[field] is None:
             result[field] = value
             result["evidence"][field] = _snippet(evidence)
@@ -479,8 +598,9 @@ def extract_merchant(html: str) -> dict:
                 cleaner = _clean_vat_candidate
             else:
                 cleaner = None
+            label_only = _is_label_only(chunk, labels) or _label_at_end(chunk, labels)
             if cleaner is not None:
-                if _is_label_only(chunk, labels):
+                if label_only:
                     cand = cleaner(nxt[:60])
                     if cand:
                         set_field(field, cand, chunk + " | " + nxt)
@@ -499,7 +619,7 @@ def extract_merchant(html: str) -> dict:
                     if cand:
                         set_field(field, cand, chunk + " | " + following)
                 continue
-            if _is_label_only(chunk, labels):
+            if label_only:
                 ev = chunk + " | " + nxt
                 if field == "eik":
                     cand = _clean_eik_candidate(nxt[:60])
@@ -517,6 +637,9 @@ def extract_merchant(html: str) -> dict:
                     ph = _RE_PHONE.search(nxt[:60])
                     if ph and 6 <= len(_digits_only(ph.group(0))) <= 15:
                         set_field(field, ph.group(0).strip(), ev)
+                elif field == "address" and not _address_value(nxt) and i + 2 < len(chunks):
+                    two = nxt + " " + chunks[i + 2].strip()
+                    set_field(field, two[:300], chunk + " | " + two)
                 else:
                     if len(nxt) >= 2:
                         set_field(field, nxt[:300], ev)
@@ -541,6 +664,13 @@ def extract_merchant(html: str) -> dict:
             if 6 <= len(_digits_only(t[:60])) <= 15:
                 set_field("phone", t.strip()[:60], "tel:" + t)
                 break
+    # "+359 877 211 226" with no label: the country code makes it unambiguous.
+    if result["phone"] is None:
+        for chunk in chunks:
+            ph = _RE_INTL_PHONE.search(chunk)
+            if ph:
+                set_field("phone", ph.group(0).strip(), chunk)
+                break
 
     # -- pass 4: unlabelled but highly patterned Bulgarian lines -------------
     # Precision first: strict shape tests, fill only missing fields, and
@@ -551,13 +681,26 @@ def extract_merchant(html: str) -> dict:
             if addr:
                 set_field("address", addr, chunk)
                 break
+    if result["address"] is None:
+        for i, chunk in enumerate(chunks):
+            addr = _contact_block_address(chunk, " ".join(chunks[max(0, i - 3):i + 4]))
+            if addr:
+                set_field("address", addr, chunk)
+                if result["address"]:
+                    break
     if result["company_name"] is None:
         for chunk in chunks:
             name = _unlabelled_company(chunk)
+            # Value has quotes stripped; evidence keeps the raw line.
+            if name and not _is_only_legal_form(name):
+                set_field("company_name", name, chunk)
+                if result["company_name"]:
+                    break
+    if result["company_name"] is None:
+        for chunk in chunks:
+            name = _contextual_company(chunk)
             if name:
-                # Value has quotes stripped; evidence keeps the raw line.
-                if not _is_only_legal_form(name):
-                    set_field("company_name", name, chunk)
+                set_field("company_name", name, chunk)
                 break
 
     return result

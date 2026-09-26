@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+day.db
+domaincheck.db
+LIA-SIGNED

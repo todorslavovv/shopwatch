@@ -164,6 +164,119 @@ footer.page p{max-width:84ch}
 .whynote{padding:13px 16px; font-size:13.5px; color:var(--ink-soft); background:var(--surface-2);
   border-top:1px solid var(--rule-soft); max-width:78ch}
 .whynote strong{color:var(--ink)}
+.livecheck{display:flex; gap:8px; margin-top:14px; max-width:640px}
+.livecheck input{flex:1; min-width:0; padding:9px 12px; font-size:14px;
+  background:var(--surface-2); color:var(--ink);
+  border:1px solid var(--rule); border-radius:2px;
+  font-family:"IBM Plex Mono",ui-monospace,monospace}
+.livecheck input::placeholder{color:var(--ink-faint)}
+.livecheck button{padding:9px 18px; font-size:14px; font-weight:600; cursor:pointer;
+  background:var(--accent); color:#fff; border:0; border-radius:2px;
+  font-family:"IBM Plex Sans",system-ui,sans-serif}
+@media (max-width:520px){.livecheck{flex-direction:column}}
+.livecheck button:disabled{opacity:.6; cursor:progress}
+.livecheck button:focus-visible,.livecheck input:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+.wrap.live{padding-bottom:0}
+.wrap.live:empty{display:none}
+.lc-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:10px 14px; padding:14px 16px;
+  border-bottom:1px solid var(--rule-soft)}
+.lc-dom{font-family:"IBM Plex Mono",monospace; font-size:16px; font-weight:600; word-break:break-all}
+.lc-conf{margin-left:auto; font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--ink-soft)}
+.lc-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(min(330px,100%),1fr))}
+.lc-grid > div{padding:14px 16px; border-right:1px solid var(--rule-soft); border-bottom:1px solid var(--rule-soft); min-width:0}
+.lc-grid h3{font-size:12px; letter-spacing:.11em; text-transform:uppercase; color:var(--accent); margin-bottom:8px}
+.tier{display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.06em;
+  padding:2px 7px; border-radius:2px; border:1px solid var(--rule); color:var(--ink-soft); white-space:normal}
+.tier.registry,.tier.official,.tier.vies{background:var(--verify-soft); color:var(--verify); border-color:var(--verify)}
+.tier.company_source{background:var(--accent-soft); color:var(--accent); border-color:var(--accent)}
+.tier.search_evidence,.tier.public_source{background:var(--warn-soft); color:var(--warn); border-color:var(--warn)}
+.tier.unverified{background:var(--surface-2); color:var(--ink-faint)}
+.tier.provisional{background:var(--warn-soft); color:var(--warn); border-color:var(--warn); border-style:dashed}
+.ev-list{list-style:none; margin:0; padding:0; font-size:12.5px}
+.ev-list li{padding:7px 0; border-bottom:1px solid var(--rule-soft); overflow-wrap:anywhere; min-width:0}
+/* Quoted source text is prose: wrap it inside the column, never let it run under the next one. */
+.ev-list .snip{font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:12px; line-height:1.5;
+  white-space:normal; overflow-wrap:anywhere; word-break:break-word; color:var(--ink-soft)}
+.ev-list li:last-child{border-bottom:0}
+.ev-url{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink-soft); word-break:break-all; margin-top:3px}
+.chk{display:grid; grid-template-columns:auto minmax(0,1fr); gap:4px 14px; font-size:12.5px}
+.chk dt{color:var(--ink-soft)} .chk dd{margin:0; font-family:"IBM Plex Mono",monospace; font-size:11.5px}
+.chk dd.good{color:var(--verify)} .chk dd.bad{color:var(--seal)} .chk dd.meh{color:var(--ink-faint)}
+.lc-conflict{margin:0; padding:10px 16px; background:var(--warn-soft); color:var(--warn); font-size:13px;
+  border-bottom:1px solid var(--rule-soft)}
+.lc-note{padding:12px 16px; font-size:12.5px; color:var(--ink-soft); background:var(--surface-2)}
+.lc-msg{padding:14px 16px; font-size:14px}
+.lc-msg.err{color:var(--seal)}
+.lc-infra{font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--ink-soft); white-space:pre-wrap;
+  word-break:break-all; margin:8px 0 0}
+details.lc summary{cursor:pointer; font-size:12px; letter-spacing:.11em; text-transform:uppercase; color:var(--accent)}
+details.lc summary:focus-visible{outline:2px solid var(--accent)}
+/* lookup progress: real stages from the server, not a timer */
+.steps{list-style:none; margin:0; padding:12px 16px 4px; display:flex; flex-wrap:wrap; gap:8px 22px}
+.step{display:flex; align-items:center; gap:7px; font-size:13.5px; color:var(--ink-faint)}
+.step .mark{width:16px; text-align:center; font-weight:600}
+.step.done{color:var(--ink)} .step.done .mark{color:var(--verify)}
+.step.active{color:var(--ink); font-weight:600}
+.step.skipped{color:var(--ink-faint)} .step.failed,.step.cancelled{color:var(--seal)}
+.step .why{font-size:11px; color:var(--ink-faint); font-weight:400}
+.spin{width:12px; height:12px; border-radius:50%; border:2px solid var(--accent-soft);
+  border-top-color:var(--accent); animation:spin .8s linear infinite; margin:0 2px}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none; border-color:var(--accent)}}
+.prov{margin:0 16px 12px; padding:10px 14px; border:1px dashed var(--rule); background:var(--surface-2)}
+.prov .why{font-size:12px; color:var(--ink-soft)}
+.lc-actions{padding:10px 16px 14px}
+.btn-ghost{padding:7px 14px; font-size:13px; cursor:pointer; background:none; color:var(--ink);
+  border:1px solid var(--rule); border-radius:2px; font-family:"IBM Plex Sans",system-ui,sans-serif}
+.btn-ghost:hover{background:var(--surface-2)}
+.btn-ghost:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+.livecheck input[readonly]{opacity:.75}
+/* compliance profile */
+.fs{display:inline-block; font-size:11.5px; margin-left:4px; white-space:normal}
+.fs.ok{color:var(--verify)} .fs.pub{color:var(--accent)} .fs.bad{color:var(--warn); font-weight:600}
+.fs.na{color:var(--ink-faint)}
+.pfields dd{overflow-wrap:anywhere}
+
+.ptable th{white-space:nowrap; vertical-align:top}
+.ptable td{vertical-align:top; overflow-wrap:anywhere; font-size:13px}
+.ptable tbody th{font-family:"IBM Plex Sans",system-ui,sans-serif; font-size:12.5px; letter-spacing:0;
+  text-transform:none; color:var(--ink-soft); padding:9px 16px}
+details.srcs{margin-top:4px}
+details.srcs summary{cursor:pointer; font-size:11.5px; color:var(--accent)}
+details.srcs summary:focus-visible{outline:2px solid var(--accent)}
+details.srcs ul{list-style:none; margin:6px 0 0; padding:0}
+details.srcs li{padding:5px 0; border-top:1px solid var(--rule-soft)}
+.srcgroup{margin-top:6px}
+.why{font-size:12px; color:var(--ink-soft)}
+/* example worklist and the check form heading */
+.checkh{font-size:15px; margin-top:16px; letter-spacing:.02em}
+.checkp{margin:3px 0 0; font-size:13px; color:var(--ink-soft); max-width:70ch}
+.whygrid p{margin:0 0 8px}
+.sflist{margin:10px 0 0; padding:0 0 0 18px; font-size:13.5px}
+.sflist > li{margin:0 0 10px}
+.auto{font-size:12px; margin-top:3px}
+.sflist .kind{font-family:"IBM Plex Mono",monospace; font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--seal); margin-right:6px}
+.sflist li.info .kind{color:var(--accent)}
+.sflist li.info{color:var(--ink-soft)}
+.vchip.v-info{background:var(--accent-soft); color:var(--accent)}
+.bench{flex-basis:100%; margin:4px 0 0; font-size:13.5px; color:var(--ink)}
+/* example findings pagination */
+.pager{display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:10px 16px;
+  padding:12px 16px; border-top:1px solid var(--rule-soft); background:var(--surface-2)}
+.pg-range{margin:0; font-family:"IBM Plex Mono",monospace; font-size:11.5px; color:var(--ink-soft)}
+.pg-links{display:flex; flex-wrap:wrap; gap:6px}
+.pg-num,.pg-step{display:inline-flex; align-items:center; justify-content:center; min-width:34px; height:32px;
+  padding:0 10px; border:1px solid var(--rule); border-radius:2px; font-size:13px;
+  color:var(--accent); background:var(--surface); text-decoration:none}
+.pg-num:hover,a.pg-step:hover{background:var(--accent-soft)}
+.pg-num.active{background:var(--accent); border-color:var(--accent); color:var(--surface); font-weight:600}
+span.pg-step{color:var(--ink-faint); border-color:var(--rule-soft); background:none; cursor:default}
+.pg-num:focus-visible,.pg-step:focus-visible{outline:2px solid var(--accent); outline-offset:1px}
+@media (pointer:coarse), (max-width:760px){.pg-num,.pg-step{min-width:44px; height:44px}}
+@media (max-width:520px){.pg-links{width:100%} .pg-step{order:1; flex:1 1 40%}}
+.auto.yes{color:var(--verify)} .auto.no{color:var(--ink-faint)}
+.shop .snip{font-family:"IBM Plex Sans",system-ui,sans-serif; white-space:normal; overflow-wrap:anywhere}
 </style>
 
 <div class="masthead"><div class="mast-in">
@@ -172,9 +285,16 @@ footer.page p{max-width:84ch}
     <div id="langslot"></div>
   </div>
   <div class="sub" id="sub"></div>
-  <div class="facts" id="facts"></div>
+  <h2 class="checkh" id="checkh"></h2>
+  <p class="checkp" id="checkp"></p>
+  <form class="livecheck" id="livecheck" novalidate>
+    <input id="liveurl" name="url" autocomplete="off" spellcheck="false" maxlength="2048"
+           inputmode="url" aria-label="адрес на сайт">
+    <button type="submit" id="livebtn">Провери</button>
+  </form>
 </div></div>
 
+<div class="wrap live" id="live" aria-live="polite"></div>
 <div class="wrap" id="app"></div>
 
 <footer class="page">

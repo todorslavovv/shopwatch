@@ -1,0 +1,350 @@
+{
+ "dobytoys.com:legal_name": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "dobytoys.com:legal_form": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "besteesrock.com:legal_name": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "besteesrock.com:address": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "besteesrock.com:NO_COMPANY": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "besteesrock.com:NO_ADDRESS": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "biancandfred.com:legal_name": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "biancandfred.com:address": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "biancandfred.com:phone": {
+  "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+  "improved": true,
+  "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous",
+  "class": "intl_phone"
+ },
+ "biancandfred.com:NO_COMPANY": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "biancandfred.com:PLACEHOLDER_ADDRESS": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "biancandfred.com:false:NO_PHONE": {
+  "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+  "improved": true,
+  "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous",
+  "class": "intl_phone"
+ },
+ "bigvip.bg:NO_LEGAL_FORM": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "elanhairboutique.com:legal_name": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "elanhairboutique.com:legal_form": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "elrelax.org:NO_COMPANY": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "elveszett.com:legal_name": {
+  "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+  "improved": true,
+  "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')",
+  "class": "english_form"
+ },
+ "elveszett.com:legal_form": {
+  "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+  "improved": true,
+  "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')",
+  "class": "english_form"
+ },
+ "elveszett.com:address": {
+  "reason": "text normalisation: the address was split over elements ('Адрес' | 'гр. София,' | 'ул. ... 253'), or sat alone next to the e-mail and phone",
+  "improved": true,
+  "change": "disclosure.py: the next two elements are joined when the first has no number; an address in a contact block (e-mail or +359 phone within three elements) is accepted",
+  "class": "split_address"
+ },
+ "elveszett.com:phone": {
+  "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+  "improved": true,
+  "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous",
+  "class": "intl_phone"
+ },
+ "elveszett.com:false:NO_COMPANY": {
+  "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+  "improved": true,
+  "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')",
+  "class": "english_form"
+ },
+ "elveszett.com:false:NO_PHONE": {
+  "reason": "field extraction: a phone number with no label ('Call us at: +359...', '+359 877 211 226' in a contact block) was never read; only labelled numbers and tel: links were",
+  "improved": true,
+  "change": "disclosure.py: an unlabelled +359 number is accepted - the country code makes it unambiguous",
+  "class": "intl_phone"
+ },
+ "carpethouse-bg.com:legal_form": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "carpethouse-bg.com:address": {
+  "class": "heading",
+  "improved": true,
+  "reason": "text normalisation: a heading ('Адрес на магазина:') stood in its own element with the address in the next one; the heading was read as the value and rejected, the next element never tried",
+  "change": "disclosure.py: a short element that starts with a label and ends in ':' takes its value from the next element"
+ },
+ "chunche-bg.com:address": {
+  "reason": "text normalisation: the address was split over elements ('Адрес' | 'гр. София,' | 'ул. ... 253'), or sat alone next to the e-mail and phone",
+  "improved": true,
+  "change": "disclosure.py: the next two elements are joined when the first has no number; an address in a contact block (e-mail or +359 phone within three elements) is accepted",
+  "class": "split_address"
+ },
+ "concretta.eu:legal_name": {
+  "reason": "insufficient URL/page discovery: a product page called 'About Dura' matched the 'about' hint and took the fifth page, so the privacy policy that names 'Concreta 2017 Ltd.' was never read",
+  "improved": true,
+  "change": "investigate.py: a hint in the URL outranks one in the link text, and each tier gets a share of the page budget (2 contact/about, 2 terms, 1 privacy)",
+  "class": "page_budget"
+ },
+ "concretta.eu:legal_form": {
+  "reason": "insufficient URL/page discovery: a product page called 'About Dura' matched the 'about' hint and took the fifth page, so the privacy policy that names 'Concreta 2017 Ltd.' was never read",
+  "improved": true,
+  "change": "investigate.py: a hint in the URL outranks one in the link text, and each tier gets a share of the page budget (2 contact/about, 2 terms, 1 privacy)",
+  "class": "page_budget"
+ },
+ "concretta.eu:address": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "concretta.eu:ADDRESS_INCOMPLETE": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "kornelv.com:legal_name": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "kornelv.com:legal_form": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "kornelv.com:address": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "davidtoys.eu:address": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "davidtoys.eu:NO_COMPANY": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "davidtoys.eu:PLACEHOLDER_ADDRESS": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "detetovteb.com:eik": {
+  "reason": "Bulgarian/English label matching: labels matched inside other words - 'Quickview' contains 'uic', so a product model number was read as an ЕИК",
+  "improved": true,
+  "change": "disclosure.py: labels match whole words only",
+  "class": "substring"
+ },
+ "detetovteb.com:false:EIK_INVALID": {
+  "reason": "Bulgarian/English label matching: labels matched inside other words - 'Quickview' contains 'uic', so a product model number was read as an ЕИК",
+  "improved": true,
+  "change": "disclosure.py: labels match whole words only",
+  "class": "substring"
+ },
+ "detetovteb.com:legal_name": {
+  "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+  "improved": true,
+  "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')",
+  "class": "english_form"
+ },
+ "detetovteb.com:legal_form": {
+  "reason": "field extraction: English legal form 'Ltd.' ('© 2026 Elveszett Ltd.', '* Parashkevovi Company Ltd.', 'a part of Concreta 2017 Ltd.') was not a legal form",
+  "improved": true,
+  "change": "disclosure.py: 'Ltd' is a legal form in standalone lines and in English operator phrases ('a part of', 'operated by')",
+  "class": "english_form"
+ },
+ "detetovteb.com:EIK_OTHER_COMPANY": {
+  "reason": "field extraction: the identifier on the site was never read (label split over two elements), so there was nothing to compare with the NAP declaration",
+  "improved": true,
+  "change": "once the UIC is read, the resolver holds two identifiers (the site's and NAP's) and reports the multiple_identifiers conflict",
+  "class": "other_company"
+ },
+ "danishgranola.bg:eik": {
+  "reason": "field extraction: the ЕИК was published only inside the VAT number BG207654830 and the triage looked for an ЕИК label only",
+  "improved": true,
+  "change": "investigate.py: a valid BG VAT number counts as the ЕИК disclosure",
+  "class": "vat_eik"
+ },
+ "danishgranola.bg:false:NO_EIK": {
+  "reason": "field extraction: the ЕИК was published only inside the VAT number BG207654830 and the triage looked for an ЕИК label only",
+  "improved": true,
+  "change": "investigate.py: a valid BG VAT number counts as the ЕИК disclosure",
+  "class": "vat_eik"
+ },
+ "danishgranola.bg:legal_name": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "danishgranola.bg:legal_form": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "danishgranola.bg:address": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "danishgranola.bg:NO_ADDRESS": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "danishgranola.bg:LEGAL_FORM_INCONSISTENT": {
+  "reason": "conflict resolution: the triage kept the first company name per field and never compared the names on different pages",
+  "improved": true,
+  "change": "investigate.py/compliance.py: distinct company names or legal forms across pages give COMPANY_INCONSISTENT",
+  "class": "inconsistent_form"
+ },
+ "detski-magazin.bg:legal_name": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "detski-magazin.bg:legal_form": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "detski-magazin.bg:address": {
+  "reason": "text normalisation: 'гр.Варна ул.Шипка № 2' has no space after the marker",
+  "improved": true,
+  "change": "disclosure.py: the settlement marker may touch the name",
+  "class": "no_space"
+ },
+ "detski-magazin.bg:false:NO_COMPANY": {
+  "reason": "Bulgarian-language pattern matching: the operator was named inside a sentence ('е собственост на X ЕООД', 'Общи условия X ЕООД уведомява', 'X ООД е създадена', 'X ЕООД ДДС номер'), with no label",
+  "improved": true,
+  "change": "disclosure.py: a company with a legal form is accepted where the sentence says it is the trader, never a courier or a web agency credit",
+  "class": "context_company"
+ },
+ "compartido.bg:legal_name": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "compartido.bg:NO_COMPANY": {
+  "reason": "field extraction: whatever followed a label ('Дружеството', 'адрес', 'Company') was accepted as the value, so a sentence fragment stood in for a company name or address and hid the shortfall",
+  "improved": true,
+  "change": "disclosure.py: a company name must carry a legal form and is cut to the capitalised run before it; an address needs a number and a street or settlement marker, and label debris in front is dropped",
+  "class": "prose"
+ },
+ "editshop.bg:vat_number": {
+  "reason": "field extraction: the ЕИК was written in VAT form ('ЕИК BG208475759'), which is the VAT number, but no VAT label was present",
+  "improved": true,
+  "change": "investigate.py: 'BG' + the ЕИК under the ЕИК label is recorded as the VAT number too",
+  "class": "eik_vat"
+ },
+ "bigvip.bg:legal_name": {
+  "class": "precision_tradeoff",
+  "improved": false,
+  "reason": "field extraction: the site names the company without a legal form ('„Стандарт 34“'); the extractor requires a legal form to tell a company name from prose after a label (the prose was hiding 20+ real shortfalls in the baseline)",
+  "change": "none - reported as NO_COMPANY, which reproduces the NO_LEGAL_FORM shortfall; the domain check still shows the name from the NAP declaration"
+ },
+ "biancandfred.com:CONTACT_INCONSISTENT": {
+  "class": "limitation",
+  "improved": false,
+  "reason": "field extraction: the triage keeps one e-mail per page and never compares the mailboxes listed across the legal pages; the extra mailboxes sit in template text of the terms and refund policy",
+  "change": "none in this pass - it needs every mailbox per page and a rule for which one is the trader's; not a privacy exclusion"
+ },
+ "concretta.eu:TRADER_NAME_INCONSISTENT": {
+  "class": "limitation",
+  "improved": false,
+  "reason": "field extraction: the terms name the supplier 'Concretta EU' with no legal form, so it is not read as a company name; with one company name found ('Concreta 2017 Ltd.') there is nothing to compare",
+  "change": "none - accepting names without a legal form would bring back the prose false positives"
+ },
+ "elanhairboutique.com:domain_operator_without_nap": {
+  "class": "source_inconsistency",
+  "improved": false,
+  "reason": "without NAP the resolver reports the company the site itself names as owner ('е собственост на Диверсо Хеър ЕООД'); the operator declared to NAP is ЕЛЪН ХЕЪР БУТИК (ЕИК 206418542) - the site and the official declaration disagree",
+  "change": "none - the resolver reports what the site states; with NAP the declared operator is used, and the disagreement is a candidate disclosure finding"
+ }
+}
