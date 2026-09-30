@@ -1,6 +1,6 @@
 # Shopwatch — merchant disclosure triage
 
-> **Try it live here:** https://returns-homework-perfect-affecting.trycloudflare.com
+> **Try it live here:** https://todorslavov.vercel.app/go/shopwatch
 
 A public-web triage tool for Bulgarian online shops. It answers two questions:
 
